@@ -32,6 +32,9 @@ Further questions are also answered within a [FAQ](#faq) section below.
 
 The table of contents for this guide can be found [here](#table-of-contents).
 
+Confused about specific formatting we use? Learn how to navigate through this guide [here](#navigating-this-guide).
+You may also find information about terms used in this guide and command formats in our [Glossary](#glossary).
+
 <br>
 
 ***How does Docedex make hospital administrative management efficient?***
