@@ -17,29 +17,12 @@ Here's an **overview** of how Docedex can help you streamline your hospital mana
 - Track the status of your patients and doctors
 - Assign patients to doctors upon triaging
 
+**If you are familiar with Docedex**, jump to our [Table of Contents](#table-of-contents) to find out what
+you are looking for!
+
+**If you are new here**, you may visit our [quick start](#quick-start) guide to onboard onto Docedex smoothly!
+
 ![Docedex User Interface](./images/Ui.png)
-
-**If you are new here**, visit our [quick start](#quick-start) guide to onboard onto Docedex smoothly!
-
-<br>
-
-***How can this guide help me?***
-
-Through this guide, we hope to first inform you on how you can [get started](#quick-start) using Docedex. As you use Docedex,
-you may also have questions on how to perform certain actions within the application. This guide thus contains
-a comprehensive list of [features](#features) offered with Docedex, as well as explanations on when and how to use them.
-Further questions are also answered within a [FAQ](#faq) section below.
-
-Confused about specific formatting we use? Learn how to navigate through this guide [here](#navigating-this-guide).
-You may also find information about terms used in this guide and command formats in our [Glossary](#glossary).
-
-<br>
-
-***Here are some helpful resources to navigate this guide***
-- [Table of contents](#table-of-contents).
-- [General formatting used](#navigating-this-guide)
-- [Terms used](#definitions)
-- [Command formats](#command-format)
 
 <br>
 
@@ -67,6 +50,17 @@ Furthermore, Docedex also comes with a nice visual feedback for our users. Find 
 {:toc}
 
 ---
+## **How can this guide help me?**
+
+If you are a new user, we hope to first inform you on how you can [get started](#quick-start) using Docedex.
+
+As you use Docedex, you may also have questions on how to perform certain actions within the application. This guide thus contains
+a comprehensive list of [features](#features) offered with Docedex, as well as explanations on when and how to use them.
+
+Further questions are also answered within a [FAQ](#faq) section below.
+
+Confused about the terms or formatting used in this guide? Learn how to navigate
+through this guide [here](#navigating-this-guide).
 
 ## **Quick start**
 
@@ -120,20 +114,9 @@ to use follow the instructions stated above instead.
 
 ## **Navigating this guide**
 
-Here are the explanations behind the formatting we use throughout this guide!
+### **Glossary**
 
-| Format                                                                | Explanation                                                                                                                                                             |
-|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Words in `code blocks`                                                | These represent any of the following:<br/>1. Text used in commands, such as `add-doc`<br/>2. Keys on your keyboard like `Enter`<br/>3. File names such as `docedex.jar` |
-| <div markdown="span" class="alert alert-danger"> Text within a red box | These usually represent major warnings. Not following these warnings may cause major errors within Docedex. (ie. Having all data cleared from Docedex)                  |
-| <div markdown="span" class="alert alert-warning"> Text within a yellow box | These usually represent minor warnings. Not following these warnings may cause minor inconveniences within Docedex. (ie. Editing patient data incorrectly)              |
-| <div markdown="span" class="alert alert-info"> Text within a blue box | These usually represent any other additional notes for users.                                                                                                           |
-
----
-
-## **Glossary**
-
-### Definitions
+#### Definitions
 
 Here are some descriptions of the words we use throughout the User Guide:
 
@@ -147,7 +130,7 @@ Here are some descriptions of the words we use throughout the User Guide:
 | **Character**     | Any letter or symbol that is recognized by the computer, and can form a line of text (eg. `a`, `+`, `$`)                                                              |
 
 
-### Parameter Information
+#### Parameter Information
 
 Within the tables below, you can find out more about the parameters that Docedex supports. These parameters come in
 handy when crafting commands in Docedex.
@@ -156,7 +139,7 @@ Here are some notes about these parameters.
 - Each parameter comes with **constraints**. These constraints detail the specific formats of text that
 each parameter accepts as valid user input.
 
-#### Common Parameters
+##### Common Parameters
 
 | Parameter           | Description                                                                                            | Constraints                                                                                                                       | Valid Examples                    | Invalid Examples                             |
 |---------------------|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|----------------------------------------------|
@@ -168,14 +151,14 @@ each parameter accepts as valid user input.
 
 <sup>*</sup>`INDEX` parameters are sometimes labelled as `PATIENT_INDEX` or `DOCTOR_INDEX` for clarity.
 
-#### Doctor Parameters
+##### Doctor Parameters
 
 | Parameter | Description                       | Constraints                                      | Valid Examples        | Invalid Examples                                 |
 |-----------|-----------------------------------|--------------------------------------------------|-----------------------|--------------------------------------------------|
 | `s/`      | Specialty of the doctor           | Alphanumeric characters (a to z, A to Z, 1 to 9) | Cardiology, Neurology | N/A (45 specialties are recognized in Singapore) |
 | `y/`      | Years of experience of the doctor | Positive whole number between 0 and 99.          | 0, 99                 | -1, 100                                          |
 
-#### Patient Parameters
+##### Patient Parameters
 
 
 | Parameter | Description                             | Constraints                                                                                                                                          | Valid Examples                      | Invalid Examples   |
@@ -186,8 +169,21 @@ each parameter accepts as valid user input.
 | `st/`     | Status                                  | Can only take one of the following values:<br/><br/>Inpatient, Outpatient, Observation, Emergency Department, Intensive Care Unit, Transitional Care | Inpatient, Outpatient               | Baymax, HelloWorld |
 | `r/`      | Remark                                  | Alphanumeric characters<br/>(a to z, A to Z, 0 to 9).                                                                                                | Compliant, Needs increase in dosage | 发烧                 |
 
+### **Format**
 
-## **Command Format**
+#### General Formatting
+
+Here are the explanations behind the formatting we use throughout this guide!
+
+| Format                                                                     | Explanation                                                                                                                                                             |
+|----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Words in `code blocks`                                                     | These represent any of the following:<br/>1. Text used in commands, such as `add-doc`<br/>2. Keys on your keyboard like `Enter`<br/>3. File names such as `docedex.jar` |
+| <div markdown="span" class="alert alert-danger"> Text within a red box     | These usually represent major warnings. Not following these warnings may cause major errors within Docedex. (ie. Having all data cleared from Docedex)                  |
+| <div markdown="span" class="alert alert-warning"> Text within a yellow box | These usually represent minor warnings. Not following these warnings may cause minor inconveniences within Docedex. (ie. Editing patient data incorrectly)              |
+| <div markdown="span" class="alert alert-info"> Text within a blue box      | These usually represent any other additional notes for users.                                                                                                           |
+
+
+#### Command Format
 
 Here are the explanations behind the formatting we use within our commands!
 
@@ -196,17 +192,6 @@ Here are the explanations behind the formatting we use within our commands!
 | Words in `UPPER_CASE`                                                                                   | These are parameter values that are supplied by the user                     | `add-doc n/NAME...` can be used as `add-doc n/John Doe...`                                        |
 | Items in square brackets                                                                                | These are optional parameters (can be left empty by user)                    | `add-doc n/NAME ... [t/TAG]` can be used as `add-doc n/John Doe t/level5` or `add-doc n/John Doe` |
 | Items with `…`​ after them                                                                              | These are parameters that can be used multiple times (or omitted completely) | `add-doc ... [t/TAG]…​` can be used as `add-doc ... t/level5 t/surgeon` or `add-doc ...`          |
-
-
-Here are some notes about the behaviour of our commands!
-
-| Notes                                                                                                        | Examples                                                                             |
-|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| Parameters are accepted in any order.                                                                        | `add-doc n/NAME p/PHONE_NUMBER ...` is equivalent to `add-doc p/PHONE_NUMBER n/NAME` |
-| If a parameter is **expected only once** but entered multiple times, only the latest occurrence is accepted. | `add-doc n/John Doe n/Shawn Koh ...` is equivalent to `add-doc n/Shawn Koh ...`      |
-| Extraneous parameters for commands that do not take in parameters will be ignored.                           | `help 123`, `list 123` is equivalent to `help` or `list`                             |
-
-[Scroll back to Table of Contents](#table-of-contents)
 
 ---
 
@@ -225,6 +210,16 @@ Here are some notes about the behaviour of our commands!
 | `help`                | N/A         | Displays the link to the User Guide.                                                                          |
 | `clear`               | N/A         | Clears all doctors and patients within Docedex. **This action cannot be undone.**                             |
 | `exit`                | N/A         | Exits the application (equivalent to closing the application).                                                |
+
+<br>
+Here are some notes about the behaviour of our commands!
+
+| Notes                                                                                                        | Examples                                                                             |
+|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| Parameters are accepted in any order.                                                                        | `add-doc n/NAME p/PHONE_NUMBER ...` is equivalent to `add-doc p/PHONE_NUMBER n/NAME` |
+| If a parameter is **expected only once** but entered multiple times, only the latest occurrence is accepted. | `add-doc n/John Doe n/Shawn Koh ...` is equivalent to `add-doc n/Shawn Koh ...`      |
+| Extraneous parameters for commands that do not take in parameters will be ignored.                           | `help 123`, `list 123` is equivalent to `help` or `list`                             |
+
 
 [Scroll back to Table of Contents](#table-of-contents)
 
