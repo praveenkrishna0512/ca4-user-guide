@@ -53,23 +53,23 @@ Furthermore, Docedex also comes with a nice visual feedback for our users. Find 
 2. Download the latest jar file (`docedex.jar`) from our [Github Releases](https://github.com/AY2223S2-CS2103T-F12-1/tp/releases/).
    ![DownloadDocedex](images/DownloadDocedex.png)
 3. Move the jar file to a folder where you want to store the data of the doctors and patients.
-- Create a new folder called (you can name it Docedex) where you would like to house the application (e.g., Desktop, Documents, etc.).
-- Move the downloaded jar file to this folder as shown below.
-  - For Mac Users:
-    ![DownloadDocedexMac](images/DownloadDocedexMac.png)
-  <br><br><br>
-  - For Windows Users:
-  ![DownloadDocedexWindows](images/DocedexInFileWin.png)
+   - Create a new folder called (you can name it Docedex) where you would like to house the application (e.g., Desktop, Documents, etc.).
+   - Move the downloaded jar file to this folder as shown below.
+     - For Mac Users:
+       ![DownloadDocedexMac](images/DownloadDocedexMac.png)
+     <br><br><br>
+     - For Windows Users:
+     ![DownloadDocedexWindows](images/DocedexInFileWin.png)
 4. Launch Docedex
-- For Mac Users:
-  - Open a new Terminal window (Command + Space > type Terminal > Enter).
-  - Navigate to the folder where you have stored the jar file using the `cd` command.
-    - For example, if you have stored the jar file in a folder called Docedex, you can type `cd Docedex` and press Enter.
-  - Type `java -jar docedex.jar` and press Enter.
-- For Windows Users:
-  - Double-click `docedex.jar` to launch the application.
-- If this still does not work follow the instructions listed [here.](#launching-docedex)
-- You should notice the GUI of the application pop up.
+   - For Mac Users:
+     - Open a new Terminal window (Command + Space > type Terminal > Enter).
+     - Navigate to the folder where you have stored the jar file using the `cd` command.
+       - For example, if you have stored the jar file in a folder called Docedex, you can type `cd Docedex` and press Enter.
+     - Type `java -jar docedex.jar` and press Enter.
+   - For Windows Users:
+     - Double-click `docedex.jar` to launch the application.
+   - If this still does not work follow the instructions listed [here.](#launching-docedex)
+   - You should notice the GUI of the application pop up.
 
 5. Learn more about navigating the GUI [here](#navigating-the-graphical-user-interface-gui).
 
@@ -94,13 +94,13 @@ to use follow the instructions stated above instead.
 
 Here are some descriptions of the words we use throughout the User Guide:
 
-| Term          | Definition                                                                                                                                                            |
-|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Parameter     | Parameters are like fields in a form you are required to fill up. They include details you would include about the doctor/patient.                                    |
-| Command       | An input from the user that tells Docedex to perform an action (ie. add a doctor).                                                                                    |
-| GUI           | Graphical User Interface (GUI) represents the visual display of Docedex that users can see.                                                                           |
-| GUI component | A subsection of the Graphical User Interface. For more information on specific GUI components, refer to [this section](#navigating-the-graphical-user-interface-gui). |
-| CLI           | Command Line Interface (CLI) represents a text-based user interface to interact with the application.                                                                 |
+| Term              | Definition                                                                                                                                                            |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Parameter**     | Parameters are like fields in a form you are required to fill up. They include details you would include about the doctor/patient.                                    |
+| **Command**       | An input from the user that tells Docedex to perform an action (ie. add a doctor).                                                                                    |
+| **GUI**           | Graphical User Interface (GUI) represents the visual display of Docedex that users can see.                                                                           |
+| **GUI component** | A subsection of the Graphical User Interface. For more information on specific GUI components, refer to [this section](#navigating-the-graphical-user-interface-gui). |
+| **CLI**           | Command Line Interface (CLI) represents a text-based user interface to interact with the application.                                                                 |
 
 
 ### Parameter Information
