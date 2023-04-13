@@ -365,7 +365,7 @@ Here are some notes about the behaviour of our commands!
 
 <div markdown="span" class="alert alert-info">
     <strong>If your patients list seems to disappear</strong> after entering this command, fret not! Click
-    <a href="#selecting-doctors-or-patients-through-commands">here</a>
+    <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
 </div>
 
@@ -409,7 +409,7 @@ new supplied parameters.
 
 <div markdown="span" class="alert alert-info">
     If your patients list seems to disappear after entering this command, fret not! Click
-    <a href="#selecting-doctors-or-patients-through-commands">here</a>
+    <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
 </div>
 
