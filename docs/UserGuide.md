@@ -64,7 +64,7 @@ Furthermore, Docedex also comes with a nice visual feedback for our users. Find 
 1. Make sure that you have **Java 11 or above** installed on your computer.
    - [How do I check my version of Java?](#checking-java-version)
    <br><br>
-2. Download the latest jar file (`docedex.jar`) from our [Github Releases](https://github.com/AY2223S2-CS2103T-F12-1/tp/releases/).
+2. Download the latest jar file (`docedex.jar`) from our [GitHub Releases](https://github.com/AY2223S2-CS2103T-F12-1/tp/releases/).
    ![DownloadDocedex](images/DownloadDocedex.png)
    <br><br>
 3. Move the jar file to a folder where you want to store the data of the doctors and patients.
@@ -198,7 +198,7 @@ Here are some notes about the behaviour of our commands!
 | `find-doc / find-ptn` | `fd / fp`   | Finds the doctor(s) and patient(s) based on specific parameters. (ie. Find all doctors named Smith")          |
 | `list-doc / list-ptn` | `lsd / lsp` | Lists all doctors or patients within Docedex.                                                                 |
 | `assign-ptn`          | `asn`       | Assigns a patient to a doctor.                                                                                |
-| `unassign-ptn`        | `uasn`      | Unassigns a patient from a doctor.                                                                            |
+| `unassign-ptn`        | `uasn`      | Remove the assignment of the specified patient to the specified doctor.                                       |
 | `sd / sp`             | `sd / sp`   | Selects the specified doctor or patient and displays the selected person's information on the user interface. |
 | `help`                | N/A         | Displays the link to the User Guide.                                                                          |
 | `clear`               | N/A         | Clears all doctors and patients within Docedex. **This action cannot be undone.**                             |
@@ -211,7 +211,7 @@ Here are some notes about the behaviour of our commands!
 ## **Navigating the Graphical User Interface (GUI)**
 
 Docedex comes with a GUI to allow for a nice visual feedback for our users. Here
-is a quick runthrough of the different sections of our GUI, as well as some notes
+is a quick run-through of the different sections of our GUI, as well as some notes
 regarding the use of the GUI.
 
 ### Quick Orientation
@@ -637,7 +637,7 @@ Method 2: For users that wish to create a script to launch Docedex (**Recommende
 ```
 java -jar [JAR file location]/docedex.jar
 ```
-3. Save the text file as `docedex.bat` (Windows) or `docedex.sh` (MacOS/Linux)
+3. Save the text file as `docedex.bat` (Windows) or `docedex.sh` (macOS/Linux)
 4. Change the admin settings of the script to allow it to run as a program:
    1. Windows: Right-click on the script and select `Properties`. Under `General`, check the box that says `Allow this file to run as a program`.
    2. MacOS/Linux: Open the terminal and navigate to the directory where the script is located. Type `chmod +x [script name]` and press enter. (`chmod +x` changes permissions of the script to allow it to be executed.)
