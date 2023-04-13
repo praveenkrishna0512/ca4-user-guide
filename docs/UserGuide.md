@@ -47,14 +47,6 @@ Here's an **overview** of how Docedex can help you streamline your hospital mana
   - Navigate to the folder where you have stored the jar file using the `cd` command.
     - For example, if you have stored the jar file in a folder called Docedex, you can type `cd Docedex` and press Enter.
   - Type `java -jar docedex.jar` and press Enter.
-  
-  <div markdown="span" class="alert alert-danger">
-  **WARNING TO ALL MAC USERS** <br/>
-  It is  possible to right click <code>docedex.jar</code> and open it with <code>JavaLauncher</code>.<br/>
-  However, doing so may result in <strong>improper loading of data</strong> into Docedex. Therefore, it is recommended
-  to use follow the instructions stated above instead.
-  </div>
-
 - For Windows Users:
   - Double-click `docedex.jar` to launch the application.
 - If this still does not work follow the instructions listed [here.](#launching-docedex)
@@ -65,6 +57,13 @@ Here's an **overview** of how Docedex can help you streamline your hospital mana
 6. For **new users**, learn to use Docedex [here](#docedex-tutorial-for-new-users).
 
 7. For **advanced users**, view all feature details [here](#features).
+
+<div markdown="span" class="alert alert-danger">
+**WARNING TO ALL MAC USERS** <br/>
+It is  possible to right click <code>docedex.jar</code> and open it with <code>JavaLauncher</code>.<br/>
+However, doing so may result in <strong>improper loading of data</strong> into Docedex. Therefore, it is recommended
+to use follow the instructions stated above instead.
+</div>
 
 [Scroll back to Table of Contents](#table-of-contents)
 
