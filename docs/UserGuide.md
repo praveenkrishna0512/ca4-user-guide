@@ -371,7 +371,7 @@ Here are some notes about the behaviour of our commands!
   - Note that the tag is optional.
 
 <div markdown="span" class="alert alert-info">
-    If your *patients list* seems to disappear after entering this command, fret not! Click
+    <strong>If your <em>patients list</em> seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
 </div>
@@ -420,7 +420,7 @@ new supplied parameters.
   - Adding `t/` also clears all existing tags.
 
 <div markdown="span" class="alert alert-info">
-    If your *patients list* seems to disappear after entering this command, fret not! Click
+    <strong>If your <em>patients list</em> seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
 </div>
@@ -539,7 +539,7 @@ Use the `sd` command!
     - Performs a mouse click on the *doctor card* of the doctor with displayed index of 1.
 
 <div markdown="span" class="alert alert-info">
-    If your *patients list* seems to disappear after entering this command, fret not! Click
+    <strong>If your <em>patients list</em> seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
 </div>
@@ -555,7 +555,6 @@ Use the `sd` command!
 [Scroll back to Table of Contents](#table-of-contents)
 
 #### Listing all doctors
-
 
 **Wish to look through all doctors within your clinic?**
 Use the `list-doc` command!
