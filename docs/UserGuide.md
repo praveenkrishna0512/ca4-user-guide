@@ -20,7 +20,7 @@ Here's an **overview** of how Docedex can help you streamline your hospital mana
 **If you are familiar with Docedex**, jump to our [Table of Contents](#table-of-contents) to find out what
 you are looking for!
 
-**If you are new here**, you may visit our [quick start](#quick-start) guide to onboard onto Docedex smoothly!
+**If you are new here**, you may visit our [Quick Start](#quick-start) guide to onboard onto Docedex smoothly!
 
 ![Docedex User Interface](./images/Ui.png)
 
@@ -144,36 +144,6 @@ Here are the explanations behind the formatting we use within our commands!
 
 ---
 
-## **Command Summary**
-
-| Command               | Shorthand   | What it does                                                                                                  |
-|-----------------------|-------------|---------------------------------------------------------------------------------------------------------------|
-| `add-doc / add-ptn`   | `ad / ap`   | Adds a doctor or patient into Docedex.                                                                        |
-| `edit-doc / edit-ptn` | `ed / ep`   | Edits the specified doctor or patient.                                                                        |
-| `del-doc / del-ptn`   | `dd / dp`   | Removes the specified doctor or patient from Docedex. **This action cannot be undone.**                       |
-| `find-doc / find-ptn` | `fd / fp`   | Finds the doctor(s) and patient(s) based on specific parameters. (ie. Find all doctors named Smith")          |
-| `list-doc / list-ptn` | `lsd / lsp` | Lists all doctors or patients within Docedex.                                                                 |
-| `assign-ptn`          | `asn`       | Assigns a patient to a doctor.                                                                                |
-| `unassign-ptn`        | `uasn`      | Remove the assignment of the specified patient to the specified doctor.                                       |
-| `sd / sp`             | `sd / sp`   | Selects the specified doctor or patient and displays the selected person's information on the user interface. |
-| `help`                | N/A         | Displays the link to the User Guide.                                                                          |
-| `clear`               | N/A         | Clears all doctors and patients within Docedex. **This action cannot be undone.**                             |
-| `exit`                | N/A         | Exits the application (equivalent to closing the application).                                                |
-
-<br>
-Here are some notes about the behaviour of our commands!
-
-| Notes                                                                                                        | Examples                                                                             |
-|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| Parameters are accepted in any order.                                                                        | `add-doc n/NAME p/PHONE_NUMBER ...` is equivalent to `add-doc p/PHONE_NUMBER n/NAME` |
-| If a parameter is **expected only once** but entered multiple times, only the latest occurrence is accepted. | `add-doc n/John Doe n/Shawn Koh ...` is equivalent to `add-doc n/Shawn Koh ...`      |
-| Extraneous parameters for commands that do not take in parameters will be ignored.                           | `help 123`, `list 123` is equivalent to `help` or `list`                             |
-
-
-[Scroll back to Table of Contents](#table-of-contents)
-
----
-
 ## **Quick start**
 
 1. Make sure that you have **Java 11 or above** installed on your computer.
@@ -215,7 +185,7 @@ Here are some notes about the behaviour of our commands!
 
 <div markdown="span" class="alert alert-danger">
 **WARNING TO ALL MAC USERS** <br/>
-It is  possible to right click <code>docedex.jar</code> and open it with <code>JavaLauncher</code>.<br/>
+It is  possible to right click <code>docedex.jar</code> and open it with <code>JavaLauncher.app</code>.<br/>
 However, doing so <strong>will result in improper loading of data</strong> into Docedex. Therefore, it is recommended
 to use follow the instructions stated above instead.
 </div>
@@ -317,6 +287,36 @@ This is a tutorial for **first-time** Docedex users.
 15. Congratulations! You are now ready to use Docedex.
 
   To view all our features, you may visit our [features section](#features).
+
+[Scroll back to Table of Contents](#table-of-contents)
+
+---
+
+## **Command Summary**
+
+| Command               | Shorthand   | What it does                                                                                                  |
+|-----------------------|-------------|---------------------------------------------------------------------------------------------------------------|
+| `add-doc / add-ptn`   | `ad / ap`   | Adds a doctor or patient into Docedex.                                                                        |
+| `edit-doc / edit-ptn` | `ed / ep`   | Edits the specified doctor or patient.                                                                        |
+| `del-doc / del-ptn`   | `dd / dp`   | Removes the specified doctor or patient from Docedex. **This action cannot be undone.**                       |
+| `find-doc / find-ptn` | `fd / fp`   | Finds the doctor(s) and patient(s) based on specific parameters. (ie. Find all doctors named Smith")          |
+| `list-doc / list-ptn` | `lsd / lsp` | Lists all doctors or patients within Docedex.                                                                 |
+| `assign-ptn`          | `asn`       | Assigns a patient to a doctor.                                                                                |
+| `unassign-ptn`        | `uasn`      | Remove the assignment of the specified patient to the specified doctor.                                       |
+| `sd / sp`             | `sd / sp`   | Selects the specified doctor or patient and displays the selected person's information on the user interface. |
+| `help`                | N/A         | Displays the link to the User Guide.                                                                          |
+| `clear`               | N/A         | Clears all doctors and patients within Docedex. **This action cannot be undone.**                             |
+| `exit`                | N/A         | Exits the application (equivalent to closing the application).                                                |
+
+<br>
+Here are some notes about the behaviour of our commands!
+
+| Notes                                                                                                        | Examples                                                                             |
+|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| Parameters are accepted in any order.                                                                        | `add-doc n/NAME p/PHONE_NUMBER ...` is equivalent to `add-doc p/PHONE_NUMBER n/NAME` |
+| If a parameter is **expected only once** but entered multiple times, only the latest occurrence is accepted. | `add-doc n/John Doe n/Shawn Koh ...` is equivalent to `add-doc n/Shawn Koh ...`      |
+| Extraneous parameters for commands that do not take in parameters will be ignored.                           | `help 123`, `list 123` is equivalent to `help` or `list`                             |
+
 
 [Scroll back to Table of Contents](#table-of-contents)
 
