@@ -138,12 +138,12 @@ each parameter accepts as valid user input.
 
 Here are the explanations behind the formatting we use throughout this guide!
 
-| Format                                                                     | Explanation                                                                                                                                                             |
-|----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Words in `code blocks`                                                     | These represent any of the following:<br/>1. Text used in commands, such as `add-doc`<br/>2. Keys on your keyboard like `Enter`<br/>3. File names such as `docedex.jar` |
-| <div markdown="span" class="alert alert-danger"> Text within a red box     | These usually represent major warnings. Not following these warnings may cause major errors within Docedex. (ie. Having all data cleared from Docedex)                  |
-| <div markdown="span" class="alert alert-warning"> Text within a yellow box | These usually represent minor warnings. Not following these warnings may cause minor inconveniences within Docedex. (ie. Editing patient data incorrectly)              |
-| <div markdown="span" class="alert alert-info"> Text within a blue box      | These usually represent any other additional notes for users.                                                                                                           |
+| Format                                                                    | Explanation                                                                                                                                                             |
+|---------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Words in `code blocks`                                                    | These represent any of the following:<br/>1. Text used in commands, such as `add-doc`<br/>2. Keys on your keyboard like `Enter`<br/>3. File names such as `docedex.jar` |
+| <div markdown="span" class="alert alert-danger">Text within a red box     | These usually represent major warnings. Not following these warnings may cause major errors within Docedex. (ie. Having all data cleared from Docedex)                  |
+| <div markdown="span" class="alert alert-warning">Text within a yellow box | These usually represent minor warnings. Not following these warnings may cause minor inconveniences within Docedex. (ie. Editing patient data incorrectly)              |
+| <div markdown="span" class="alert alert-info">Text within a blue box      | These usually represent any other additional notes for users.                                                                                                           |
 
 [Scroll back to Table of Contents](#table-of-contents)
 
@@ -416,6 +416,48 @@ new supplied parameters.
 [Scroll back to Table of Contents](#table-of-contents)
 
 #### Deleting a doctor
+
+**Wish to change the email of an existing doctor?** Use the `edit-doc` command!
+
+***Command format***
+<br>
+```edit-doc INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [s/SPECIALTY] [y/YOE] [t/TAGS]…```
+<br>
+
+***What does it do?***
+- Edits the information of the doctor at the specified `INDEX` using any
+  new supplied parameters.
+
+<div markdown="span" class="alert alert-warning">
+**WARNING**: This command overwrites existing data within Docedex, proceed with caution.
+</div>
+
+***Additional notes***
+- Don't know what each parameter stands for? Refer to our guide on [Parameter Information](#parameter-information).
+- Confused regarding the command format? Refer to our guide on [Command Format](#command-format).
+- 
+- At least one parameter must be provided to the command.
+    - Not providing any parameters (such as typing ```edit-doc 1```) will result in an error message.
+- Only parameters specified in the command will be updated.
+    - All other information about the doctor will remain the same.
+- When editing tags, you have to include any previous tags that was already associated with the doctor.
+    - Not doing so will result in these tags being removed.
+    - Type `t/` once, leaving the text for the tag empty, to remove all tags from a doctor.
+
+***Examples***
+- `edit-doc 1 p/91234567`
+    - Edits the phone number of the 1st doctor to be `91234567`.
+- `edit-doc 2 n/Gabriel Tan p/12345678 t/`
+    - Edits the name and phone number of the 2nd doctor to be `Gabriel Tan` and `91234567` respectively.
+    - Adding `t/` also clears all existing tags.
+
+<div markdown="span" class="alert alert-info">
+    If your patients list seems to disappear after entering this command, fret not! Click
+    <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
+    to find out why this happens.
+</div>
+
+[Scroll back to Table of Contents](#table-of-contents)
 
 ```del-doc INDEX```
 - To view parameter information click [here](#parameter-information)
