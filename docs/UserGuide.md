@@ -19,17 +19,20 @@ Here's an **overview** of how Docedex can help you streamline your hospital mana
 
 **If you are new here**, visit our [quick start](#quick-start) guide to onboard onto Docedex smoothly!
 
+<br><br>
+
 ***How does Docedex make hospital administrative management efficient?***
+
 From our market research, we found that fast typists prefer to do their hospital management
-through the use of single-line text "commands" that tell Docedex exactly what to do.
+through **the use of single-line text "commands"** that tell Docedex exactly what to do.
 
 For example, let's say that you want to add a doctor named Steve. Docedex allows you to enter
 a single line of text specifying your wish to add a doctor named Steve, alongside any other
-information about Steve that you wish to store. (For more information on the usage of these commands,
-go to our [Features](#features) section)
+information about Steve that you wish to store. *(For more information on the usage of these commands,
+go to our [Features](#features) section)*
 
-This way, we ensure that all critical patient management functionality can be performed
-through the keyboard. Thus, we ***reduce the amount of time spent switching between the keyboard and mouse***
+This way, we ensure that ***all critical patient management functionality can be performed
+through the keyboard***. Thus, we reduce the amount of time spent switching between the keyboard and mouse
 while you perform your duties.
 
 Furthermore, Docedex also comes with a nice visual feedback for our users. Find out more about our user interface
@@ -77,7 +80,7 @@ Furthermore, Docedex also comes with a nice visual feedback for our users. Find 
 <div markdown="span" class="alert alert-danger">
 **WARNING TO ALL MAC USERS** <br/>
 It is  possible to right click <code>docedex.jar</code> and open it with <code>JavaLauncher</code>.<br/>
-However, doing so may result in <strong>improper loading of data</strong> into Docedex. Therefore, it is recommended
+However, doing so <strong>will result in improper loading of data</strong> into Docedex. Therefore, it is recommended
 to use follow the instructions stated above instead.
 </div>
 
