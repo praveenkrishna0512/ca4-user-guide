@@ -30,10 +30,16 @@ you may also have questions on how to perform certain actions within the applica
 a comprehensive list of [features](#features) offered with Docedex, as well as explanations on when and how to use them.
 Further questions are also answered within a [FAQ](#faq) section below.
 
-The table of contents for this guide can be found [here](#table-of-contents).
-
 Confused about specific formatting we use? Learn how to navigate through this guide [here](#navigating-this-guide).
 You may also find information about terms used in this guide and command formats in our [Glossary](#glossary).
+
+<br>
+
+***Here are some helpful resources to navigate this guide***
+- [Table of contents](#table-of-contents).
+- [General formatting used](#navigating-this-guide)
+- [Terms used](#definitions)
+- [Command formats](#command-format)
 
 <br>
 
