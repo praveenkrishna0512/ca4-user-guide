@@ -361,7 +361,7 @@ Here are some notes about the behaviour of our commands!
 <br>
 
 ***What does it do?***
-- Adds a new doctor to the doctors list in Docedex.
+- Adds a new doctor to the *doctors list* in Docedex.
 
 ***Examples***
 - `add-doc n/John Doe p/98765432 e/johnd@example.com s/Cardiology y/5 t/surgeon`
@@ -371,7 +371,7 @@ Here are some notes about the behaviour of our commands!
   - Note that the tag is optional.
 
 <div markdown="span" class="alert alert-info">
-    <strong>If your patients list seems to disappear</strong> after entering this command, fret not! Click
+    If your *patients list* seems to disappear after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
 </div>
@@ -379,6 +379,9 @@ Here are some notes about the behaviour of our commands!
     Don't know what each parameter stands for? Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
     <br/><br/>
     Confused regarding the command format? Refer to our guide on the <a href="#command-format">Command Format</a>.
+    <br/><br/>
+    Not sure of the terminology used? Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
+    and <a href="#quick-orientation">Quick Orientation</a> to the GUI for the definitions of GUI components.
 </div>
 
 [Scroll back to Table of Contents](#table-of-contents)
@@ -417,7 +420,7 @@ new supplied parameters.
   - Adding `t/` also clears all existing tags.
 
 <div markdown="span" class="alert alert-info">
-    If your patients list seems to disappear after entering this command, fret not! Click
+    If your *patients list* seems to disappear after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
 </div>
@@ -425,6 +428,9 @@ new supplied parameters.
     Don't know what each parameter stands for? Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
     <br/><br/>
     Confused regarding the command format? Refer to our guide on the <a href="#command-format">Command Format</a>.
+    <br/><br/>
+    Not sure of the terminology used? Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
+    and <a href="#quick-orientation">Quick Orientation</a> to the GUI for the definitions of GUI components.
 </div>
 
 [Scroll back to Table of Contents](#table-of-contents)
@@ -446,17 +452,20 @@ new supplied parameters.
 - Deletes the doctor at the specified `INDEX`.
 
 ***Additional notes***
-- If the doctor you wish to delete is not shown on the doctors list, you can try
+- If the doctor you wish to delete is not shown on the *doctors list*, you can try
 using [`list-doc`](#listing-all-doctors) to list out all the doctors in Docedex first.
 
 ***Examples***
 - `del-doc 2`
-  - Deletes the 2nd doctor displayed in the doctors list within Docedex.
+  - Deletes the 2nd doctor displayed in the *doctors list* within Docedex.
 
 <div markdown="span" class="alert alert-info">
     Don't know what each parameter stands for? Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
     <br/><br/>
     Confused regarding the command format? Refer to our guide on the <a href="#command-format">Command Format</a>.
+    <br/><br/>
+    Not sure of the terminology used? Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
+    and <a href="#quick-orientation">Quick Orientation</a> to the GUI for the definitions of GUI components.
 </div>
 
 [Scroll back to Table of Contents](#table-of-contents)
@@ -472,7 +481,7 @@ using [`list-doc`](#listing-all-doctors) to list out all the doctors in Docedex 
 
 ***What does it do?***
 - Finds all doctors in Docedex that match the specified parameter values, and displays
-those doctors to the user within the doctors list.
+those doctors to the user within the *doctors list*.
 
 ***Additional notes***
 - The specified parameter values can be case-insensitive.
@@ -503,36 +512,70 @@ will be displayed to the user.
     Don't know what each parameter stands for? Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
     <br/><br/>
     Confused regarding the command format? Refer to our guide on the <a href="#command-format">Command Format</a>.
+    <br/><br/>
+    Not sure of the terminology used? Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
+    and <a href="#quick-orientation">Quick Orientation</a> to the GUI for the definitions of GUI components.
 </div>
 
 [Scroll back to Table of Contents](#table-of-contents)
 
 #### Select doctor
 
+**Wish to click on a *doctor card* to view more information about them without using a mouse?**
+Use the `sd` command!
+
+***Command format***
+<br>
 ```sd INDEX```
-- To view parameter information click [here](#parameter-information)
-- What it does: This command mimics a mouse click on a doctor's contact card. It shows the information of the doctor and filters the patients' list to only show assigned patients.
-- Possible use cases: Find which patients were treated by a doctor
-- Note to user:
-  - The index refers to the index number shown in the displayed doctor list.
+<br>
+
+***What does it do?***
+- Performs a mouse click on the *doctor card* of the doctor at the specified `INDEX`.
+  - This displays all information about the doctor within the *contact card*.
+  - It also filters the *patients list* to only show patients assigned to this doctor.
+
+***Examples***
+- `sel-doc 1`
+    - Performs a mouse click on the *doctor card* of the doctor with displayed index of 1.
 
 <div markdown="span" class="alert alert-info">
-Selecting doctor command displays only the recently queried doctor's information in the Enlarged Contact Card.
-**If no patients appear in the patients list**, it is because none have been assigned to the doctor.
-
-For more information see: [Selecting doctors or patients through commands](#selecting-doctors-or-patients-through-commands)
+    If your *patients list* seems to disappear after entering this command, fret not! Click
+    <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
+    to find out why this happens.
 </div>
-
+<div markdown="span" class="alert alert-info">
+    Don't know what each parameter stands for? Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
+    <br/><br/>
+    Confused regarding the command format? Refer to our guide on the <a href="#command-format">Command Format</a>.
+    <br/><br/>
+    Not sure of the terminology used? Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
+    and <a href="#quick-orientation">Quick Orientation</a> to the GUI for the definitions of GUI components.
+</div>
 
 [Scroll back to Table of Contents](#table-of-contents)
 
 #### Listing all doctors
 
-`list-doc`
-- Possible use cases: Retrieval of all doctors in Docedex after commands involving selection.
-- What it does: Lists all doctors in Docedex.
 
-For more information see: [Selecting doctors or patients through commands](#selecting-doctors-or-patients-through-commands)
+**Wish to look through all doctors within your clinic?**
+Use the `list-doc` command!
+
+***Command format***
+<br>
+```list-doc```
+<br>
+
+***What does it do?***
+- Lists all doctors within the *doctors list* in Docedex.
+    
+<div markdown="span" class="alert alert-info">
+    Don't know what each parameter stands for? Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
+    <br/><br/>
+    Confused regarding the command format? Refer to our guide on the <a href="#command-format">Command Format</a>.
+    <br/><br/>
+    Not sure of the terminology used? Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
+    and <a href="#quick-orientation">Quick Orientation</a> to the GUI for the definitions of GUI components.
+</div>
 
 [Scroll back to Table of Contents](#table-of-contents)
 
