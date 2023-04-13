@@ -351,16 +351,16 @@ Here are some notes about the behaviour of our commands!
 
 **Wish to add a new doctor who has joined your department?** Use the `add-doc` command!
 
-*Command format*
+***Command format***
 <br>
 ```add-doc n/NAME p/PHONE_NUMBER e/EMAIL s/SPECIALITY y/YEARS_OF_EXPERIENCE [t/TAGS]…```
 <br>
 
-*What does it do?*
+***What does it do?***
 <br>
 This command adds a new doctor to the doctors list in Docedex.
 
-*Examples*
+***Examples***
 - `add-doc n/John Doe p/98765432 e/johnd@example.com s/Cardiology y/5 t/surgeon`
 - `add-doc n/Gabriel Tan p/98765432 e/gabt@example.com s/Neurosurgery y/5`
 
@@ -376,12 +376,12 @@ This command adds a new doctor to the doctors list in Docedex.
 
 **Wish to change the email of an existing doctor?** Use the `edit-doc` command!
 
-*Command format*
+***Command format***
 <br>
 ```edit-doc INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [s/SPECIALTY] [y/YOE] [t/TAGS]…```
 <br>
 
-*What does it do?*
+***What does it do?***
 <br>
 Edits the information of the doctor at the specified `INDEX` using any
 new supplied parameters.
@@ -390,19 +390,18 @@ new supplied parameters.
 **WARNING**: This command overwrites existing data within Docedex, proceed with caution.
 </div>
 
-*Additional notes*
+***Additional notes***
 - The index refers to the index number shown in the displayed doctor list.
 Refer to [this image](#docedex-user-interface-with-index-highlighted) for more information on how to determine
 the index of a doctor.
-- Users can edit specific doctors in the clinic by providing at least one of the optional parameters.
-Only parameters specified in the command will be updated. All other information about the doctor will remain the same.
 - At least one parameter must be provided to the command.
-  - Typing ```edit-doc 1``` will result in an error message.
+  - Not providing any parameters (such as typing ```edit-doc 1```) will result in an error message.
+- Only parameters specified in the command will be updated. All other information about the doctor will remain the same.
 - When editing tags, you have to include any previous tags that was already associated with the doctor.
   - Not doing so will result in these tags being removed.
   - Type `t/` once, leaving the text for the tag empty, to remove all tags from a doctor.
 
-*Examples*
+***Examples***
 - `edit-doc 1 p/91234567`
   - Edits the phone number of the 1st doctor to be `91234567`.
 - `edit-doc 2 n/Gabriel Tan p/12345678 t/`
