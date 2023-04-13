@@ -195,7 +195,7 @@ Here are the explanations behind the formatting we use within our commands!
 
 5. Learn more about navigating the GUI [here](#navigating-the-graphical-user-interface-gui).
 
-6. For **new users**, learn to use Docedex through our [tutorial](#docedex-tutorial-for-new-users).
+6. For **new users**, learn to use Docedex through our [Tutorial](#docedex-tutorial-for-new-users).
    - We also highly recommend looking through the section on [navigating this guide](#navigating-this-guide)
    to better understand the terminology and formats used in this guide.
 
@@ -246,7 +246,7 @@ Here is a quick summary of each GUI component within Docedex.
 Certain commands involve the selection of doctors
 and patients immediately after they are entered.
 
-For example, when you type in the `add-doc` command, Docedex will automatically select
+For example, when you type in the [`add-doc`](#adding-a-doctor) command, Docedex will automatically select
 the newly added doctor and display their details to you. This gives the user (you!)
 a nice visual feedback that the command is successful.
 
@@ -357,15 +357,14 @@ Here are some notes about the behaviour of our commands!
 <br>
 
 ***What does it do?***
-<br>
-This command adds a new doctor to the doctors list in Docedex.
+- Adds a new doctor to the doctors list in Docedex.
 
 ***Examples***
 - `add-doc n/John Doe p/98765432 e/johnd@example.com s/Cardiology y/5 t/surgeon`
 - `add-doc n/Gabriel Tan p/98765432 e/gabt@example.com s/Neurosurgery y/5`
 
 <div markdown="span" class="alert alert-info">
-    If your patients list seems to disappear after entering this command, fret not! Click
+    <strong>If your patients list seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands">here</a>
     to find out why this happens.
 </div>
@@ -382,8 +381,7 @@ This command adds a new doctor to the doctors list in Docedex.
 <br>
 
 ***What does it do?***
-<br>
-Edits the information of the doctor at the specified `INDEX` using any
+- Edits the information of the doctor at the specified `INDEX` using any
 new supplied parameters.
 
 <div markdown="span" class="alert alert-warning">
