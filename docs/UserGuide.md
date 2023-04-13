@@ -345,10 +345,9 @@ This command adds a new doctor to the doctors list in Docedex.
 - `add-doc n/Gabriel Tan p/98765432 e/gabt@example.com s/Neurosurgery y/5`
 
 <div markdown="span" class="alert alert-info">
-Adding doctor command, also calls select doctor to display the recently added information in the Enlarged Contact Card.
-**If no patients appear in the patients list**, it is because none have been assigned to the doctor.
-
-For more information see: [Selecting doctors or patients through commands](#selecting-doctors-or-patients-through-commands)
+    If your patients list seems to disappear after entering this command, fret not! Click
+    <a href="#selecting-doctors-or-patients-through-commands">here</a>
+    to find out why this happens.
 </div>
 
 [Scroll back to Table of Contents](#table-of-contents)
