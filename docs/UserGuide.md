@@ -19,6 +19,22 @@ Here's an **overview** of how Docedex can help you streamline your hospital mana
 
 **If you are new here**, visit our [quick start](#quick-start) guide to onboard onto Docedex smoothly!
 
+***How does Docedex make hospital administrative management efficient?***
+From our market research, we found that fast typists prefer to do their hospital management
+through the use of single-line text "commands" that tell Docedex exactly what to do.
+
+For example, let's say that you want to add a doctor named Steve. Docedex allows you to enter
+a single line of text specifying your wish to add a doctor named Steve, alongside any other
+information about Steve that you wish to store. (For more information on the usage of these commands,
+go to our [Features](#features) section)
+
+This way, we ensure that all critical patient management functionality can be performed
+through the keyboard. Thus, we ***reduce the amount of time spent switching between the keyboard and mouse***
+while you perform your duties.
+
+Furthermore, Docedex also comes with a nice visual feedback for our users. Find out more about our user interface
+[here](#navigating-the-graphical-user-interface-gui).
+
 ## Table of Contents
 {: .no_toc}
 
