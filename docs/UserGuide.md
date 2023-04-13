@@ -17,7 +17,7 @@ Here's an **overview** of how Docedex can help you streamline your hospital mana
 - Track the status of your patients and doctors
 - Assign patients to doctors upon triaging
 
-[Docedex User Interface](./images/Ui.png)
+![Docedex User Interface](./images/Ui.png)
 
 **If you are new here**, visit our [quick start](#quick-start) guide to onboard onto Docedex smoothly!
 
@@ -109,6 +109,17 @@ to use follow the instructions stated above instead.
 
 ---
 
+## **Navigating this guide**
+
+Here are the explanations behind the formatting we use throughout this guide!
+
+| Format                     | Explanation                                                                                                                                                              |
+|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Words in `code blocks`     | These represent any of the following:<br/>1. text used in commands, such as `add-doc`<br/>2. Keys on your keyboard like `Enter`<br/>3. File names such as `docedex.jar`  |
+
+
+---
+
 ## **Glossary**
 
 ### Definitions
@@ -136,13 +147,13 @@ each parameter accepts as valid user input.
 
 #### Common Parameters
 
-| Parameter           | Description                                                                                                                                         | Constraints                                                                                                                | Valid Examples                    | Invalid Examples                             |
-|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|-----------------------------------|----------------------------------------------|
-| `n/`                | Name of the doctor/patient                                                                                                                          | Alphanumeric characters (a to z, A to Z, 0 to 9)                                                                           | Will Hunting, Elizabeth 2         | 成龍,  潔 いさぎ 世 よ 一 いち, Ganesh s/o Ravichandran |
-| `e/`                | Email of the doctor/patient                                                                                                                         | Format: <prefix>@<domain><br/><br/>The prefix and domain can contain any alphanumeric characters (a to z, A to Z, 0 to 9). | whunting@gmail.com, eliz2@mit.edu | whunting@, eliz2                             |
-| `p/`                | Phone number of the doctor/patient                                                                                                                  | Positive whole number with 3 or more digits                                                                                | 999, 94565625                     | 0, -1                                        |
-| `t/`                | Tag associated with the doctor/patient                                                                                                              | Single string of characters not separated by any whitespace                                                                | pendingReview, recurrentProblem   | N/A                                          |
-| `INDEX`<sup>*</sup> | Index number of the doctors/patients list<br/><br/>(Refer to [this image](#docedex-user-interface-with-index-highlighted) for a visual description) | Positive whole number less than or equal to 2147483649                                                                     | 1, 2147483647                     | -1, 2147483650                               |
+| Parameter           | Description                                                                                                                                  | Constraints                                                                                                                       | Valid Examples                    | Invalid Examples                             |
+|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|----------------------------------------------|
+| `n/`                | Name of the doctor/patient                                                                                                                   | Alphanumeric characters<br/>(a to z, A to Z, 0 to 9)                                                                              | Will Hunting, Elizabeth 2         | 成龍,  潔 いさぎ 世 よ 一 いち, Ganesh s/o Ravichandran |
+| `e/`                | Email of the doctor/patient                                                                                                                  | Format: \<prefix\>@\<domain\><br/><br/>The prefix and domain can contain any alphanumeric character.<br/>(a to z, A to Z, 0 to 9) | whunting@gmail.com, eliz2@mit.edu | whunting@, eliz2                             |
+| `p/`                | Phone number of the doctor/patient                                                                                                           | Positive whole number with 3 or more digits                                                                                       | 999, 94565625                     | 0, -1                                        |
+| `t/`                | Tag associated with the doctor/patient                                                                                                       | Single string of characters not separated by any whitespace                                                                       | pendingReview, recurrentProblem   | N/A                                          |
+| `INDEX`<sup>*</sup> | Index number of the doctor/patient<br/><br/>(Refer to [this image](#docedex-user-interface-with-index-highlighted) for a visual description) | Positive whole number less than or equal to 2147483649                                                                            | 1, 2147483647                     | -1, 2147483650                               |
 
 <sup>*</sup>`INDEX` parameters are sometimes labelled as `PATIENT_INDEX` or `DOCTOR_INDEX` for clarity.
 
@@ -156,24 +167,24 @@ each parameter accepts as valid user input.
 #### Patient Parameters
 
 
-| Parameter | Description                             | Constraints                                                                                                                                 | Valid Examples                      | Invalid Examples   |
-|-----------|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|--------------------|
-| `h/`      | Height of the patient in metres (m)     | 3-digit number with 2 decimal places representing patient's height in metres                                                                | 1.63, 1.99                          | 1, 1.2, 1.234      |
-| `w/`      | Weight of the patient in kilograms (kg) | Number with an optional 1 decimal place representing patient's weight in kg                                                                 | 85.0, 63.2                          | -85, 63.20         |
-| `d/`      | Diagnosis                               | Alphanumeric characters (a to z, A to Z, 0 to 9)                                                                                            | Fever, Cancer                       | 发烧                 |
-| `st/`     | Status                                  | Can only take one of the following values: Inpatient, Outpatient, Observation, Emergency Department, Intensive Care Unit, Transitional Care | Inpatient, Outpatient               | Baymax, HelloWorld |
-| `r/`      | Remark                                  | Alphanumeric characters (a to z, A to Z, 0 to 9).                                                                                           | Compliant, Needs increase in dosage | 发烧                 |
+| Parameter | Description                             | Constraints                                                                                                                                          | Valid Examples                      | Invalid Examples   |
+|-----------|-----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|--------------------|
+| `h/`      | Height of the patient in metres (m)     | 3-digit number with 2 decimal places representing patient's height in metres                                                                         | 1.63, 1.99                          | 1, 1.2, 1.234      |
+| `w/`      | Weight of the patient in kilograms (kg) | Number with an optional 1 decimal place representing patient's weight in kg                                                                          | 85.0, 63.2                          | -85, 63.20         |
+| `d/`      | Diagnosis                               | Alphanumeric characters<br/>(a to z, A to Z, 0 to 9)                                                                                                 | Fever, Cancer                       | 发烧                 |
+| `st/`     | Status                                  | Can only take one of the following values:<br/><br/>Inpatient, Outpatient, Observation, Emergency Department, Intensive Care Unit, Transitional Care | Inpatient, Outpatient               | Baymax, HelloWorld |
+| `r/`      | Remark                                  | Alphanumeric characters<br/>(a to z, A to Z, 0 to 9).                                                                                                | Compliant, Needs increase in dosage | 发烧                 |
 
 
-## **Command format**
+## **Command Format**
 
 Here are the explanations behind the formatting we use within our commands!
 
-| Format/Note                                                                                                  | Explanation                                                                  | Examples                                                                                          |
-|--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| Words in `UPPER_CASE`                                                                                        | These are parameter values that are supplied by the user                     | `add-doc n/NAME...` can be used as `add-doc n/John Doe...`                                        |
-| Items in square brackets                                                                                     | These are optional parameters (can be left empty by user)                    | `add-doc n/NAME ... [t/TAG]` can be used as `add-doc n/John Doe t/level5` or `add-doc n/John Doe` |
-| Items with `…`​ after them                                                                                   | These are parameters that can be used multiple times (or omitted completely) | `add-doc ... [t/TAG]…​` can be used as `add-doc ... t/level5 t/surgeon` or `add-doc ...`          |
+| Format                                                                                                  | Explanation                                                                  | Examples                                                                                          |
+|---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| Words in `UPPER_CASE`                                                                                   | These are parameter values that are supplied by the user                     | `add-doc n/NAME...` can be used as `add-doc n/John Doe...`                                        |
+| Items in square brackets                                                                                | These are optional parameters (can be left empty by user)                    | `add-doc n/NAME ... [t/TAG]` can be used as `add-doc n/John Doe t/level5` or `add-doc n/John Doe` |
+| Items with `…`​ after them                                                                              | These are parameters that can be used multiple times (or omitted completely) | `add-doc ... [t/TAG]…​` can be used as `add-doc ... t/level5 t/surgeon` or `add-doc ...`          |
 
 
 Here are some notes about the behaviour of our commands!
