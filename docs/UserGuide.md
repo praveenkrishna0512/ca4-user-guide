@@ -175,13 +175,15 @@ Here are the explanations behind the formatting we use within our commands!
     - If this still does not work follow the instructions listed [here](#launching-docedex).
     - You should notice the GUI of the application pop up.
       <br><br>
+
 5. Learn more about navigating the GUI [here](#navigating-the-graphical-user-interface-gui).
 
-6. For **new users**, learn to use Docedex [here](#docedex-tutorial-for-new-users).
-    - We also highly recommend looking through our **[Glossary](#glossary)** to understand the terminology
-      used within this guide.
+6. For **new users**, learn to use Docedex through our [tutorial](#docedex-tutorial-for-new-users).
+   - We also highly recommend looking through the section on [navigating this guide](#navigating-this-guide)
+   to better understand the terminology and formats used in this guide.
 
-7. For **advanced users**, view all feature details [here](#features).
+7. For **advanced users**, view the specifics regarding what Docedex can do for you
+   in our [Features](#features) section.
 
 <div markdown="span" class="alert alert-danger">
 **WARNING TO ALL MAC USERS** <br/>
