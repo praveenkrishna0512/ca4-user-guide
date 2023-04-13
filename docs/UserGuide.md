@@ -62,59 +62,9 @@ Further questions are also answered within a [FAQ](#faq) section below.
 Confused about the terms or formatting used in this guide? Learn how to navigate
 through this guide [here](#navigating-this-guide).
 
-## **Quick start**
-
-1. Make sure that you have **Java 11 or above** installed on your computer.
-   - [How do I check my version of Java?](#checking-java-version)
-   <br><br>
-2. Download the latest jar file (`docedex.jar`) from our [GitHub Releases](https://github.com/AY2223S2-CS2103T-F12-1/tp/releases/).
-   ![DownloadDocedex](images/DownloadDocedex.png)
-   <br><br>
-3. Move the jar file to a folder where you want to store the data of the doctors and patients.
-   - Create a new folder called (you can name it Docedex) where you would like to house the application (e.g., Desktop, Documents, etc.).
-   - Move the downloaded `docedex.jar` file to this folder as shown below.
-     - For Mac Users:
-       ![DownloadDocedexMac](images/DownloadDocedexMac.png)
-     <br><br>
-     - For Windows Users:
-     ![DownloadDocedexWindows](images/DocedexInFileWin.png)
-     <br><br>
-4. Launch Docedex
-   - For Mac Users:
-     - Open a new Terminal window by following the instructions below.
-       - Press `Command ⌘` and `Space` keys together.
-       - Type "Terminal".
-       - Hit the `Enter` key.
-     - Navigate to the folder where you have stored the jar file using the `cd` command.
-       - For example, if you have stored the jar file in a folder called Docedex, you can type `cd Docedex` and press Enter.
-     - Type `java -jar docedex.jar` and press Enter.
-   - For Windows Users:
-     - Double-click `docedex.jar` to launch the application.
-   - If this still does not work follow the instructions listed [here](#launching-docedex).
-   - You should notice the GUI of the application pop up.
-   <br><br>
-5. Learn more about navigating the GUI [here](#navigating-the-graphical-user-interface-gui).
-
-6. For **new users**, learn to use Docedex [here](#docedex-tutorial-for-new-users).
-   - We also highly recommend looking through our **[Glossary](#glossary)** to understand the terminology
-   used within this guide.
-
-7. For **advanced users**, view all feature details [here](#features).
-
-<div markdown="span" class="alert alert-danger">
-**WARNING TO ALL MAC USERS** <br/>
-It is  possible to right click <code>docedex.jar</code> and open it with <code>JavaLauncher</code>.<br/>
-However, doing so <strong>will result in improper loading of data</strong> into Docedex. Therefore, it is recommended
-to use follow the instructions stated above instead.
-</div>
-
-[Scroll back to Table of Contents](#table-of-contents)
-
----
-
 ## **Navigating this guide**
 
-### **Glossary**
+### Glossary
 
 #### Definitions
 
@@ -160,7 +110,6 @@ each parameter accepts as valid user input.
 
 ##### Patient Parameters
 
-
 | Parameter | Description                             | Constraints                                                                                                                                          | Valid Examples                      | Invalid Examples   |
 |-----------|-----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|--------------------|
 | `h/`      | Height of the patient in metres (m)     | 3-digit number with 2 decimal places representing patient's height in metres                                                                         | 1.63, 1.99                          | 1, 1.2, 1.234      |
@@ -169,7 +118,7 @@ each parameter accepts as valid user input.
 | `st/`     | Status                                  | Can only take one of the following values:<br/><br/>Inpatient, Outpatient, Observation, Emergency Department, Intensive Care Unit, Transitional Care | Inpatient, Outpatient               | Baymax, HelloWorld |
 | `r/`      | Remark                                  | Alphanumeric characters<br/>(a to z, A to Z, 0 to 9).                                                                                                | Compliant, Needs increase in dosage | 发烧                 |
 
-### **Format**
+### Format
 
 #### General Formatting
 
@@ -220,6 +169,56 @@ Here are some notes about the behaviour of our commands!
 | If a parameter is **expected only once** but entered multiple times, only the latest occurrence is accepted. | `add-doc n/John Doe n/Shawn Koh ...` is equivalent to `add-doc n/Shawn Koh ...`      |
 | Extraneous parameters for commands that do not take in parameters will be ignored.                           | `help 123`, `list 123` is equivalent to `help` or `list`                             |
 
+
+[Scroll back to Table of Contents](#table-of-contents)
+
+---
+
+## **Quick start**
+
+1. Make sure that you have **Java 11 or above** installed on your computer.
+    - [How do I check my version of Java?](#checking-java-version)
+      <br><br>
+2. Download the latest jar file (`docedex.jar`) from our [GitHub Releases](https://github.com/AY2223S2-CS2103T-F12-1/tp/releases/).
+   ![DownloadDocedex](images/DownloadDocedex.png)
+   <br><br>
+3. Move the jar file to a folder where you want to store the data of the doctors and patients.
+    - Create a new folder called (you can name it Docedex) where you would like to house the application (e.g., Desktop, Documents, etc.).
+    - Move the downloaded `docedex.jar` file to this folder as shown below.
+        - For Mac Users:
+          ![DownloadDocedexMac](images/DownloadDocedexMac.png)
+          <br><br>
+        - For Windows Users:
+          ![DownloadDocedexWindows](images/DocedexInFileWin.png)
+          <br><br>
+4. Launch Docedex
+    - For Mac Users:
+        - Open a new Terminal window by following the instructions below.
+            - Press `Command ⌘` and `Space` keys together.
+            - Type "Terminal".
+            - Hit the `Enter` key.
+        - Navigate to the folder where you have stored the jar file using the `cd` command.
+            - For example, if you have stored the jar file in a folder called Docedex, you can type `cd Docedex` and press Enter.
+        - Type `java -jar docedex.jar` and press Enter.
+    - For Windows Users:
+        - Double-click `docedex.jar` to launch the application.
+    - If this still does not work follow the instructions listed [here](#launching-docedex).
+    - You should notice the GUI of the application pop up.
+      <br><br>
+5. Learn more about navigating the GUI [here](#navigating-the-graphical-user-interface-gui).
+
+6. For **new users**, learn to use Docedex [here](#docedex-tutorial-for-new-users).
+    - We also highly recommend looking through our **[Glossary](#glossary)** to understand the terminology
+      used within this guide.
+
+7. For **advanced users**, view all feature details [here](#features).
+
+<div markdown="span" class="alert alert-danger">
+**WARNING TO ALL MAC USERS** <br/>
+It is  possible to right click <code>docedex.jar</code> and open it with <code>JavaLauncher</code>.<br/>
+However, doing so <strong>will result in improper loading of data</strong> into Docedex. Therefore, it is recommended
+to use follow the instructions stated above instead.
+</div>
 
 [Scroll back to Table of Contents](#table-of-contents)
 
