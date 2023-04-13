@@ -19,7 +19,18 @@ Here's an **overview** of how Docedex can help you streamline your hospital mana
 
 **If you are new here**, visit our [quick start](#quick-start) guide to onboard onto Docedex smoothly!
 
-<br><br>
+<br>
+
+***How can this guide help me?***
+
+Through this guide, we hope to first inform you on how you can [get started](#quick-start) using Docedex. As you use Docedex,
+you may also have questions on how to perform certain actions within the application. This guide thus contains
+a comprehensive list of [features](#features) offered with Docedex, as well as explanations on when and how to use them.
+Further questions are also answered within a [FAQ](#faq) section below.
+
+The table of contents for this guide can be found [here](#table-of-contents).
+
+<br>
 
 ***How does Docedex make hospital administrative management efficient?***
 
@@ -80,6 +91,8 @@ Furthermore, Docedex also comes with a nice visual feedback for our users. Find 
 5. Learn more about navigating the GUI [here](#navigating-the-graphical-user-interface-gui).
 
 6. For **new users**, learn to use Docedex [here](#docedex-tutorial-for-new-users).
+   - We also highly recommend looking through our **[Glossary](#glossary)** to understand the terminology
+   used within this guide.
 
 7. For **advanced users**, view all feature details [here](#features).
 
@@ -111,7 +124,8 @@ Here are some descriptions of the words we use throughout the User Guide:
 
 ### Parameter Information
 
-The information below specifies parameter description, constraints and usage through valid and invalid examples.
+Within the tables below, you can find out more about the parameters that Docedex supports. These parameters come in
+handy when crafting commands in Docedex.
 
 #### Common Parameters
 
