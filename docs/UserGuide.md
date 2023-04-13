@@ -91,13 +91,13 @@ each parameter accepts as valid user input.
 
 ##### Common Parameters
 
-| Parameter           | Description                                                                                            | Constraints                                                                                                                       | Valid Examples                    | Invalid Examples                             |
-|---------------------|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|----------------------------------------------|
-| `n/`                | Name of the doctor/patient                                                                             | Alphanumeric characters<br/>(a to z, A to Z, 0 to 9)                                                                              | Will Hunting, Elizabeth 2         | 成龍,  潔 いさぎ 世 よ 一 いち, Ganesh s/o Ravichandran |
-| `e/`                | Email of the doctor/patient                                                                            | Format: \<prefix\>@\<domain\><br/><br/>The prefix and domain can contain any alphanumeric character.<br/>(a to z, A to Z, 0 to 9) | whunting@gmail.com, eliz2@mit.edu | whunting@, eliz2                             |
-| `p/`                | Phone number of the doctor/patient                                                                     | Positive whole number with 3 or more digits                                                                                       | 999, 94565625                     | 0, -1                                        |
-| `t/`                | Tag associated with the doctor/patient                                                                 | Single string of characters not separated by any whitespace                                                                       | pendingReview, recurrentProblem   | N/A                                          |
-| `INDEX`<sup>*</sup> | Index number of the doctor/patient<br/><br/>(Refer to [this image](#docedex) for a visual description) | Positive whole number less than or equal to 2147483649                                                                            | 1, 2147483647                     | -1, 2147483650                               |
+| Parameter           | Description                                                                                                                                  | Constraints                                                                                                                       | Valid Examples                    | Invalid Examples                             |
+|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|----------------------------------------------|
+| `n/`                | Name of the doctor/patient                                                                                                                   | Alphanumeric characters<br/>(a to z, A to Z, 0 to 9)                                                                              | Will Hunting, Elizabeth 2         | 成龍,  潔 いさぎ 世 よ 一 いち, Ganesh s/o Ravichandran |
+| `e/`                | Email of the doctor/patient                                                                                                                  | Format: \<prefix\>@\<domain\><br/><br/>The prefix and domain can contain any alphanumeric character.<br/>(a to z, A to Z, 0 to 9) | whunting@gmail.com, eliz2@mit.edu | whunting@, eliz2                             |
+| `p/`                | Phone number of the doctor/patient                                                                                                           | Positive whole number with 3 or more digits                                                                                       | 999, 94565625                     | 0, -1                                        |
+| `t/`                | Tag associated with the doctor/patient                                                                                                       | Single string of characters not separated by any whitespace                                                                       | pendingReview, recurrentProblem   | N/A                                          |
+| `INDEX`<sup>*</sup> | Index number of the doctor/patient<br/><br/>(Refer to [this image](#docedex-user-interface-with-index-highlighted) for a visual description) | Positive whole number less than or equal to 2147483649                                                                            | 1, 2147483647                     | -1, 2147483650                               |
 
 <sup>*</sup>`INDEX` parameters are sometimes labelled as `PATIENT_INDEX` or `DOCTOR_INDEX` for clarity.
 
@@ -685,7 +685,7 @@ for an explanation of why this occurs.
 
 ## **Appendix A: Relevant Images**
 
-#### Docedex User Interface with Index Highlighted
+### Docedex User Interface with Index Highlighted
 {: .no_toc}
 
 The **red box** represents the index of a doctor/patient.
