@@ -561,7 +561,7 @@ Use the `list-doc` command!
 
 ***Command format***
 <br>
-```list-doc```
+`list-doc`
 <br>
 
 ***What does it do?***
