@@ -50,6 +50,7 @@ Furthermore, Docedex also comes with a nice visual feedback for our users. Find 
 {:toc}
 
 ---
+
 ## **How can this guide help me?**
 
 If you are a new user, we hope to first inform you on how you can [get started](#quick-start) using Docedex.
@@ -61,6 +62,10 @@ Further questions are also answered within a [FAQ](#faq) section below.
 
 Confused about the terms or formatting used in this guide? Learn how to navigate
 through this guide [here](#navigating-this-guide).
+
+[Scroll back to Table of Contents](#table-of-contents)
+
+---
 
 ## **Navigating this guide**
 
@@ -79,6 +84,7 @@ Here are some descriptions of the words we use throughout the User Guide:
 | **CLI**           | Command Line Interface (CLI) represents a text-based user interface to interact with the application.                                                                 |
 | **Character**     | Any letter or symbol that is recognized by the computer, and can form a line of text (eg. `a`, `+`, `$`)                                                              |
 
+[Scroll back to Table of Contents](#table-of-contents)
 
 #### Parameter Information
 
@@ -88,6 +94,8 @@ handy when crafting commands in Docedex.
 Here are some notes about these parameters.
 - Each parameter comes with **constraints**. These constraints detail the specific formats of text that
 each parameter accepts as valid user input.
+
+[Scroll back to Table of Contents](#table-of-contents)
 
 ##### Common Parameters
 
@@ -101,12 +109,16 @@ each parameter accepts as valid user input.
 
 <sup>*</sup>`INDEX` parameters are sometimes labelled as `PATIENT_INDEX` or `DOCTOR_INDEX` for clarity.
 
+[Scroll back to Table of Contents](#table-of-contents)
+
 ##### Doctor Parameters
 
 | Parameter | Description                       | Constraints                                      | Valid Examples        | Invalid Examples                                 |
 |-----------|-----------------------------------|--------------------------------------------------|-----------------------|--------------------------------------------------|
 | `s/`      | Specialty of the doctor           | Alphanumeric characters (a to z, A to Z, 1 to 9) | Cardiology, Neurology | N/A (45 specialties are recognized in Singapore) |
 | `y/`      | Years of experience of the doctor | Positive whole number between 0 and 99.          | 0, 99                 | -1, 100                                          |
+
+[Scroll back to Table of Contents](#table-of-contents)
 
 ##### Patient Parameters
 
@@ -117,6 +129,8 @@ each parameter accepts as valid user input.
 | `d/`      | Diagnosis                               | Alphanumeric characters<br/>(a to z, A to Z, 0 to 9)                                                                                                 | Fever, Cancer                       | 发烧                 |
 | `st/`     | Status                                  | Can only take one of the following values:<br/><br/>Inpatient, Outpatient, Observation, Emergency Department, Intensive Care Unit, Transitional Care | Inpatient, Outpatient               | Baymax, HelloWorld |
 | `r/`      | Remark                                  | Alphanumeric characters<br/>(a to z, A to Z, 0 to 9).                                                                                                | Compliant, Needs increase in dosage | 发烧                 |
+
+[Scroll back to Table of Contents](#table-of-contents)
 
 ### Format
 
@@ -131,6 +145,7 @@ Here are the explanations behind the formatting we use throughout this guide!
 | <div markdown="span" class="alert alert-warning"> Text within a yellow box | These usually represent minor warnings. Not following these warnings may cause minor inconveniences within Docedex. (ie. Editing patient data incorrectly)              |
 | <div markdown="span" class="alert alert-info"> Text within a blue box      | These usually represent any other additional notes for users.                                                                                                           |
 
+[Scroll back to Table of Contents](#table-of-contents)
 
 #### Command Format
 
@@ -141,6 +156,8 @@ Here are the explanations behind the formatting we use within our commands!
 | Words in `UPPER_CASE`                                                                                   | These are parameter values that are supplied by the user                     | `add-doc n/NAME...` can be used as `add-doc n/John Doe...`                                        |
 | Items in square brackets                                                                                | These are optional parameters (can be left empty by user)                    | `add-doc n/NAME ... [t/TAG]` can be used as `add-doc n/John Doe t/level5` or `add-doc n/John Doe` |
 | Items with `…`​ after them                                                                              | These are parameters that can be used multiple times (or omitted completely) | `add-doc ... [t/TAG]…​` can be used as `add-doc ... t/level5 t/surgeon` or `add-doc ...`          |
+
+[Scroll back to Table of Contents](#table-of-contents)
 
 ---
 
@@ -220,6 +237,7 @@ Here is a quick summary of each GUI component within Docedex.
 | **Information Card**  | Displays all information about a selected doctor or patient.                                                                                                                                                                                                                |
 | **Footer**            | Shows the location of the Docedex storage.                                                                                                                                                                                                                                  |
 
+[Scroll back to Table of Contents](#table-of-contents)
 
 ### Notes about the GUI
 
@@ -247,6 +265,8 @@ This behaviour will also exist if the user adds a patient instead too.
     <br/><br/>
     <b><em>Your storage is still secure.</em></b>
 </div>
+
+[Scroll back to Table of Contents](#table-of-contents)
 
 #### Unselecting doctors or patients
 
@@ -354,29 +374,45 @@ This command adds a new doctor to the doctors list in Docedex.
 
 #### Editing a doctor
 
+**Wish to change the email of an existing doctor?** Use the `edit-doc` command!
+
+*Command format*
+<br>
 ```edit-doc INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [s/SPECIALTY] [y/YOE] [t/TAGS]…```
-- To view parameter information click [here](#parameter-information)
-- What it does: Edits the doctor at the specified `INDEX` using any specified parameters as the new value.
-- Possible use cases: Updating contact information of a doctor.
+<br>
+
+*What does it do?*
+<br>
+Edits the information of the doctor at the specified `INDEX` using any
+new supplied parameters.
+
 <div markdown="span" class="alert alert-warning">
 **WARNING**: This command overwrites existing data within Docedex, proceed with caution.
 </div>
 
-- Note to users:
-    - The index refers to the index number shown in the displayed doctor list.
-    - Users can edit specific doctors in the clinic by providing at least one of the optional parameters. Specified parameters will be updated to the input values and all other parameter values will remain the same.
-    - At least one of the optional parameters must be provided.
-    - When editing tags, you have to include any previous tags that was already included in the doctor, or else these tags will be removed. This also means that you can use `t/` to remove all tags from a doctor using the `edit-doc` command.
+*Additional notes*
+- The index refers to the index number shown in the displayed doctor list.
+Refer to [this image](#docedex-user-interface-with-index-highlighted) for more information on how to determine
+the index of a doctor.
+- Users can edit specific doctors in the clinic by providing at least one of the optional parameters.
+Only parameters specified in the command will be updated. All other information about the doctor will remain the same.
+- At least one parameter must be provided to the command.
+  - Typing ```edit-doc 1``` will result in an error message.
+- When editing tags, you have to include any previous tags that was already associated with the doctor.
+  - Not doing so will result in these tags being removed.
+  - Type `t/` once, leaving the text for the tag empty, to remove all tags from a doctor.
 
-- Examples:
-    - `edit-doc 1 p/91234567` Edits the phone number of the 1st doctor to be `91234567`.
-    - `edit-doc 2 n/Gabriel Tan p/12345678 t/` Edits the name and phone number of the 2nd doctor to be `Gabriel Tan` and `91234567` respectively. Adding t/ also clears all existing tags.
+*Examples*
+- `edit-doc 1 p/91234567`
+  - Edits the phone number of the 1st doctor to be `91234567`.
+- `edit-doc 2 n/Gabriel Tan p/12345678 t/`
+  - Edits the name and phone number of the 2nd doctor to be `Gabriel Tan` and `91234567` respectively.
+  - Adding `t/` also clears all existing tags.
 
 <div markdown="span" class="alert alert-info">
-Edit doctor command, also calls select doctor to display the recently updated information in the Enlarged Contact Card.
-**If no patients appear in the patients list**, it is because none have been assigned to the doctor.
-
-For more information see: [Selecting doctors or patients through commands](#selecting-doctors-or-patients-through-commands)
+    If your patients list seems to disappear after entering this command, fret not! Click
+    <a href="#selecting-doctors-or-patients-through-commands">here</a>
+    to find out why this happens.
 </div>
 
 [Scroll back to Table of Contents](#table-of-contents)
