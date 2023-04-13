@@ -7,19 +7,15 @@ title: User Guide
 
 ***Taking control of hospital administrative management is just a few keystrokes away!***
 
-Docedex is a **desktop application** built for **medical administrative assistants**
-to manage doctors and patients within clinics.
+Docedex is a **desktop application** that enables efficient and secure
+management of doctors and patients within clinics. Docedex is built for
+**medical administrative assistants** who are also **fast typists**. If you can type fast,
+Docedex can get your hospital management tasks done faster than other apps in the industry.
 
 Here's an **overview** of how Docedex can help you streamline your hospital management processes.
 - Store and edit information about your patients and doctors
 - Track the status of your patients and doctors
 - Assign patients to doctors upon triaging
-
-On top of these functionalities, we believe that patient management must be **efficient**.
-Therefore, Docedex is **optimized for** use via a **Command Line Interface (CLI)**
-while still having the benefits of a **Graphical User Interface (GUI).**
-If you type fast, Docedex can get your hospital management tasks done faster
-than current GUI apps in the industry.
 
 **If you are new here**, visit our [quick start](#quick-start) guide to onboard onto Docedex smoothly!
 
@@ -53,21 +49,21 @@ than current GUI apps in the industry.
   - Type `java -jar docedex.jar` and press Enter.
   
   <div markdown="span" class="alert alert-danger">
-  **WARNING TO ALL MAC USERS**
-  Performing these instructions may result in non-deterministic behaviour of data loading in Docedex. This was tested on multiple
-  MacOS Systems:<br />
-  
-  - Right-click `docedex.jar` > Open With > JavaLauncher.app
-  - First time users may be prompted with a warning that the file was downloaded from the Internet. Simply click Open in the prompt to continue.
-  
+  **WARNING TO ALL MAC USERS** <br/>
+  It is  possible to right click <code>docedex.jar</code> and open it with <code>JavaLauncher</code>.<br/>
+  However, doing so may result in <strong>improper loading of data</strong> into Docedex. Therefore, it is recommended
+  to use follow the instructions stated above instead.
   </div>
 
 - For Windows Users:
   - Double-click `docedex.jar` to launch the application.
 - If this still does not work follow the instructions listed [here.](#launching-docedex)
 - You should notice the GUI of the application pop up.
+
 5. Learn more about navigating the GUI [here](#navigating-the-graphical-user-interface-gui).
+
 6. For **new users**, learn to use Docedex [here](#docedex-tutorial-for-new-users).
+
 7. For **advanced users**, view all feature details [here](#features).
 
 [Scroll back to Table of Contents](#table-of-contents)

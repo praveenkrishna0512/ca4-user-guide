@@ -3,6 +3,8 @@
 /build/
 src/main/resources/docs/
 
+/.github/workflows
+
 # IDEA files
 /.idea/
 /out/
