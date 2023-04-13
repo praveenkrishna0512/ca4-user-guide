@@ -17,6 +17,8 @@ Here's an **overview** of how Docedex can help you streamline your hospital mana
 - Track the status of your patients and doctors
 - Assign patients to doctors upon triaging
 
+[Docedex User Interface](./images/Ui.png)
+
 **If you are new here**, visit our [quick start](#quick-start) guide to onboard onto Docedex smoothly!
 
 <br>
@@ -120,6 +122,7 @@ Here are some descriptions of the words we use throughout the User Guide:
 | **GUI**           | Graphical User Interface (GUI) represents the visual display of Docedex that users can see.                                                                           |
 | **GUI component** | A subsection of the Graphical User Interface. For more information on specific GUI components, refer to [this section](#navigating-the-graphical-user-interface-gui). |
 | **CLI**           | Command Line Interface (CLI) represents a text-based user interface to interact with the application.                                                                 |
+| **Character**     | Any letter or symbol that is recognized by the computer, and can form a line of text (eg. `a`, `+`, `$`)                                                              |
 
 
 ### Parameter Information
@@ -127,46 +130,59 @@ Here are some descriptions of the words we use throughout the User Guide:
 Within the tables below, you can find out more about the parameters that Docedex supports. These parameters come in
 handy when crafting commands in Docedex.
 
+Here are some notes about these parameters.
+- Each parameter comes with **constraints**. These constraints detail the specific formats of text that
+each parameter accepts as valid user input.
+
 #### Common Parameters
 
-| Parameter         | Description                        | Constraints                                                                     | Valid Examples                    | Invalid Examples                             |
-|-------------------|------------------------------------|---------------------------------------------------------------------------------|-----------------------------------|----------------------------------------------|
-| n/                | Name of the doctor/patient         | Alphanumeric characters (a to z, A to Z, 0 to 9)                                | Will Hunting, Elizabeth 2         | 成龍,  潔 いさぎ 世 よ 一 いち, Ganesh s/o Ravichandran |
-| e/                | Email of the doctor/patient        | Email prefix: Alphanumeric characters (a to z, A to Z, 0 to 9), @, Email Domain | whunting@gmail.com, eliz2@mit.edu | whunting@, eliz2                             |
-| p/                | Phone number of the doctor/patient | Positive integer with 3 or more digits                                          | 999, 94565625                     | 0, -1                                        |
-| t/                | Tags (optional parameter)          | Single string of characters not separated by any whitespace                     | pendingReview, recurrentProblem   | N/A                                          |
-| INDEX<sup>*</sup> | Index in doctors/patients list     | Positive integer less than or equal to 2147483649                               | 1, 2147483647                     | -1, 2147483649                               |
+| Parameter           | Description                                                                                                                                         | Constraints                                                                                                                | Valid Examples                    | Invalid Examples                             |
+|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|-----------------------------------|----------------------------------------------|
+| `n/`                | Name of the doctor/patient                                                                                                                          | Alphanumeric characters (a to z, A to Z, 0 to 9)                                                                           | Will Hunting, Elizabeth 2         | 成龍,  潔 いさぎ 世 よ 一 いち, Ganesh s/o Ravichandran |
+| `e/`                | Email of the doctor/patient                                                                                                                         | Format: <prefix>@<domain><br/><br/>The prefix and domain can contain any alphanumeric characters (a to z, A to Z, 0 to 9). | whunting@gmail.com, eliz2@mit.edu | whunting@, eliz2                             |
+| `p/`                | Phone number of the doctor/patient                                                                                                                  | Positive whole number with 3 or more digits                                                                                | 999, 94565625                     | 0, -1                                        |
+| `t/`                | Tag associated with the doctor/patient                                                                                                              | Single string of characters not separated by any whitespace                                                                | pendingReview, recurrentProblem   | N/A                                          |
+| `INDEX`<sup>*</sup> | Index number of the doctors/patients list<br/><br/>(Refer to [this image](#docedex-user-interface-with-index-highlighted) for a visual description) | Positive whole number less than or equal to 2147483649                                                                     | 1, 2147483647                     | -1, 2147483650                               |
 
-<sup>*</sup>Index is prefaced by doc/ and ptn/ in the commands [`assign-ptn`](#assigning-a-patient-to-a-doctor) and [`unassign-ptn`](#undoing-assignment-of-a-patient-from-a-doctor)
+<sup>*</sup>`INDEX` parameters are sometimes labelled as `PATIENT_INDEX` or `DOCTOR_INDEX` for clarity.
 
 #### Doctor Parameters
 
-| Parameter | Description             | Constraints                                      | Valid Examples        | Invalid Examples                                 |
-|-----------|-------------------------|--------------------------------------------------|-----------------------|--------------------------------------------------|
-| s/        | Specialty of the doctor | Alphanumeric characters (a to z, A to Z, 1 to 9) | Cardiology, Neurology | N/A (45 specialties are recognized in Singapore) |
-| y/        | Years of experience     | Positive integer between 0 and 99.               | 0, 99                 | -1, 100                                          |
+| Parameter | Description                       | Constraints                                      | Valid Examples        | Invalid Examples                                 |
+|-----------|-----------------------------------|--------------------------------------------------|-----------------------|--------------------------------------------------|
+| `s/`      | Specialty of the doctor           | Alphanumeric characters (a to z, A to Z, 1 to 9) | Cardiology, Neurology | N/A (45 specialties are recognized in Singapore) |
+| `y/`      | Years of experience of the doctor | Positive whole number between 0 and 99.          | 0, 99                 | -1, 100                                          |
 
 #### Patient Parameters
 
 
-| Parameter | Description                             | Constraints                                                                                                                                 | Valid Examples        | Invalid Examples   |
-|-----------|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|--------------------|
-| h/        | Height of the patient in metres (m)     | 3-digit number with 2 decimal places representing patient's height in metres                                                                | 1.63, 1.99            | 1, 1.2, 1.234      |
-| w/        | Weight of the patient in kilograms (kg) | Number with an optional 1 decimal place representing patient's weight in kg                                                                 | 85.0, 63.2            | -85, 63.20         |
-| d/        | Diagnosis                               | Alphanumeric characters (a to z, A to Z, 0 to 9)                                                                                            | Fever, Cancer         | 发烧                 |
-| st/       | Status                                  | Can only take one of the following values: Inpatient, Outpatient, Observation, Emergency Department, Intensive Care Unit, Transitional Care | Inpatient, Outpatient | Baymax, HelloWorld |
+| Parameter | Description                             | Constraints                                                                                                                                 | Valid Examples                      | Invalid Examples   |
+|-----------|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|--------------------|
+| `h/`      | Height of the patient in metres (m)     | 3-digit number with 2 decimal places representing patient's height in metres                                                                | 1.63, 1.99                          | 1, 1.2, 1.234      |
+| `w/`      | Weight of the patient in kilograms (kg) | Number with an optional 1 decimal place representing patient's weight in kg                                                                 | 85.0, 63.2                          | -85, 63.20         |
+| `d/`      | Diagnosis                               | Alphanumeric characters (a to z, A to Z, 0 to 9)                                                                                            | Fever, Cancer                       | 发烧                 |
+| `st/`     | Status                                  | Can only take one of the following values: Inpatient, Outpatient, Observation, Emergency Department, Intensive Care Unit, Transitional Care | Inpatient, Outpatient               | Baymax, HelloWorld |
+| `r/`      | Remark                                  | Alphanumeric characters (a to z, A to Z, 0 to 9).                                                                                           | Compliant, Needs increase in dosage | 发烧                 |
 
 
 ## **Command format**
 
-| Format                                                                                                       | Explanation                                                                  | Examples                                                                                          |
+Here are the explanations behind the formatting we use within our commands!
+
+| Format/Note                                                                                                  | Explanation                                                                  | Examples                                                                                          |
 |--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | Words in `UPPER_CASE`                                                                                        | These are parameter values that are supplied by the user                     | `add-doc n/NAME...` can be used as `add-doc n/John Doe...`                                        |
-| Items in square brackets                                                                                     | These are optional parameters (can be left empty by user)                    | `add-doc n/NAME ... [t/TAG]` can be used as `add-doc n/John Doe t/friend` or `add-doc n/John Doe` |
-| Items with `…`​ after them                                                                                   | These are parameters that can be used multiple times (or omitted completely) | `add-doc ... [t/TAG]…​` can be used as `add-doc ... t/friend t/surgeon` or `add-doc ...`          |
-| Parameters can be in any order.                                                                              | N/A                                                                          | `add-doc n/NAME p/PHONE_NUMBER ...` is equivalent to `add-doc p/PHONE_NUMBER n/NAME`              |
-| If a parameter is **expected only once** and entered multiple times, only the latest occurrence is accepted. | N/A                                                                          | `add-doc n/John Doe n/Shawn Koh ...` is equivalent to `add-doc n/Shawn Koh ...`                   |
-| Extraneous parameters for commands that do not take in parameters will be ignored.                           | N/A                                                                          | `help 123`, `list 123` is equivalent to `help` or `list`                                          |
+| Items in square brackets                                                                                     | These are optional parameters (can be left empty by user)                    | `add-doc n/NAME ... [t/TAG]` can be used as `add-doc n/John Doe t/level5` or `add-doc n/John Doe` |
+| Items with `…`​ after them                                                                                   | These are parameters that can be used multiple times (or omitted completely) | `add-doc ... [t/TAG]…​` can be used as `add-doc ... t/level5 t/surgeon` or `add-doc ...`          |
+
+
+Here are some notes about the behaviour of our commands!
+
+| Notes                                                                                                        | Examples                                                                             |
+|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| Parameters are accepted in any order.                                                                        | `add-doc n/NAME p/PHONE_NUMBER ...` is equivalent to `add-doc p/PHONE_NUMBER n/NAME` |
+| If a parameter is **expected only once** but entered multiple times, only the latest occurrence is accepted. | `add-doc n/John Doe n/Shawn Koh ...` is equivalent to `add-doc n/Shawn Koh ...`      |
+| Extraneous parameters for commands that do not take in parameters will be ignored.                           | `help 123`, `list 123` is equivalent to `help` or `list`                             |
 
 [Scroll back to Table of Contents](#table-of-contents)
 
@@ -174,19 +190,19 @@ handy when crafting commands in Docedex.
 
 ## **Command Summary**
 
-| Command               | Shorthand   | What it does                                                                              |
-|-----------------------|-------------|-------------------------------------------------------------------------------------------|
-| `add-doc / add-ptn`   | `ad / ap`   | Adds a doctor or patient into Docedex.                                                    |
-| `edit-doc / edit-ptn` | `ed / ep`   | Edits the specified doctor or patient.                                                    |
-| `del-doc / del-ptn`   | `dd / dp`   | Removes the specified doctor or patient from Docedex. **This action cannot be undone.**   |
-| `find-doc / find-ptn` | `fd / fp`   | Finds the doctor(s) and patient(s) which matches the search query.                        |
-| `list-doc / list-ptn` | `lsd / lsp` | Lists all doctors or patients.                                                            |
-| `assign-ptn`          | `asn`       | Assigns a patient to a doctor.                                                            |
-| `unassign-ptn`        | `uasn`      | Unassigns a patient from a doctor.                                                        |
-| `sd / sp`             | `sd / sp`   | Selects the specified doctor or patient and displays the person's information on the GUI. |
-| `help`                | N/A         | Displays the link to the User Guide.                                                      |
-| `clear`               | N/A         | Clears all entries from Docedex. **This action cannot be undone.**                        |
-| `exit`                | N/A         | Exits the application (equivalent to closing the application).                            |
+| Command               | Shorthand   | What it does                                                                                                  |
+|-----------------------|-------------|---------------------------------------------------------------------------------------------------------------|
+| `add-doc / add-ptn`   | `ad / ap`   | Adds a doctor or patient into Docedex.                                                                        |
+| `edit-doc / edit-ptn` | `ed / ep`   | Edits the specified doctor or patient.                                                                        |
+| `del-doc / del-ptn`   | `dd / dp`   | Removes the specified doctor or patient from Docedex. **This action cannot be undone.**                       |
+| `find-doc / find-ptn` | `fd / fp`   | Finds the doctor(s) and patient(s) based on specific parameters. (ie. Find all doctors named Smith")          |
+| `list-doc / list-ptn` | `lsd / lsp` | Lists all doctors or patients within Docedex.                                                                 |
+| `assign-ptn`          | `asn`       | Assigns a patient to a doctor.                                                                                |
+| `unassign-ptn`        | `uasn`      | Unassigns a patient from a doctor.                                                                            |
+| `sd / sp`             | `sd / sp`   | Selects the specified doctor or patient and displays the selected person's information on the user interface. |
+| `help`                | N/A         | Displays the link to the User Guide.                                                                          |
+| `clear`               | N/A         | Clears all doctors and patients within Docedex. **This action cannot be undone.**                             |
+| `exit`                | N/A         | Exits the application (equivalent to closing the application).                                                |
 
 [Scroll back to Table of Contents](#table-of-contents)
 
@@ -375,8 +391,8 @@ Examples:
     - Please follow the parameter constraints closely, or you will not retrieve any doctors.
 
 - Examples:
-    - `find-doc n/Gabriel` matches any doctor with the name containing the string `Gabriel`.
-    - `find-doc n/Gabriel t/friend t/expert` matches any doctor with the name containing the string `Gabriel` and has tags `friend` and `expert`.
+    - `find-doc n/Gabriel` matches any doctor with the name containing the word `Gabriel`.
+    - `find-doc n/Gabriel t/friend t/expert` matches any doctor with the name containing the word `Gabriel` and has tags `friend` and `expert`.
     - `find-doc y/3` matches any doctor that has the number 3 in their years of experience, i.e. `3`,`30`,`23` will be matched but `5` and `10` will not be matched.
     - `find-doc n/@#$!` will not return any doctors because the search query for name does not follow the constraints for the name parameter.
 
@@ -528,8 +544,8 @@ Examples:
     - Please follow the parameter constraints closely, or you will not retrieve any patients.
 
 - Examples:
-  - `find-ptn n/Alice` matches any patient with the name containing the string `Alice`.
-  - `find-ptn h/1` match any patient with the height containing the string `1`, i.e. `1.70` and `0.91` will be matched but `0.99` and `2.00` will not be matched.
+  - `find-ptn n/Alice` matches any patient with the name containing the word `Alice`.
+  - `find-ptn h/1` match any patient with the height containing the number `1`, i.e. `1.70` and `0.91` will be matched but `0.99` and `2.00` will not be matched.
 
 [Scroll back to Table of Contents](#table-of-contents)
 
@@ -648,3 +664,14 @@ For Mac Users you may wish to follow the instructions listed [here](https://nus-
 for an explanation of why this occurs.
 
 [Scroll back to Table of Contents](#table-of-contents)
+
+---
+
+## **Appendix A: Relevant Images**
+
+###### Docedex User Interface with Index Highlighted
+{: .no_toc}
+
+The red box represents the index of a doctor/patient.
+
+[User Interface](./images/UiIndexHighlight.png)
