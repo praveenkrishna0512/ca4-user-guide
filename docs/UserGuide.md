@@ -329,14 +329,20 @@ Here are some notes about the behaviour of our commands!
 ### Doctor Commands
 #### Adding a doctor
 
-```add-doc n/NAME p/PHONE_NUMBER e/EMAIL s/SPECIALITY y/YEARS_OF_EXPERIENCE [t/TAGS]…```
-- To view parameter information click [here](#parameter-information)
-- What it does: Adds a new doctor to the doctors list and filters the patients' list to display only associate patients.
-- Possible use cases: A new doctor has joined your department/you are setting Docedex up for the first time.
+**Wish to add a new doctor who has joined your department?** Use the `add-doc` command!
 
-- Examples:
-    - `add-doc n/John Doe p/98765432 e/johnd@example.com s/Cardiology y/5 t/surgeon`
-    - `add-doc n/Gabriel Tan p/98765432 e/gabt@example.com s/Neurosurgery y/5`
+*Command format*
+<br>
+```add-doc n/NAME p/PHONE_NUMBER e/EMAIL s/SPECIALITY y/YEARS_OF_EXPERIENCE [t/TAGS]…```
+<br>
+
+*What does it do?*
+<br>
+This command adds a new doctor to the doctors list in Docedex.
+
+*Examples*
+- `add-doc n/John Doe p/98765432 e/johnd@example.com s/Cardiology y/5 t/surgeon`
+- `add-doc n/Gabriel Tan p/98765432 e/gabt@example.com s/Neurosurgery y/5`
 
 <div markdown="span" class="alert alert-info">
 Adding doctor command, also calls select doctor to display the recently added information in the Enlarged Contact Card.
