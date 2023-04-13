@@ -232,39 +232,6 @@ look through all the doctors and patients in Docedex, please use the
 
 [Scroll back to Table of Contents](#table-of-contents)
 
-## **Notes about the command format**
-
-| Notes                                                                                                        | Explanation                                                                  | Examples                                                                                          |
-|--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| Words in `UPPER_CASE`                                                                                        | These are parameter values that are supplied by the user                     | `add-doc n/NAME...` can be used as `add-doc n/John Doe...`                                        |
-| Items in square brackets                                                                                     | These are optional parameters (can be left empty by user)                    | `add-doc n/NAME ... [t/TAG]` can be used as `add-doc n/John Doe t/friend` or `add-doc n/John Doe` |
-| Items with `…`​ after them                                                                                   | These are parameters that can be used multiple times (or omitted completely) | `add-doc ... [t/TAG]…​` can be used as `add-doc ... t/friend t/surgeon` or `add-doc ...`          |
-| Parameters can be in any order.                                                                              | N/A                                                                          | `add-doc n/NAME p/PHONE_NUMBER ...` is equivalent to `add-doc p/PHONE_NUMBER n/NAME`              |
-| If a parameter is **expected only once** and entered multiple times, only the latest occurrence is accepted. | N/A                                                                          | `add-doc n/John Doe n/Shawn Koh ...` is equivalent to `add-doc n/Shawn Koh ...`                   |
-| Extraneous parameters for commands that do not take in parameters will be ignored.                           | N/A                                                                          | `help 123`, `list 123` is equivalent to `help` or `list`                                          |
-
-[Scroll back to Table of Contents](#table-of-contents)
-
----
-
-## **Command Summary**
-
-| Command               | Shorthand   | What it does                                                                              |
-|-----------------------|-------------|-------------------------------------------------------------------------------------------|
-| `add-doc / add-ptn`   | `ad / ap`   | Adds a doctor or patient into Docedex.                                                    |
-| `edit-doc / edit-ptn` | `ed / ep`   | Edits the specified doctor or patient.                                                    |
-| `del-doc / del-ptn`   | `dd / dp`   | Removes the specified doctor or patient from Docedex. **This action cannot be undone.**   |
-| `find-doc / find-ptn` | `fd / fp`   | Finds the doctor(s) and patient(s) which matches the search query.                        |
-| `list-doc / list-ptn` | `lsd / lsp` | Lists all doctors or patients.                                                            |
-| `assign-ptn`          | `asn`       | Assigns a patient to a doctor.                                                            |
-| `unassign-ptn`        | `uasn`      | Unassigns a patient from a doctor.                                                        |
-| `sd / sp`             | `sd / sp`   | Selects the specified doctor or patient and displays the person's information on the GUI. |
-| `help`                | N/A         | Displays the link to the User Guide.                                                      |
-| `clear`               | N/A         | Clears all entries from Docedex. **This action cannot be undone.**                        |
-| `exit`                | N/A         | Exits the application (equivalent to closing the application).                            |
-
-[Scroll back to Table of Contents](#table-of-contents)
-
 ---
 
 ## **Docedex Tutorial (for new users)**
