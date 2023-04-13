@@ -389,12 +389,13 @@ new supplied parameters.
 </div>
 
 ***Additional notes***
-- The index refers to the index number shown in the displayed doctor list.
-Refer to [this image](#docedex-user-interface-with-index-highlighted) for more information on how to determine
-the index of a doctor.
+- The index refers to the index number shown in the displayed doctor list. 
+  - Refer to [this image](#docedex-user-interface-with-index-highlighted) for more information on how to determine
+  the index of a doctor.
 - At least one parameter must be provided to the command.
   - Not providing any parameters (such as typing ```edit-doc 1```) will result in an error message.
-- Only parameters specified in the command will be updated. All other information about the doctor will remain the same.
+- Only parameters specified in the command will be updated.
+  - All other information about the doctor will remain the same.
 - When editing tags, you have to include any previous tags that was already associated with the doctor.
   - Not doing so will result in these tags being removed.
   - Type `t/` once, leaving the text for the tag empty, to remove all tags from a doctor.
