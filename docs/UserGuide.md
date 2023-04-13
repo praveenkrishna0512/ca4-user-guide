@@ -94,6 +94,10 @@ handy when crafting commands in Docedex.
 Here are some notes about these parameters.
 - Each parameter comes with **constraints**. These constraints detail the specific formats of text that
 each parameter accepts as valid user input.
+  - Not following these constraints will result in an error when
+  entering the command.
+  - Nonetheless, Docedex will not stop working. Rather, a message will be provided to you on how to correct
+  your command.
 
 [Scroll back to Table of Contents](#table-of-contents)
 
@@ -361,12 +365,20 @@ Here are some notes about the behaviour of our commands!
 
 ***Examples***
 - `add-doc n/John Doe p/98765432 e/johnd@example.com s/Cardiology y/5 t/surgeon`
+  - Adds a doctor named John Doe, with the specified information.
 - `add-doc n/Gabriel Tan p/98765432 e/gabt@example.com s/Neurosurgery y/5`
+  - Adds a doctor named Gabriel Tan, with the specified information.
+  - Note that the tag is optional.
 
 <div markdown="span" class="alert alert-info">
     <strong>If your patients list seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
+</div>
+<div markdown="span" class="alert alert-info">
+    Don't know what each parameter stands for? Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
+    <br/><br/>
+    Confused regarding the command format? Refer to our guide on the <a href="#command-format">Command Format</a>.
 </div>
 
 [Scroll back to Table of Contents](#table-of-contents)
@@ -380,18 +392,15 @@ Here are some notes about the behaviour of our commands!
 ```edit-doc INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [s/SPECIALTY] [y/YOE] [t/TAGS]…```
 <br>
 
-***What does it do?***
-- Edits the information of the doctor at the specified `INDEX` using any
-new supplied parameters.
-
 <div markdown="span" class="alert alert-warning">
 **WARNING**: This command overwrites existing data within Docedex, proceed with caution.
 </div>
 
+***What does it do?***
+- Edits the information of the doctor at the specified `INDEX` using any
+new supplied parameters.
+
 ***Additional notes***
-- The index refers to the index number shown in the displayed doctor list. 
-  - Refer to [this image](#docedex-user-interface-with-index-highlighted) for more information on how to determine
-  the index of a doctor.
 - At least one parameter must be provided to the command.
   - Not providing any parameters (such as typing ```edit-doc 1```) will result in an error message.
 - Only parameters specified in the command will be updated.
@@ -412,88 +421,89 @@ new supplied parameters.
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
 </div>
+<div markdown="span" class="alert alert-info">
+    Don't know what each parameter stands for? Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
+    <br/><br/>
+    Confused regarding the command format? Refer to our guide on the <a href="#command-format">Command Format</a>.
+</div>
 
 [Scroll back to Table of Contents](#table-of-contents)
 
 #### Deleting a doctor
 
-**Wish to change the email of an existing doctor?** Use the `edit-doc` command!
+**Wish to remove a doctor who no longer works at your clinic?** Use the `del-doc` command!
 
 ***Command format***
 <br>
-```edit-doc INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [s/SPECIALTY] [y/YOE] [t/TAGS]…```
+```del-doc INDEX```
 <br>
 
-***What does it do?***
-- Edits the information of the doctor at the specified `INDEX` using any
-  new supplied parameters.
-
-<div markdown="span" class="alert alert-warning">
-**WARNING**: This command overwrites existing data within Docedex, proceed with caution.
+<div markdown="span" class="alert alert-danger">
+**WARNING**: This command is cannot be undone, and there is no way to recover the deleted doctor's information.
 </div>
+
+***What does it do?***
+- Deletes the doctor at the specified `INDEX`.
 
 ***Additional notes***
-- Don't know what each parameter stands for? Refer to our guide on [Parameter Information](#parameter-information).
-- Confused regarding the command format? Refer to our guide on [Command Format](#command-format).
-- 
-- At least one parameter must be provided to the command.
-    - Not providing any parameters (such as typing ```edit-doc 1```) will result in an error message.
-- Only parameters specified in the command will be updated.
-    - All other information about the doctor will remain the same.
-- When editing tags, you have to include any previous tags that was already associated with the doctor.
-    - Not doing so will result in these tags being removed.
-    - Type `t/` once, leaving the text for the tag empty, to remove all tags from a doctor.
+- If the doctor you wish to delete is not shown on the doctors list, you can try
+using [`list-doc`](#listing-all-doctors) to list out all the doctors in Docedex first.
 
 ***Examples***
-- `edit-doc 1 p/91234567`
-    - Edits the phone number of the 1st doctor to be `91234567`.
-- `edit-doc 2 n/Gabriel Tan p/12345678 t/`
-    - Edits the name and phone number of the 2nd doctor to be `Gabriel Tan` and `91234567` respectively.
-    - Adding `t/` also clears all existing tags.
+- `del-doc 2`
+  - Deletes the 2nd doctor displayed in the doctors list within Docedex.
 
 <div markdown="span" class="alert alert-info">
-    If your patients list seems to disappear after entering this command, fret not! Click
-    <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
-    to find out why this happens.
+    Don't know what each parameter stands for? Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
+    <br/><br/>
+    Confused regarding the command format? Refer to our guide on the <a href="#command-format">Command Format</a>.
 </div>
-
-[Scroll back to Table of Contents](#table-of-contents)
-
-```del-doc INDEX```
-- To view parameter information click [here](#parameter-information)
-- What it does: Deletes the specified doctor from the address book.
-<div markdown="span" class="alert alert-danger">
-**WARNING**: This command is destructive. Doctor's removed will need to be added back.
-</div>
-
-- Note to user:
-    - The index refers to the index number shown in the displayed doctor list. If the doctor you wish to delete is not shown on the doctor's list, you can try using `list-doc` to list out all the doctors first.
-
-Examples:
-* `list-doc` followed by `del-doc 2` deletes the 2nd doctor in the address book.
-* `find-doc Gabriel` followed by `del-doc 1` deletes the 1st doctor in the results of the `find-doc` command.
 
 [Scroll back to Table of Contents](#table-of-contents)
 
 #### Finding a doctor
 
-```find-doc [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [s/SPECIALTY] [y/YEARS_OF_EXPERIENCE] [t/TAGS]…```
-- To view parameter information click [here](#parameter-information)
-- What it does: Find doctors with specified parameter value
-- Possible use cases: Retrieval of doctor records
-- Note to user:
-    - Matches are case-insensitive.
-    - Parameters are matched if they contain the search value (if there are two doctors named Gabriel and Gabriella in Docedex, using the command with search value `n/Gabriel` retrieves both records).
-    - At least one of the parameters must be provided.
-    - More than one tag can be provided.
-    - Blank parameters will be ignored.
-    - Please follow the parameter constraints closely, or you will not retrieve any doctors.
+**Wish to find a doctor with at least 5 years of experience?** Use the `find-doc` command!
 
-- Examples:
-    - `find-doc n/Gabriel` matches any doctor with the name containing the word `Gabriel`.
-    - `find-doc n/Gabriel t/friend t/expert` matches any doctor with the name containing the word `Gabriel` and has tags `friend` and `expert`.
-    - `find-doc y/3` matches any doctor that has the number 3 in their years of experience, i.e. `3`,`30`,`23` will be matched but `5` and `10` will not be matched.
-    - `find-doc n/@#$!` will not return any doctors because the search query for name does not follow the constraints for the name parameter.
+***Command format***
+<br>
+```find-doc [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [s/SPECIALTY] [y/YEARS_OF_EXPERIENCE] [t/TAGS]…```
+<br>
+
+***What does it do?***
+- Finds all doctors in Docedex that match the specified parameter values, and displays
+those doctors to the user within the doctors list.
+
+***Additional notes***
+- The specified parameter values can be case-insensitive.
+  - So if there is a doctor named *Gabriel* in Docedex,
+      entering the command `find-doc n/GAbRiEl` will still display the requested doctor.
+- If the parameter value searched by the user is contained within the parameter value of a doctor, that doctor
+will be displayed to the user.
+  - So if there are two doctors named *Gabriel* and *Gabriella* in Docedex,
+  entering the command `find-doc n/Gabriel` will display both doctors.
+  - This happens as both the names *Gabriel* and *Gabriella* contain the word *Gabriel*
+- At least one of the parameters must be provided.
+  - Not providing any parameters (such as typing ```find-doc```) will result in an error message.
+- More than one tag can be provided in the command.
+  - ```find-doc t/surgeon t/level5``` is a valid command.
+- Blank parameters will be ignored.
+  - Typing ```find-doc n/Gabriel p/``` is equivalent to ```find-doc n/Gabriel```.
+
+***Examples***
+- `find-doc n/Gabriel`
+  - Finds and displays all doctors whose names contain the word `Gabriel`.
+- `find-doc n/Gabriel t/friend t/expert`
+  - Finds and displays all doctors whose names contain the word `Gabriel`, and have the tags `friend` and `expert`.
+- `find-doc y/3`
+  - Finds and displays all doctors that have the number *3* in their years of experience.
+  - So, any doctor with 3, 30 or 23 years of experience will be displayed.
+
+<div markdown="span" class="alert alert-info">
+    Don't know what each parameter stands for? Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
+    <br/><br/>
+    Confused regarding the command format? Refer to our guide on the <a href="#command-format">Command Format</a>.
+</div>
 
 [Scroll back to Table of Contents](#table-of-contents)
 
