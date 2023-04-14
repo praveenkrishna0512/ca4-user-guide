@@ -85,7 +85,8 @@ Here are some descriptions of the words we use throughout the User Guide:
 | **GUI**           | Graphical User Interface (GUI) represents the visual display of Docedex that users can see.                                                                               |
 | **GUI component** | A subsection of the Graphical User Interface. For more information on specific GUI components, refer to **[this section](#navigating-the-graphical-user-interface-gui)**. |
 | **CLI**           | Command Line Interface (CLI) represents a text-based user interface to interact with the application.                                                                     |
-| **Character**     | Any letter or symbol that is recognized by the computer, and can form a line of text (eg. `a`, `+`, `$`)                                                                  |
+| **Character**     | Any letter or symbol that is recognized by the computer, and can form a line of text (eg. `a`, `+`, `$`).                                                                 |
+| **JSON**          | [JavaScript Object Notation.](https://en.wikipedia.org/wiki/JSON)                                                                                                         |
 
 [Scroll back to Table of Contents](#table-of-contents)
 
