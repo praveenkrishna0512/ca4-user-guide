@@ -444,7 +444,7 @@ new supplied parameters.
 <br>
 
 <div markdown="span" class="alert alert-danger">
-**WARNING**: This command is cannot be undone, and there is no way to recover the deleted doctor's information.
+**WARNING**: This command is cannot be undone, and there is no way to recover the deleted doctor.
 </div>
 
 ***What does it do?***
@@ -503,7 +503,7 @@ will be displayed to the user.
   - Finds and displays all doctors whose names contain the word `Gabriel`, and have the tags `friend` and `expert`.
 - `find-doc y/3`
   - Finds and displays all doctors that have the number *3* in their years of experience.
-  - So, any doctor with 3, 30 or 23 years of experience will be displayed.
+  - So, for example, any doctor with 3, 30 or 23 years of experience will be displayed.
 
 <div markdown="span" class="alert alert-info">
     <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
@@ -530,7 +530,7 @@ Use the `sd` command!
   - It also filters the *patients list* to only show patients assigned to this doctor.
 
 ***Examples***
-- `sel-doc 1`
+- `sd 1`
     - Performs a mouse click on the *doctor card* of the doctor with displayed index of 1.
 
 <div markdown="span" class="alert alert-info">
@@ -572,20 +572,32 @@ Use the `list-doc` command!
 
 #### Adding a patient
 
-```add-ptn n/NAME p/PHONE e/EMAIL h/HEIGHT w/WEIGHT d/DIAGNOSIS st/STATUS [r/REMARK] [t/TAGS]…```
-- To view parameter information click [here](#parameter-information)
-- Possible use cases: Adding a new patient visiting a clinic to the address book.
-- What it does: Adds a new patient to the patients' list and filters the doctors' list to show only associated doctors.
+**Wish to add a patient who is visiting your clinic for the first time?** Use the `add-ptn` command!
 
-- Examples:
-  - `add-ptn n/Patrick Bateman p/85167604 e/psigma@gmail.com h/1.88 w/80.5 d/Rhinitis st/Outpatient r/Dust allergy t/brother`
-  - `add-ptn n/Patrick Bateman p/85167604 e/psigma@gmail.com h/1.88 w/80.5 d/Rhinitis st/Outpatient`
+***Command format***
+<br><br>
+```add-ptn n/NAME p/PHONE e/EMAIL h/HEIGHT w/WEIGHT d/DIAGNOSIS st/STATUS [r/REMARK] [t/TAGS]…```
+<br>
+
+***What does it do?***
+- Adds a new patient to the *patients list* in Docedex.
+
+***Examples***
+- `add-ptn n/Patrick Bateman p/85167604 e/psigma@gmail.com h/1.88 w/80.5 d/Rhinitis st/Outpatient r/Dust allergy t/brother`
+  - Adds a patient named Patrick Bateman, with the specified information.
+- `add-ptn n/Patrick Bateman p/85167604 e/psigma@gmail.com h/1.88 w/80.5 d/Rhinitis st/Outpatient`
+  - Adds a patient named Patrick Bateman, with the specified information.
+  - Note that both the remark and tag are optional.
 
 <div markdown="span" class="alert alert-info">
-Adding patient command, also calls select patient to display the recently added information in the Enlarged Contact Card.
-**If no doctors appear in the doctors list**, it is because the patient has not been assigned to any doctor.
-
-For more information see: [Selecting doctors or patients through commands](#selecting-doctors-or-patients-through-commands)
+    <strong>If your <em>doctors list</em> seems to disappear</strong> after entering this command, fret not! Click
+    <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
+    to find out why this happens.
+    <br/><br/>
+    <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
+    refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
+    for definitions of terms related to the user interface.
 </div>
 
 [Scroll back to Table of Contents](#table-of-contents)
@@ -628,118 +640,249 @@ For more information see: [Selecting doctors or patients through commands](#sele
 
 #### Editing a patient
 
-```edit-ptn [INDEX] [n/NAME] [p/PHONE] [e/EMAIL] [h/HEIGHT] [w/WEIGHT] [d/DIAGNOSIS] [st/STATUS] [r/REMARK] [t/TAGS]…```
-- To view parameter information click [here](#parameter-information)
-- What it does: Edits the patient at the specified `INDEX`.
+**Wish to change the status of an existing patient?** Use the `edit-ptn` command!
+
+***Command format***
+<br><br>
+```edit-ptn INDEX [n/NAME] [p/PHONE] [e/EMAIL] [h/HEIGHT] [w/WEIGHT] [d/DIAGNOSIS] [st/STATUS] [r/REMARK] [t/TAGS]…```
+<br>
+
 <div markdown="span" class="alert alert-warning">
 **WARNING**: This command overwrites existing data within Docedex, proceed with caution.
 </div>
 
-- Note to users:
-    - The index refers to the index number shown in the displayed patient list.
-    - Users can edit specific patients in the clinic by providing at least one of the optional parameters. Specified parameters will be updated to the input values and all other parameter values will remain the same.
-    - At least one of the optional parameters must be provided.
-    - When editing tags, you have to include any previous tags that was already included in the patient, or else these tags will be removed. This also means that you can use `t/` to remove all tags from a doctor using the `edit-doc` command.
+***What does it do?***
+- Edits the information of the patient at the specified `INDEX` using any
+  new supplied parameters.
 
+***Additional notes***
+- At least one parameter must be provided to the command.
+    - Not providing any parameters (such as typing ```edit-ptn 1```) will result in an error message.
+- Only parameters specified in the command will be updated.
+    - All other information about the patient will remain the same.
+- When editing tags, you have to include any previous tags that was already associated with the patient.
+    - Not doing so will result in these tags being removed.
+    - Type `t/` once, leaving the text for the tag empty, to remove all tags from a patient.
 
-- Examples:
-    - `edit-ptn 1 n/Daenerys Targaryen` Edits the name of the 1st patient to be `Daenerys Targaryen`.
-    - `edit-ptn 2 n/Daenerys Targaryen st/Inpatient t/` Edits the name and status of the 2nd patient to be `Daenerys Targaryen` and `Inpatient` respectively. Adding t/ also clears all existing tags.
+***Examples***
+- `edit-ptn 1 n/Daenerys Targaryen`
+  - Edits the name of the 1st patient to be `Daenerys Targaryen`.
+- `edit-ptn 2 n/Daenerys Targaryen st/Inpatient t/`
+  - Edits the name and status of the 2nd patient to be `Daenerys Targaryen` and `Inpatient` respectively.
+  - Adding `t/` also clears all existing tags.
 
 <div markdown="span" class="alert alert-info">
-Edit patient command, also calls select patient to display the recently updated information in the Enlarged Contact Card.
-The doctors that appear in the doctors list, are those that the patient has been assigned to (if no doctors are displayed, the patient has not been assigned to any doctor). 
-<br/>
-For more information see: [Selecting doctors or patients through commands](#selecting-doctors-or-patients-through-commands)
+    <strong>If your <em>doctors list</em> seems to disappear</strong> after entering this command, fret not! Click
+    <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
+    to find out why this happens.
+    <br/><br/>
+    <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
+    refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
+    for definitions of terms related to the user interface.
 </div>
 
 [Scroll back to Table of Contents](#table-of-contents)
 
 #### Deleting a patient
-- Command format: `del-ptn INDEX`
-- What it does: Deletes the specified patient from the address book.
-<div markdown="span" class="alert alert-danger">
-**WARNING**: This command is destructive. Patients removed will need to be added back.
-</div>
-- Note to user:
-  - The index refers to the index number shown in the displayed patient list.
 
-Examples:
-* `list-ptn` followed by `del-ptn 2` deletes the 2nd patient in the address book.
-* `find-ptn Gabriel` followed by `del-ptn 1` deletes the 1st patient in the results of the `find-ptn` command.
+**Wish to remove a patient who have not visited your clinic in 5 years?** Use the `del-ptn` command!
+
+***Command format***
+<br><br>
+```del-ptn INDEX```
+<br>
+
+<div markdown="span" class="alert alert-danger">
+**WARNING**: This command is cannot be undone, and there is no way to recover the deleted patient.
+</div>
+
+***What does it do?***
+- Deletes the patient at the specified `INDEX`.
+
+***Additional notes***
+- If the patient you wish to delete is not shown on the *patients list*, you can try
+  using [`list-ptn`](#listing-all-patients) to list out all the patients in Docedex first.
+
+***Examples***
+- `del-ptn 2`
+    - Deletes the 2nd patient displayed in the *patients list* within Docedex.
+
+<div markdown="span" class="alert alert-info">
+    <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
+    refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
+    for definitions of terms related to the user interface.
+</div>
 
 [Scroll back to Table of Contents](#table-of-contents)
 
 #### Finding a patient
 
-```find-ptn [n/NAME] [p/PHONE] [e/EMAIL] [h/HEIGHT] [w/WEIGHT] [d/DIAGNOSIS] [st/STATUS] [r/REMARK] [t/TAGS]…```
-- To view parameter information click [here](#parameter-information)
-- What it does: Find patients with specified parameter value
-- Possible use cases: Retrieval of patient records
-- Note to user:
-    - Matches are case-insensitive.
-    - Parameters are matched if they contain the search value (if there are two patients named Gabriel and Gabriella in Docedex, using the command with search value `n/Gabriel` retrieves both records).
-    - At least one of the parameters must be provided.
-    - More than one tag can be provided.
-    - Blank parameters will be ignored.
-    - Please follow the parameter constraints closely, or you will not retrieve any patients.
+**Wish to find all patients with a diagnosis of diabetes** Use the `find-ptn` command!
 
-- Examples:
-  - `find-ptn n/Alice` matches any patient with the name containing the word `Alice`.
-  - `find-ptn h/1` match any patient with the height containing the number `1`, i.e. `1.70` and `0.91` will be matched but `0.99` and `2.00` will not be matched.
+***Command format***
+<br><br>
+```find-ptn [n/NAME] [p/PHONE] [e/EMAIL] [h/HEIGHT] [w/WEIGHT] [d/DIAGNOSIS] [st/STATUS] [r/REMARK] [t/TAGS]…```
+<br>
+
+***What does it do?***
+- Finds all patients in Docedex that match the specified parameter values, and displays
+  those patients to the user within the *patients list*.
+
+***Additional notes***
+- The specified parameter values can be case-insensitive.
+    - So if there is a patient named *Gabriel* in Docedex,
+      entering the command `find-ptn n/GAbRiEl` will still display the requested patient.
+- If the parameter value searched by the user is contained within the parameter value of a patient, that patient
+  will be displayed to the user.
+    - So if there are two patients named *Gabriel* and *Gabriella* in Docedex,
+      entering the command `find-ptn n/Gabriel` will display both patients.
+    - This happens as both the names *Gabriel* and *Gabriella* contain the word *Gabriel*
+- At least one of the parameters must be provided.
+    - Not providing any parameters (such as typing ```find-ptn```) will result in an error message.
+- More than one tag can be provided in the command.
+    - ```find-ptn t/Compliant t/visitedTwice``` is a valid command.
+- Blank parameters will be ignored.
+    - Typing ```find-ptn n/Gabriel p/``` is equivalent to ```find-ptn n/Gabriel```.
+
+***Examples***
+- `find-ptn n/Alice`
+    - Finds and displays all patients whose names contain the word `Alice`.
+- `find-ptn h/1`
+    - Finds and displays all patients that have the number *1* in their height.
+    - So, for example, any patients with a height of 1.70m, 0.91m or 1.81m will be displayed.
+
+<div markdown="span" class="alert alert-info">
+    <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
+    refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
+    for definitions of terms related to the user interface.
+</div>
 
 [Scroll back to Table of Contents](#table-of-contents)
 
 #### Select patient
 
-```sp INDEX```
+**Wish to click on a *patient card* to view more information about them without using a mouse?**
+Use the `sp` command!
 
-- To view parameter information click [here](#parameter-information)
-- What it does: This command mimics a mouse click on a patient's contact card. It shows the information of the patient and filters the doctors' list to only show assigned doctors.
-- Possible use cases: Find which doctors treated a patient
-- Note to user:
-    - The index refers to the index number shown in the displayed patient list.
+***Command format***
+<br><br>
+```sp INDEX```
+<br>
+
+***What does it do?***
+- Performs a mouse click on the *patient card* of the patient at the specified `INDEX`.
+    - This displays all information about the patient within the *contact card*.
+    - It also filters the *doctors list* to only show doctors assigned to this patient.
+
+***Examples***
+- `sp 1`
+    - Performs a mouse click on the *patient card* of the patient with displayed index of 1.
 
 <div markdown="span" class="alert alert-info">
-Selecting patient command only displays the recently queried patients' information in the Enlarged Contact Card.
-**If no doctors appear in the doctors list**, it is because the patient has not been assigned to any doctor.
-
-For more information see: [Selecting doctors or patients through commands](#selecting-doctors-or-patients-through-commands)
+    <strong>If your <em>doctors list</em> seems to disappear</strong> after entering this command, fret not! Click
+    <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
+    to find out why this happens.
+    <br/><br/>
+    <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
+    refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
+    for definitions of terms related to the user interface.
 </div>
 
 [Scroll back to Table of Contents](#table-of-contents)
 
 #### Listing all patients
 
-`list-ptn`
-- Possible use cases: Retrieval of all patients in Docedex after commands involving selection.
-- What it does: Lists all patients in Docedex.
+**Wish to look through all patients within your clinic?**
+Use the `list-ptn` command!
 
-For more information see: [Selecting doctors or patients through commands](#selecting-doctors-or-patients-through-commands)
+***Command format***
+<br><br>
+`list-ptn`
+<br>
+
+***What does it do?***
+- Lists all patients within the *patients list* in Docedex.
+
+<div markdown="span" class="alert alert-info">
+    <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
+    refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
+    for definitions of terms related to the user interface.
+</div>
 
 [Scroll back to Table of Contents](#table-of-contents)
 
 ### Common Commands
 #### Viewing help
 
-- Command format: `help`
-- What it does: Shows a message explaining how to access this help page.
+**Having issues navigating Docedex?**
+Use the `help` command!
+
+***Command format***
+<br><br>
+`help`
+<br>
+
+***What does it do?***
+- Displays the link to this user guide.
+
+<div markdown="span" class="alert alert-info">
+    <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
+    refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
+    for definitions of terms related to the user interface.
+</div>
 
 [Scroll back to Table of Contents](#table-of-contents)
 
 #### Exiting the program
-- Command format: `exit`
-- What it does: This command is equivalent to closing the application (exits the program).
+
+**About to head home and wish to exit Docedex?**
+Use the `exit` command!
+
+***Command format***
+<br><br>
+`exit`
+<br>
+
+***What does it do?***
+- Closes Docedex after ensuring proper storage of data.
+
+<div markdown="span" class="alert alert-info">
+    <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
+    refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
+    for definitions of terms related to the user interface.
+</div>
 
 [Scroll back to Table of Contents](#table-of-contents)
 
 #### Clearing all data
-- Command format: `clear`
-- What it does: This command will clear all data in Docedex.
+
+**Transferred to a new clinic and wish to reset all data in Docedex?**
+Use the `clear` command!
+
+***Command format***
+<br><br>
+`clear`
+<br>
+
 <div markdown="span" class="alert alert-danger">
-**WARNING**
-  - This command will clear all data in Docedex. This includes all doctors and patients.
-  - This command **cannot be undone**.
+**WARNING**: This command is cannot be undone, and there is no way to recover the deleted doctors and patients.
+</div>
+
+***What does it do?***
+- Deletes all patients and doctors in Docedex.
+
+<div markdown="span" class="alert alert-info">
+    <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
+    refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
+    for definitions of terms related to the user interface.
 </div>
 
 [Scroll back to Table of Contents](#table-of-contents)
