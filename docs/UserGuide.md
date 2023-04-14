@@ -142,28 +142,14 @@ each parameter accepts as valid user input.
 
 Here are the explanations behind the formatting we use throughout this guide!
 
-[//]: # ()
-[//]: # (| Format                                                               | Explanation                                                                                                                                                             |)
-
-[//]: # (|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|)
-
-[//]: # (| Words in `code blocks`                                               | These represent any of the following:<br/>1. Text used in commands, such as `add-doc`<br/>2. Keys on your keyboard like `Enter`<br/>3. File names such as `docedex.jar` |)
-
-[//]: # (| Text within a red box                                                | These usually represent major warnings. Not following these warnings may cause major errors within Docedex. &#40;ie. Having all data cleared from Docedex&#41;                  |)
-
-[//]: # (| Text within a yellow box         | These usually represent minor warnings. Not following these warnings may cause minor inconveniences within Docedex. &#40;ie. Editing patient data incorrectly&#41;              |)
-
-[//]: # (| Text within a blue box | These usually represent any other additional notes for users.                                                                                                           |)
-
-
 Words in `code blocks` usually represent any of the following:
 1. Text used in commands, such as `add-doc`
 2. Keys on your keyboard like `Enter`
 3. File names such as `docedex.jar`
 
-<p class="alert alert-danger"><strong>Text within a red box</strong></p> 
-<p class="alert alert-warning"><strong>Text within a yellow box</strong></p> 
-<p class="alert alert-info"><strong>Text within a blue box</strong></p>  
+<p class="alert alert-danger">Text within a red box usually represent <strong>major warnings</strong>. Not following these warnings may cause major errors within Docedex. (ie. Having all data cleared from Docedex)</p> 
+<p class="alert alert-warning">Text within a yellow box usually represent <strong>minor warnings</strong>. Not following these warnings may cause minor inconveniences within Docedex. (ie. Editing patient data incorrectly)</p> 
+<p class="alert alert-info">Text within a blue box usually represent any other <strong>additional notes for users</strong>.</p>  
 
 [Scroll back to Table of Contents](#table-of-contents)
 
