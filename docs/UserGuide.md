@@ -401,7 +401,7 @@ Here are some notes about the behaviour of our commands!
 **WARNING**: This command overwrites existing data within Docedex, proceed with caution.
 </div>
 
-<br>***What does it do?***
+***What does it do?***
 - Edits the information of the doctor at the specified `INDEX` using any
 new supplied parameters.
 
