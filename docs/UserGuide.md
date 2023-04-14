@@ -87,7 +87,7 @@ Here are some descriptions of the words we use throughout the User Guide:
 | **CLI**           | Command Line Interface (CLI) represents a text-based user interface to interact with the application.                                                                     |
 | **Character**     | Any letter or symbol that is recognized by the computer, and can form a line of text (eg. `a`, `+`, `$`).                                                                 |
 | **JSON**          | [JavaScript Object Notation.](https://en.wikipedia.org/wiki/JSON)                                                                                                         |
-| **JAR file**      | [Java Archive File](#)                                                                                                                                                    |
+| **JAR file**      | [Java Archive File](https://en.wikipedia.org/wiki/JAR_(file_format))                                                                                                      |
 
 [Scroll back to Table of Contents](#table-of-contents)
 
