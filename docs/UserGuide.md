@@ -40,8 +40,8 @@ This way, we ensure that ***all critical patient management functionality can be
 through the keyboard***. Thus, we reduce the amount of time spent switching between the keyboard and mouse
 while you perform your duties.
 
-Furthermore, Docedex also comes with a nice visual feedback for our users. Find out more about our user interface
-**[here](#navigating-the-graphical-user-interface-gui)**.
+Furthermore, Docedex also comes with a nice visual feedback for our users. Find out more about **our user interface
+[here](#navigating-the-graphical-user-interface-gui)**.
 
 ## Table of Contents
 {: .no_toc}
@@ -60,11 +60,11 @@ a comprehensive list of **[Features](#features)** offered with Docedex, as well 
 
 Further questions are also answered within a **[FAQ](#faq)** section below.
 
-Confused about the terms or formatting used in this guide? Learn how to navigate
-this guide **[here](#navigating-this-guide)**.
+Confused about the terms or formatting used in this guide? Learn how to **navigate
+this guide [here](#navigating-this-guide)**.
 
-Confused about the visual display of Docedex? Learn how to navigate the user interface of
-Docedex **[here](#navigating-the-graphical-user-interface-gui)**.
+Confused about the visual display of Docedex? Learn how to **navigate the user interface of
+Docedex [here](#navigating-the-graphical-user-interface-gui)**.
 
 [Scroll back to Table of Contents](#table-of-contents)
 
@@ -361,7 +361,7 @@ Here are some notes about the behaviour of our commands!
 **Wish to add a new doctor who has joined your department?** Use the `add-doc` command!
 
 ***Command format***
-<br><br>
+<br>
 ```add-doc n/NAME p/PHONE_NUMBER e/EMAIL s/SPECIALITY y/YEARS_OF_EXPERIENCE [t/TAGS]…```
 <br>
 
@@ -395,7 +395,7 @@ Here are some notes about the behaviour of our commands!
 **Wish to change the email of an existing doctor?** Use the `edit-doc` command!
 
 ***Command format***
-<br><br>
+<br>
 ```edit-doc INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [s/SPECIALTY] [y/YOE] [t/TAGS]…```
 <br>
 
@@ -403,7 +403,7 @@ Here are some notes about the behaviour of our commands!
 **WARNING**: This command overwrites existing data within Docedex, proceed with caution.
 </div>
 
-***What does it do?***
+<br>***What does it do?***
 - Edits the information of the doctor at the specified `INDEX` using any
 new supplied parameters.
 
@@ -443,7 +443,7 @@ new supplied parameters.
 **Wish to remove a doctor who no longer works at your clinic?** Use the `del-doc` command!
 
 ***Command format***
-<br><br>
+<br>
 ```del-doc INDEX```
 <br>
 
@@ -478,7 +478,7 @@ using [`list-doc`](#listing-all-doctors) to list out all the doctors in Docedex 
 **Wish to find a doctor with at least 5 years of experience?** Use the `find-doc` command!
 
 ***Command format***
-<br><br>
+<br>
 ```find-doc [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [s/SPECIALTY] [y/YEARS_OF_EXPERIENCE] [t/TAGS]…```
 <br>
 
@@ -528,7 +528,7 @@ will be displayed to the user.
 Use the `sd` command!
 
 ***Command format***
-<br><br>
+<br>
 ```sd INDEX```
 <br>
 
@@ -562,7 +562,7 @@ Use the `sd` command!
 Use the `list-doc` command!
 
 ***Command format***
-<br><br>
+<br>
 `list-doc`
 <br>
 
