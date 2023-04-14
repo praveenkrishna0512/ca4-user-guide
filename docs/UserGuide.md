@@ -63,6 +63,9 @@ Further questions are also answered within a **[FAQ](#faq)** section below.
 Confused about the terms or formatting used in this guide? Learn how to navigate
 this guide **[here](#navigating-this-guide)**.
 
+Confused about the visual display of Docedex? Learn how to navigate the user interface of
+Docedex **[here](#navigating-the-graphical-user-interface-gui)**.
+
 [Scroll back to Table of Contents](#table-of-contents)
 
 ---
@@ -167,58 +170,6 @@ Here are the explanations behind the formatting we use within our commands!
 
 ---
 
-## **Quick start**
-
-1. Make sure that you have **Java 11 or above** installed on your computer.
-    - [How do I check my version of Java?](#checking-java-version)
-      <br><br>
-2. Download the latest jar file (`docedex.jar`) from our **[GitHub Releases](https://github.com/AY2223S2-CS2103T-F12-1/tp/releases/)**.
-   ![DownloadDocedex](images/DownloadDocedex.png)
-   <br><br>
-3. Move the jar file to a folder where you want to store the data of the doctors and patients.
-    - Create a new folder called (you can name it Docedex) where you would like to house the application (e.g., Desktop, Documents, etc.).
-    - Move the downloaded `docedex.jar` file to this folder as shown below.
-        - For Mac Users:
-          ![DownloadDocedexMac](images/DownloadDocedexMac.png)
-          <br><br>
-        - For Windows Users:
-          ![DownloadDocedexWindows](images/DocedexInFileWin.png)
-          <br><br>
-4. Launch Docedex
-    - For Mac Users:
-        - Open a new Terminal window by following the instructions below.
-            - Press `Command ⌘` and `Space` keys together.
-            - Type "Terminal".
-            - Hit the `Enter` key.
-        - Navigate to the folder where you have stored the jar file using the `cd` command.
-            - For example, if you have stored the jar file in a folder called Docedex, you can type `cd Docedex` and press Enter.
-        - Type `java -jar docedex.jar` and press Enter.
-    - For Windows Users:
-        - Double-click `docedex.jar` to launch the application.
-    - If this still does not work follow the instructions listed **[here](#launching-docedex)**.
-    - You should notice the GUI of the application pop up.
-      <br><br>
-
-5. Learn more about **navigating the GUI [here](#navigating-the-graphical-user-interface-gui)**.
-
-6. For **new users**, learn to use Docedex through our **[Tutorial](#docedex-tutorial-for-new-users)**.
-   - We also highly recommend looking through the section on **[navigating this guide](#navigating-this-guide)**
-   to better understand the terminology and formats used in this guide.
-
-7. For **advanced users**, view the specifics regarding what Docedex can do for you
-   in our **[Features](#features)** section.
-
-<div markdown="span" class="alert alert-danger">
-**WARNING TO ALL MAC USERS** <br/>
-It is  possible to right click <code>docedex.jar</code> and open it with <code>JavaLauncher.app</code>.<br/>
-However, doing so <strong>will result in improper loading of data</strong> into Docedex. Therefore, it is recommended
-to use follow the instructions stated above instead.
-</div>
-
-[Scroll back to Table of Contents](#table-of-contents)
-
----
-
 ## **Navigating the Graphical User Interface (GUI)**
 
 Docedex comes with a GUI to allow for a nice visual feedback for our users. Here
@@ -279,6 +230,58 @@ This behaviour will also exist if the user adds a patient instead too.
 Unselecting doctors and patients is currently not supported in Docedex. If you wish to
 look through all the doctors and patients in Docedex, please use the
 [`list-doc`](#listing-all-doctors) and [`list-ptn`](#listing-all-patients) commands instead.
+
+[Scroll back to Table of Contents](#table-of-contents)
+
+---
+
+## **Quick start**
+
+1. Make sure that you have **Java 11 or above** installed on your computer.
+    - [How do I check my version of Java?](#checking-java-version)
+      <br><br>
+2. Download the latest jar file (`docedex.jar`) from our **[GitHub Releases](https://github.com/AY2223S2-CS2103T-F12-1/tp/releases/)**.
+   ![DownloadDocedex](images/DownloadDocedex.png)
+   <br><br>
+3. Move the jar file to a folder where you want to store the data of the doctors and patients.
+    - Create a new folder called (you can name it Docedex) where you would like to house the application (e.g., Desktop, Documents, etc.).
+    - Move the downloaded `docedex.jar` file to this folder as shown below.
+        - For Mac Users:
+          ![DownloadDocedexMac](images/DownloadDocedexMac.png)
+          <br><br>
+        - For Windows Users:
+          ![DownloadDocedexWindows](images/DocedexInFileWin.png)
+          <br><br>
+4. Launch Docedex
+    - For Mac Users:
+        - Open a new Terminal window by following the instructions below.
+            - Press `Command ⌘` and `Space` keys together.
+            - Type "Terminal".
+            - Hit the `Enter` key.
+        - Navigate to the folder where you have stored the jar file using the `cd` command.
+            - For example, if you have stored the jar file in a folder called Docedex, you can type `cd Docedex` and press Enter.
+        - Type `java -jar docedex.jar` and press Enter.
+    - For Windows Users:
+        - Double-click `docedex.jar` to launch the application.
+    - If this still does not work follow the instructions listed **[here](#launching-docedex)**.
+    - You should notice the GUI of the application pop up.
+      <br><br>
+
+5. Learn more about **navigating the GUI [here](#navigating-the-graphical-user-interface-gui)**.
+
+6. For **new users**, learn to use Docedex through our **[Tutorial](#docedex-tutorial-for-new-users)**.
+   - We also highly recommend looking through the section on **[navigating this guide](#navigating-this-guide)**
+   to better understand the terminology and formats used in this guide.
+
+7. For **advanced users**, view the specifics regarding what Docedex can do for you
+   in our **[Features](#features)** section.
+
+<div markdown="span" class="alert alert-danger">
+**WARNING TO ALL MAC USERS** <br/>
+It is  possible to right click <code>docedex.jar</code> and open it with <code>JavaLauncher.app</code>.<br/>
+However, doing so <strong>will result in improper loading of data</strong> into Docedex. Therefore, it is recommended
+to use follow the instructions stated above instead.
+</div>
 
 [Scroll back to Table of Contents](#table-of-contents)
 
