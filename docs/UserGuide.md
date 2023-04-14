@@ -365,7 +365,7 @@ Here are some notes about the behavior of our commands!
 ***Command format***
 <br><br>
 ```add-doc n/NAME p/PHONE_NUMBER e/EMAIL s/SPECIALITY y/YEARS_OF_EXPERIENCE [t/TAGS]…```
-<br>
+<br><br>
 
 ***What does it do?***
 - Adds a new doctor to the *doctors list* in Docedex.
@@ -402,6 +402,8 @@ Here are some notes about the behavior of our commands!
 <div markdown="span" class="alert alert-warning">
 **WARNING**: This command overwrites existing data within Docedex, proceed with caution.
 </div>
+
+<br><br>
 
 ***What does it do?***
 - Edits the information of the doctor associated with the specified `INDEX` using any
@@ -449,6 +451,8 @@ new supplied parameters.
 **WARNING**: This command is cannot be undone, and there is no way to recover the deleted doctor.
 </div>
 
+<br><br>
+
 ***What does it do?***
 - Deletes the doctor associated with the specified `INDEX`.
 
@@ -476,7 +480,7 @@ using [`list-doc`](#listing-all-doctors) to list out all the doctors in Docedex 
 ***Command format***
 <br><br>
 ```find-doc [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [s/SPECIALTY] [y/YEARS_OF_EXPERIENCE] [t/TAGS]…```
-<br>
+<br><br>
 
 ***What does it do?***
 - Finds all doctors in Docedex that match the specified parameter values and displays
@@ -524,7 +528,7 @@ Use the `sd` command!
 ***Command format***
 <br><br>
 ```sd INDEX```
-<br>
+<br><br>
 
 ***What does it do?***
 - Performs a mouse click on the *Doctor Card* of the doctor associated with the specified `INDEX`.
@@ -556,7 +560,7 @@ Use the `list-doc` command!
 ***Command format***
 <br><br>
 `list-doc`
-<br>
+<br><br>
 
 ***What does it do?***
 - Lists all doctors within the *doctors list* in Docedex.
@@ -579,7 +583,7 @@ Use the `list-doc` command!
 ***Command format***
 <br><br>
 ```add-ptn n/NAME p/PHONE e/EMAIL h/HEIGHT w/WEIGHT d/DIAGNOSIS st/STATUS [r/REMARK] [t/TAGS]…```
-<br>
+<br><br>
 
 ***What does it do?***
 - Adds a new patient to the *patients list* in Docedex.
@@ -611,7 +615,7 @@ Use the `list-doc` command!
 ***Command format***
 <br><br>
 ```assign-ptn ptn/PATIENT_INDEX doc/DOCTOR_INDEX```
-<br>
+<br><br>
 
 ***What does it do?***
 - Assigns the patient associated with the specified `PATIENT_INDEX`
@@ -638,7 +642,7 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
 ***Command format***
 <br><br>
 ```unassign-ptn ptn/PATIENT_INDEX doc/DOCTOR_INDEX```
-<br>
+<br><br>
 
 ***What does it do?***
 - Remove the assignment of the patient associated with the specified `PATIENT_INDEX`
@@ -674,6 +678,8 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
 <div markdown="span" class="alert alert-warning">
 **WARNING**: This command overwrites existing data within Docedex, proceed with caution.
 </div>
+
+<br><br>
 
 ***What does it do?***
 - Edits the information of the patient associated with the specified `INDEX` using any
@@ -721,6 +727,8 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
 **WARNING**: This command is cannot be undone, and there is no way to recover the deleted patient.
 </div>
 
+<br><br>
+
 ***What does it do?***
 - Deletes the patient associated with the specified `INDEX`.
 
@@ -748,7 +756,7 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
 ***Command format***
 <br><br>
 ```find-ptn [n/NAME] [p/PHONE] [e/EMAIL] [h/HEIGHT] [w/WEIGHT] [d/DIAGNOSIS] [st/STATUS] [r/REMARK] [t/TAGS]…```
-<br>
+<br><br>
 
 ***What does it do?***
 - Finds all patients in Docedex that match the specified parameter values and displays
@@ -794,7 +802,7 @@ Use the `sp` command!
 ***Command format***
 <br><br>
 ```sp INDEX```
-<br>
+<br><br>
 
 ***What does it do?***
 - Performs a mouse click on the *Patient Card* of the patient associated with the specified `INDEX`.
@@ -826,7 +834,7 @@ Use the `list-ptn` command!
 ***Command format***
 <br><br>
 `list-ptn`
-<br>
+<br><br>
 
 ***What does it do?***
 - Lists all patients within the *patients list* in Docedex.
@@ -849,7 +857,7 @@ Use the `help` command!
 ***Command format***
 <br><br>
 `help`
-<br>
+<br><br>
 
 ***What does it do?***
 - Displays the link to this user guide.
@@ -871,7 +879,7 @@ Use the `exit` command!
 ***Command format***
 <br><br>
 `exit`
-<br>
+<br><br>
 
 ***What does it do?***
 - Closes Docedex after ensuring proper storage of data.
@@ -898,6 +906,8 @@ Use the `clear` command!
 <div markdown="span" class="alert alert-danger">
 **WARNING**: This command is cannot be undone, and there is no way to recover the deleted doctors and patients.
 </div>
+
+<br><br>
 
 ***What does it do?***
 - Deletes all patients and doctors in Docedex.
