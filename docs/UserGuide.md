@@ -420,9 +420,9 @@ new supplied parameters.
 
 ***Examples***
 - `edit-doc 1 p/91234567`
-  - Edits the phone number of the 1st doctor to be `91234567`.
+  - Edits the phone number of the 1st doctor to be *91234567*.
 - `edit-doc 2 n/Gabriel Tan p/12345678 t/`
-  - Edits the name and phone number of the 2nd doctor to be `Gabriel Tan` and `91234567` respectively.
+  - Edits the name and phone number of the 2nd doctor to be *Gabriel Tan* and *91234567* respectively.
   - Adding `t/` also clears all existing tags.
 
 <div markdown="span" class="alert alert-info">
@@ -504,9 +504,9 @@ will be displayed to the user.
 
 ***Examples***
 - `find-doc n/Gabriel`
-  - Finds and displays all doctors whose names contain the word `Gabriel`.
+  - Finds and displays all doctors whose names contain the word *Gabriel*.
 - `find-doc n/Gabriel t/friend t/expert`
-  - Finds and displays all doctors whose names contain the word `Gabriel`, and have the tags `friend` and `expert`.
+  - Finds and displays all doctors whose names contain the word *Gabriel*, and have the tags *friend* and *expert*.
 - `find-doc y/3`
   - Finds and displays all doctors that have the number *3* in their years of experience.
   - So, for example, any doctor with 3, 30, or 23 years of experience will be displayed.
@@ -696,9 +696,9 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
 
 ***Examples***
 - `edit-ptn 1 n/Daenerys Targaryen`
-  - Edits the name of the 1st patient to be `Daenerys Targaryen`.
+  - Edits the name of the 1st patient to be *Daenerys Targaryen*.
 - `edit-ptn 2 n/Daenerys Targaryen st/Inpatient t/`
-  - Edits the name and status of the 2nd patient to be `Daenerys Targaryen` and `Inpatient` respectively.
+  - Edits the name and status of the 2nd patient to be *Daenerys Targaryen* and *Inpatient* respectively.
   - Adding `t/` also clears all existing tags.
 
 <div markdown="span" class="alert alert-info">
@@ -780,7 +780,7 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
 
 ***Examples***
 - `find-ptn n/Alice`
-    - Finds and displays all patients whose names contain the word `Alice`.
+    - Finds and displays all patients whose names contain the word *Alice*.
 - `find-ptn h/1`
     - Finds and displays all patients that have the number *1* in their height.
     - So, for example, any patients with a height of 1.70m, 0.91m, or 1.81m will be displayed.
