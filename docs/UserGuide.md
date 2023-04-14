@@ -17,10 +17,10 @@ Here's an **overview** of how Docedex can help you streamline your hospital mana
 - Track the status of your patients and doctors
 - Assign patients to doctors upon triaging
 
-**If you are familiar with Docedex**, jump to our [Table of Contents](#table-of-contents) to find out what
+**If you are familiar with Docedex**, jump to our **[Table of Contents](#table-of-contents)** to find out what
 you are looking for!
 
-**If you are new here**, you may visit our [Quick Start](#quick-start) guide to onboard onto Docedex smoothly!
+**If you are new here**, you may visit our **[Quick Start](#quick-start)** guide to onboard onto Docedex smoothly!
 
 ![Docedex User Interface](./images/Ui.png)
 
@@ -34,14 +34,14 @@ through **the use of single-line text "commands"** that tell Docedex exactly wha
 For example, let's say that you want to add a doctor named Steve. Docedex allows you to enter
 a single line of text specifying your wish to add a doctor named Steve, alongside any other
 information about Steve that you wish to store. *(For more information on the usage of these commands,
-go to our [Features](#features) section)*
+go to our **[Features](#features)** section)*
 
 This way, we ensure that ***all critical patient management functionality can be performed
 through the keyboard***. Thus, we reduce the amount of time spent switching between the keyboard and mouse
 while you perform your duties.
 
 Furthermore, Docedex also comes with a nice visual feedback for our users. Find out more about our user interface
-[here](#navigating-the-graphical-user-interface-gui).
+**[here](#navigating-the-graphical-user-interface-gui)**.
 
 ## Table of Contents
 {: .no_toc}
@@ -53,15 +53,15 @@ Furthermore, Docedex also comes with a nice visual feedback for our users. Find 
 
 ## **How can this guide help me?**
 
-If you are a new user, we hope to first inform you on how you can [get started](#quick-start) using Docedex.
+If you are a new user, we hope to first inform you on how you can **[get started](#quick-start)** using Docedex.
 
 As you use Docedex, you may also have questions on how to perform certain actions within the application. This guide thus contains
-a comprehensive list of [features](#features) offered with Docedex, as well as explanations on when and how to use them.
+a comprehensive list of **[Features](#features)** offered with Docedex, as well as explanations on when and how to use them.
 
-Further questions are also answered within a [FAQ](#faq) section below.
+Further questions are also answered within a **[FAQ](#faq)** section below.
 
 Confused about the terms or formatting used in this guide? Learn how to navigate
-through this guide [here](#navigating-this-guide).
+this guide **[here](#navigating-this-guide)**.
 
 [Scroll back to Table of Contents](#table-of-contents)
 
@@ -75,14 +75,14 @@ through this guide [here](#navigating-this-guide).
 
 Here are some descriptions of the words we use throughout the User Guide:
 
-| Term              | Definition                                                                                                                                                            |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Parameter**     | Parameters are specific details you would include about the doctor/patient. (eg. name, years of experience)                                                           |
-| **Command**       | An input from the user that tells Docedex to perform an action (ie. add a doctor).                                                                                    |
-| **GUI**           | Graphical User Interface (GUI) represents the visual display of Docedex that users can see.                                                                           |
-| **GUI component** | A subsection of the Graphical User Interface. For more information on specific GUI components, refer to [this section](#navigating-the-graphical-user-interface-gui). |
-| **CLI**           | Command Line Interface (CLI) represents a text-based user interface to interact with the application.                                                                 |
-| **Character**     | Any letter or symbol that is recognized by the computer, and can form a line of text (eg. `a`, `+`, `$`)                                                              |
+| Term              | Definition                                                                                                                                                                |
+|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Parameter**     | Parameters are specific details you would include about the doctor/patient. (eg. name, years of experience)                                                               |
+| **Command**       | An input from the user that tells Docedex to perform an action (ie. add a doctor).                                                                                        |
+| **GUI**           | Graphical User Interface (GUI) represents the visual display of Docedex that users can see.                                                                               |
+| **GUI component** | A subsection of the Graphical User Interface. For more information on specific GUI components, refer to **[this section](#navigating-the-graphical-user-interface-gui)**. |
+| **CLI**           | Command Line Interface (CLI) represents a text-based user interface to interact with the application.                                                                     |
+| **Character**     | Any letter or symbol that is recognized by the computer, and can form a line of text (eg. `a`, `+`, `$`)                                                                  |
 
 [Scroll back to Table of Contents](#table-of-contents)
 
@@ -103,13 +103,13 @@ each parameter accepts as valid user input.
 
 ##### Common Parameters
 
-| Parameter           | Description                                                                                                                                  | Constraints                                                                                                                       | Valid Examples                    | Invalid Examples                             |
-|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|----------------------------------------------|
-| `n/`                | Name of the doctor/patient                                                                                                                   | Alphanumeric characters<br/>(a to z, A to Z, 0 to 9)                                                                              | Will Hunting, Elizabeth 2         | 成龍,  潔 いさぎ 世 よ 一 いち, Ganesh s/o Ravichandran |
-| `e/`                | Email of the doctor/patient                                                                                                                  | Format: \<prefix\>@\<domain\><br/><br/>The prefix and domain can contain any alphanumeric character.<br/>(a to z, A to Z, 0 to 9) | whunting@gmail.com, eliz2@mit.edu | whunting@, eliz2                             |
-| `p/`                | Phone number of the doctor/patient                                                                                                           | Positive whole number with 3 or more digits                                                                                       | 999, 94565625                     | 0, -1                                        |
-| `t/`                | Tag associated with the doctor/patient                                                                                                       | Single string of characters not separated by any whitespace                                                                       | pendingReview, recurrentProblem   | N/A                                          |
-| `INDEX`<sup>*</sup> | Index number of the doctor/patient<br/><br/>(Refer to [this image](#docedex-user-interface-with-index-highlighted) for a visual description) | Positive whole number less than or equal to 2147483649                                                                            | 1, 2147483647                     | -1, 2147483650                               |
+| Parameter           | Description                                                                                                                                      | Constraints                                                                                                                       | Valid Examples                    | Invalid Examples                             |
+|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|----------------------------------------------|
+| `n/`                | Name of the doctor/patient                                                                                                                       | Alphanumeric characters<br/>(a to z, A to Z, 0 to 9)                                                                              | Will Hunting, Elizabeth 2         | 成龍,  潔 いさぎ 世 よ 一 いち, Ganesh s/o Ravichandran |
+| `e/`                | Email of the doctor/patient                                                                                                                      | Format: \<prefix\>@\<domain\><br/><br/>The prefix and domain can contain any alphanumeric character.<br/>(a to z, A to Z, 0 to 9) | whunting@gmail.com, eliz2@mit.edu | whunting@, eliz2                             |
+| `p/`                | Phone number of the doctor/patient                                                                                                               | Positive whole number with 3 or more digits                                                                                       | 999, 94565625                     | 0, -1                                        |
+| `t/`                | Tag associated with the doctor/patient                                                                                                           | Single string of characters not separated by any whitespace                                                                       | pendingReview, recurrentProblem   | N/A                                          |
+| `INDEX`<sup>*</sup> | Index number of the doctor/patient<br/><br/>(Refer to **[this image](#docedex-user-interface-with-index-highlighted)** for a visual description) | Positive whole number less than or equal to 2147483649                                                                            | 1, 2147483647                     | -1, 2147483650                               |
 
 <sup>*</sup>`INDEX` parameters are sometimes labelled as `PATIENT_INDEX` or `DOCTOR_INDEX` for clarity.
 
@@ -172,7 +172,7 @@ Here are the explanations behind the formatting we use within our commands!
 1. Make sure that you have **Java 11 or above** installed on your computer.
     - [How do I check my version of Java?](#checking-java-version)
       <br><br>
-2. Download the latest jar file (`docedex.jar`) from our [GitHub Releases](https://github.com/AY2223S2-CS2103T-F12-1/tp/releases/).
+2. Download the latest jar file (`docedex.jar`) from our **[GitHub Releases](https://github.com/AY2223S2-CS2103T-F12-1/tp/releases/)**.
    ![DownloadDocedex](images/DownloadDocedex.png)
    <br><br>
 3. Move the jar file to a folder where you want to store the data of the doctors and patients.
@@ -195,18 +195,18 @@ Here are the explanations behind the formatting we use within our commands!
         - Type `java -jar docedex.jar` and press Enter.
     - For Windows Users:
         - Double-click `docedex.jar` to launch the application.
-    - If this still does not work follow the instructions listed [here](#launching-docedex).
+    - If this still does not work follow the instructions listed **[here](#launching-docedex)**.
     - You should notice the GUI of the application pop up.
       <br><br>
 
-5. Learn more about navigating the GUI [here](#navigating-the-graphical-user-interface-gui).
+5. Learn more about **navigating the GUI [here](#navigating-the-graphical-user-interface-gui)**.
 
-6. For **new users**, learn to use Docedex through our [Tutorial](#docedex-tutorial-for-new-users).
-   - We also highly recommend looking through the section on [navigating this guide](#navigating-this-guide)
+6. For **new users**, learn to use Docedex through our **[Tutorial](#docedex-tutorial-for-new-users)**.
+   - We also highly recommend looking through the section on **[navigating this guide](#navigating-this-guide)**
    to better understand the terminology and formats used in this guide.
 
 7. For **advanced users**, view the specifics regarding what Docedex can do for you
-   in our [Features](#features) section.
+   in our **[Features](#features)** section.
 
 <div markdown="span" class="alert alert-danger">
 **WARNING TO ALL MAC USERS** <br/>
@@ -287,7 +287,7 @@ look through all the doctors and patients in Docedex, please use the
 ## **Docedex Tutorial (for new users)**
 
 This is a tutorial for **first-time** Docedex users.
-1. Launch Docedex. You may refer to the instructions [here](#quick-start)
+1. Launch Docedex. You may refer to the instructions **[here](#quick-start)**
    - Note: On launch, Docedex will not contain any doctor or patient records.
 2. Let us try **adding a doctor** to our Docedex. Enter the command `add-doc n/John Doe p/98765432 e/johnd@example.com s/Cardiology y/5 t/surgeon` in the command box.
    - Note: On adding a new doctor, the patients' list is filtered to show only patients associated with the doctor. To view all patient records, simply type `list-ptn` in the command box.
@@ -314,7 +314,7 @@ This is a tutorial for **first-time** Docedex users.
 14. Let us try **listing all patients**. Enter the command `list-ptn` in the command box. This lists all the patients within Docedex.
 15. Congratulations! You are now ready to use Docedex.
 
-  To view all our features, you may visit our [features section](#features).
+  To view all our features, you may visit our **[Features](#features)** section.
 
 [Scroll back to Table of Contents](#table-of-contents)
 
@@ -813,7 +813,7 @@ For Mac Users you may wish to follow the instructions listed [here](https://nus-
 ### Using Docedex
 **Q**: I entered a command and my doctor/patient list was cleared. What happened?<br>
 **A**: Refer to the subsection titled
-[Selecting doctors or patients through commands](#selecting-doctors-or-patients-through-commands)
+**[Selecting doctors or patients through commands](#selecting-doctors-or-patients-through-commands)**
 for an explanation of why this occurs.
 
 [Scroll back to Table of Contents](#table-of-contents)
