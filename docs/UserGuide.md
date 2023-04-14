@@ -376,8 +376,7 @@ Here are some notes about the behaviour of our commands!
     <strong>If your <em>patients list</em> seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
-</div>
-<div markdown="span" class="alert alert-info">
+    <br/><br/>
     <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information"><strong>Parameter Information</strong></a>.
     <br/><br/>
     <strong><strong>Confused regarding the command format?</strong></strong> Refer to our guide on the <a href="#command-format"><strong>Command Format</strong></a>.
@@ -425,8 +424,7 @@ new supplied parameters.
     <strong>If your <em>patients list</em> seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
-</div>
-<div markdown="span" class="alert alert-info">
+    <br/><br/>
     <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information"><strong>Parameter Information</strong></a>.
     <br/><br/>
     <strong><strong>Confused regarding the command format?</strong></strong> Refer to our guide on the <a href="#command-format"><strong>Command Format</strong></a>.
@@ -544,8 +542,7 @@ Use the `sd` command!
     <strong>If your <em>patients list</em> seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
-</div>
-<div markdown="span" class="alert alert-info">
+    <br/><br/>
     <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information"><strong>Parameter Information</strong></a>.
     <br/><br/>
     <strong>Confused regarding the command format?</strong> Refer to our guide on the <a href="#command-format"><strong>Command Format</strong></a>.
