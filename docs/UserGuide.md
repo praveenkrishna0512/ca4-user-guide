@@ -142,12 +142,18 @@ each parameter accepts as valid user input.
 
 Here are the explanations behind the formatting we use throughout this guide!
 
-| Format                                                               | Explanation                                                                                                                                                             |
-|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Words in `code blocks`                                               | These represent any of the following:<br/>1. Text used in commands, such as `add-doc`<br/>2. Keys on your keyboard like `Enter`<br/>3. File names such as `docedex.jar` |
-| Text within a red box                                                | These usually represent major warnings. Not following these warnings may cause major errors within Docedex. (ie. Having all data cleared from Docedex)                  |
-| Text within a yellow box         | These usually represent minor warnings. Not following these warnings may cause minor inconveniences within Docedex. (ie. Editing patient data incorrectly)              |
-| Text within a blue box | These usually represent any other additional notes for users.                                                                                                           |
+[//]: # ()
+[//]: # (| Format                                                               | Explanation                                                                                                                                                             |)
+
+[//]: # (|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|)
+
+[//]: # (| Words in `code blocks`                                               | These represent any of the following:<br/>1. Text used in commands, such as `add-doc`<br/>2. Keys on your keyboard like `Enter`<br/>3. File names such as `docedex.jar` |)
+
+[//]: # (| Text within a red box                                                | These usually represent major warnings. Not following these warnings may cause major errors within Docedex. &#40;ie. Having all data cleared from Docedex&#41;                  |)
+
+[//]: # (| Text within a yellow box         | These usually represent minor warnings. Not following these warnings may cause minor inconveniences within Docedex. &#40;ie. Editing patient data incorrectly&#41;              |)
+
+[//]: # (| Text within a blue box | These usually represent any other additional notes for users.                                                                                                           |)
 
 
 Words in `code blocks` usually represent any of the following:
