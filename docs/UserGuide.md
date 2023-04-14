@@ -358,7 +358,7 @@ Here are some notes about the behaviour of our commands!
 **Wish to add a new doctor who has joined your department?** Use the `add-doc` command!
 
 ***Command format***
-<br>
+<br><br>
 ```add-doc n/NAME p/PHONE_NUMBER e/EMAIL s/SPECIALITY y/YEARS_OF_EXPERIENCE [t/TAGS]…```
 <br>
 
@@ -392,7 +392,7 @@ Here are some notes about the behaviour of our commands!
 **Wish to change the email of an existing doctor?** Use the `edit-doc` command!
 
 ***Command format***
-<br>
+<br><br>
 ```edit-doc INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [s/SPECIALTY] [y/YOE] [t/TAGS]…```
 <br>
 
@@ -440,7 +440,7 @@ new supplied parameters.
 **Wish to remove a doctor who no longer works at your clinic?** Use the `del-doc` command!
 
 ***Command format***
-<br>
+<br><br>
 ```del-doc INDEX```
 <br>
 
@@ -475,7 +475,7 @@ using [`list-doc`](#listing-all-doctors) to list out all the doctors in Docedex 
 **Wish to find a doctor with at least 5 years of experience?** Use the `find-doc` command!
 
 ***Command format***
-<br>
+<br><br>
 ```find-doc [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [s/SPECIALTY] [y/YEARS_OF_EXPERIENCE] [t/TAGS]…```
 <br>
 
@@ -525,7 +525,7 @@ will be displayed to the user.
 Use the `sd` command!
 
 ***Command format***
-<br>
+<br><br>
 ```sd INDEX```
 <br>
 
@@ -559,7 +559,7 @@ Use the `sd` command!
 Use the `list-doc` command!
 
 ***Command format***
-<br>
+<br><br>
 `list-doc`
 <br>
 
