@@ -368,7 +368,7 @@ Here are some notes about the behavior of our commands!
 <br><br>
 
 ***What does it do?***
-- Adds a new doctor to the *doctors list* in Docedex.
+- Adds a new doctor to the *Doctors List* in Docedex.
 
 ***Examples***
 - `add-doc n/John Doe p/98765432 e/johnd@example.com s/Cardiology y/5 t/surgeon`
@@ -378,7 +378,7 @@ Here are some notes about the behavior of our commands!
   - Note that the tag is optional.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:    <strong>If your <em>patients list</em> seems to disappear</strong> after entering this command, fret not! Click
+    :information_source:    <strong>If your <em>Patients List</em> seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
     <br/><br/>
@@ -426,7 +426,7 @@ new supplied parameters.
   - Adding `t/` also clears all existing tags.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:    <strong>If your <em>patients list</em> seems to disappear</strong> after entering this command, fret not! Click
+    :information_source:    <strong>If your <em>Patients List</em> seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
     <br/><br/>
@@ -457,12 +457,12 @@ new supplied parameters.
 - Deletes the doctor associated with the specified `INDEX`.
 
 ***Additional notes***
-- If the doctor you wish to delete is not shown on the *doctors list*, you can try
+- If the doctor you wish to delete is not shown on the *Doctors List*, you can try
 using [`list-doc`](#listing-all-doctors) to list out all the doctors in Docedex first.
 
 ***Examples***
 - `del-doc 2`
-  - Deletes the 2nd doctor displayed in the *doctors list* within Docedex.
+  - Deletes the 2nd doctor displayed in the *Doctors List* within Docedex.
 
 <div markdown="span" class="alert alert-info">
     :information_source:    <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
@@ -484,7 +484,7 @@ using [`list-doc`](#listing-all-doctors) to list out all the doctors in Docedex 
 
 ***What does it do?***
 - Finds all doctors in Docedex that match the specified parameter values and displays
-those doctors to the user within the *doctors list*.
+those doctors to the user within the *Doctors List*.
 
 ***Additional notes***
 - The specified parameter values can be case-insensitive.
@@ -533,14 +533,14 @@ Use the `sd` command!
 ***What does it do?***
 - Performs a mouse click on the *Doctor Card* of the doctor associated with the specified `INDEX`.
   - This displays all information about the doctor within the *contact card*.
-  - It also filters the *patients list* to only show patients assigned to this doctor.
+  - It also filters the *Patients List* to only show patients assigned to this doctor.
 
 ***Examples***
 - `sd 1`
     - Performs a mouse click on the *Doctor Card* of the doctor with displayed index of 1.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:    <strong>If your <em>patients list</em> seems to disappear</strong> after entering this command, fret not! Click
+    :information_source:    <strong>If your <em>Patients List</em> seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
     <br/><br/>
@@ -563,7 +563,7 @@ Use the `list-doc` command!
 <br><br>
 
 ***What does it do?***
-- Lists all doctors within the *doctors list* in Docedex.
+- Lists all doctors within the *Doctors List* in Docedex.
     
 <div markdown="span" class="alert alert-info">
     :information_source:    <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
@@ -586,7 +586,7 @@ Use the `list-doc` command!
 <br><br>
 
 ***What does it do?***
-- Adds a new patient to the *patients list* in Docedex.
+- Adds a new patient to the *Patients List* in Docedex.
 
 ***Examples***
 - `add-ptn n/Patrick Bateman p/85167604 e/psigma@gmail.com h/1.88 w/80.5 d/Rhinitis st/Outpatient r/Dust allergy t/brother`
@@ -596,7 +596,7 @@ Use the `list-doc` command!
   - Note that both the remark and tag are optional.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:    <strong>If your <em>doctors list</em> seems to disappear</strong> after entering this command, fret not! Click
+    :information_source:    <strong>If your <em>Doctors List</em> seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
     <br/><br/>
@@ -623,8 +623,8 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
 
 ***Examples***
 - `assign-ptn ptn/2 doc/1`
-  - Assigns the 2nd patient displayed in the *patients list*
-  to the 1st doctor  displayed in the *doctors list*.
+  - Assigns the 2nd patient displayed in the *Patients List*
+  to the 1st doctor  displayed in the *Doctors List*.
 
 <div markdown="span" class="alert alert-info">
     :information_source:    <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
@@ -650,11 +650,11 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
 
 ***Examples***
 - `unassign-ptn ptn/2 doc/1`
-    - Removes the assignment of the 2nd patient displayed in the *patients list*
-      to the 1st doctor  displayed in the *doctors list*.
+    - Removes the assignment of the 2nd patient displayed in the *Patients List*
+      to the 1st doctor  displayed in the *Doctors List*.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:    <strong>If your <em>doctors list</em> seems to disappear</strong> after entering this command, fret not! Click
+    :information_source:    <strong>If your <em>Doctors List</em> seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
     <br/><br/>
@@ -702,7 +702,7 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
   - Adding `t/` also clears all existing tags.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:    <strong>If your <em>doctors list</em> seems to disappear</strong> after entering this command, fret not! Click
+    :information_source:    <strong>If your <em>Doctors List</em> seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
     <br/><br/>
@@ -733,12 +733,12 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
 - Deletes the patient associated with the specified `INDEX`.
 
 ***Additional notes***
-- If the patient you wish to delete is not shown on the *patients list*, you can try
+- If the patient you wish to delete is not shown on the *Patients List*, you can try
   using [`list-ptn`](#listing-all-patients) to list out all the patients in Docedex first.
 
 ***Examples***
 - `del-ptn 2`
-    - Deletes the 2nd patient displayed in the *patients list* within Docedex.
+    - Deletes the 2nd patient displayed in the *Patients List* within Docedex.
 
 <div markdown="span" class="alert alert-info">
     :information_source:    <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
@@ -760,7 +760,7 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
 
 ***What does it do?***
 - Finds all patients in Docedex that match the specified parameter values and displays
-  those patients to the user within the *patients list*.
+  those patients to the user within the *Patients List*.
 
 ***Additional notes***
 - The specified parameter values can be case-insensitive.
@@ -807,14 +807,14 @@ Use the `sp` command!
 ***What does it do?***
 - Performs a mouse click on the *Patient Card* of the patient associated with the specified `INDEX`.
     - This displays all information about the patient within the *contact card*.
-    - It also filters the *doctors list* to only show doctors assigned to this patient.
+    - It also filters the *Doctors List* to only show doctors assigned to this patient.
 
 ***Examples***
 - `sp 1`
     - Performs a mouse click on the *Patient Card* of the patient with displayed index of 1.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:    <strong>If your <em>doctors list</em> seems to disappear</strong> after entering this command, fret not! Click
+    :information_source:    <strong>If your <em>Doctors List</em> seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
     <br/><br/>
@@ -837,7 +837,7 @@ Use the `list-ptn` command!
 <br><br>
 
 ***What does it do?***
-- Lists all patients within the *patients list* in Docedex.
+- Lists all patients within the *Patients List* in Docedex.
 
 <div markdown="span" class="alert alert-info">
     :information_source:    <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
