@@ -40,7 +40,7 @@ This way, we ensure that ***all critical patient management functionality can be
 through the keyboard***. Thus, we reduce the amount of time spent switching between the keyboard and mouse
 while you perform your duties.
 
-Furthermore, Docedex also comes with a nice visual feedback for our users. Find out more about **our user interface
+Furthermore, Docedex also comes with nice visual feedback for our users. Find out more about **our user interface
 [here](#navigating-the-graphical-user-interface-gui)**.
 
 ## Table of Contents
@@ -81,12 +81,13 @@ Here are some descriptions of the words we use throughout the User Guide:
 | Term              | Definition                                                                                                                                                                |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Parameter**     | Parameters are specific details you would include about the doctor/patient. (eg. name, years of experience)                                                               |
-| **Command**       | An input from the user that tells Docedex to perform an action (ie. add a doctor).                                                                                        |
+| **Command**       | An input from the user that tells Docedex to perform an action (i.e. add a doctor).                                                                                       |
 | **GUI**           | Graphical User Interface (GUI) represents the visual display of Docedex that users can see.                                                                               |
 | **GUI component** | A subsection of the Graphical User Interface. For more information on specific GUI components, refer to **[this section](#navigating-the-graphical-user-interface-gui)**. |
 | **CLI**           | Command Line Interface (CLI) represents a text-based user interface to interact with the application.                                                                     |
 | **Character**     | Any letter or symbol that is recognized by the computer, and can form a line of text (eg. `a`, `+`, `$`).                                                                 |
 | **JSON**          | [JavaScript Object Notation.](https://en.wikipedia.org/wiki/JSON)                                                                                                         |
+| **JAR file**      | [Java Archive File](#)                                                                                                                                                    |
 
 [Scroll back to Table of Contents](#table-of-contents)
 
@@ -132,7 +133,7 @@ each parameter accepts as valid user input.
 
 | Parameter | Description                             | Constraints                                                                                                                                          | Valid Examples                      | Invalid Examples   |
 |-----------|-----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|--------------------|
-| `h/`      | Height of the patient in metres (m)     | 3-digit number with 2 decimal places representing patient's height in metres                                                                         | 1.63, 1.99                          | 1, 1.2, 1.234      |
+| `h/`      | Height of the patient in meters (m)     | 3-digit number with 2 decimal places representing patient's height in meters                                                                         | 1.63, 1.99                          | 1, 1.2, 1.234      |
 | `w/`      | Weight of the patient in kilograms (kg) | Number with an optional 1 decimal place representing patient's weight in kg                                                                          | 85.0, 63.2                          | -85, 63.20         |
 | `d/`      | Diagnosis                               | Alphanumeric characters<br/>(a to z, A to Z, 0 to 9)                                                                                                 | Fever, Cancer                       | 发烧                 |
 | `st/`     | Status                                  | Can only take one of the following values:<br/><br/>Inpatient, Outpatient, Observation, Emergency Department, Intensive Care Unit, Transitional Care | Inpatient, Outpatient               | Baymax, HelloWorld |
@@ -151,8 +152,8 @@ Words in `grey blocks (like these)` usually represent any of the following:
 2. Keys on your keyboard like `Enter`
 3. File names such as `docedex.jar`
 
-<p class="alert alert-danger">Text within a red box usually represent <strong>major warnings</strong>. Not following these warnings may cause major errors within Docedex. (ie. Having all data cleared from Docedex)</p> 
-<p class="alert alert-warning">Text within a yellow box usually represent <strong>minor warnings</strong>. Not following these warnings may cause minor inconveniences within Docedex. (ie. Editing patient data incorrectly)</p> 
+<p class="alert alert-danger">Text within a red box usually represent <strong>major warnings</strong>. Not following these warnings may cause major errors within Docedex. (i.e. Having all data cleared from Docedex)</p> 
+<p class="alert alert-warning">Text within a yellow box usually represent <strong>minor warnings</strong>. Not following these warnings may cause minor inconveniences within Docedex. (i.e. Editing patient data incorrectly)</p> 
 <p class="alert alert-info">Text within a blue box usually represent any other <strong>additional notes for users</strong>.</p>  
 
 [Scroll back to Table of Contents](#table-of-contents)
@@ -161,11 +162,11 @@ Words in `grey blocks (like these)` usually represent any of the following:
 
 Here are the explanations behind the formatting we use within our commands!
 
-| Format                                                                                                  | Explanation                                                                  | Examples                                                                                          |
-|---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| Words in `UPPER_CASE`                                                                                   | These are parameter values that are supplied by the user                     | `add-doc n/NAME...` can be used as `add-doc n/John Doe...`                                        |
-| Items in square brackets                                                                                | These are optional parameters (can be left empty by user)                    | `add-doc n/NAME ... [t/TAG]` can be used as `add-doc n/John Doe t/level5` or `add-doc n/John Doe` |
-| Items with `…`​ after them                                                                              | These are parameters that can be used multiple times (or omitted completely) | `add-doc ... [t/TAG]…​` can be used as `add-doc ... t/level5 t/surgeon` or `add-doc ...`          |
+| Format                     | Explanation                                                                  | Examples                                                                                          |
+|----------------------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| Words in `UPPER_CASE`      | These are parameter values that are supplied by the user                     | `add-doc n/NAME...` can be used as `add-doc n/John Doe...`                                        |
+| Items in square brackets   | These are optional parameters that can be left empty by the user             | `add-doc n/NAME ... [t/TAG]` can be used as `add-doc n/John Doe t/level5` or `add-doc n/John Doe` |
+| Items with `…`​ after them | These are parameters that can be used multiple times (or omitted completely) | `add-doc ... [t/TAG]…​` can be used as `add-doc ... t/level5 t/surgeon` or `add-doc ...`          |
 
 [Scroll back to Table of Contents](#table-of-contents)
 
@@ -173,7 +174,7 @@ Here are the explanations behind the formatting we use within our commands!
 
 ## **Navigating the Graphical User Interface (GUI)**
 
-Docedex comes with a GUI to allow for a nice visual feedback for our users. Here
+Docedex comes with a GUI to allow for nice visual feedback for our users. Here
 is a quick run-through of the different sections of our GUI, as well as some notes
 regarding the use of the GUI.
 
@@ -183,17 +184,17 @@ regarding the use of the GUI.
 
 Here is a quick summary of each GUI component within Docedex.
 
-| **Name of component** | **Description**                                                                                                                                                                                                                                                             |
-|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Menu Bar**          | Contains dropdown menu options for the Docedex application.                                                                                                                                                                                                                 |
-| **Command Box**       | Allows users to enter Docedex commands.                                                                                                                                                                                                                                     |
-| **Result Display**    | Provides CLI-based feedback upon a user command.<br>Allows users to see if their command was successful or not.<br>Provides error messages to guide user on how to use Docedex commands.                                                                                    |
-| **Doctor List**       | Shows a list of **Doctor Cards**. This list can be manipulated through commands.<br><br>Upon starting the app, this list will reflect all doctors in Docedex.<br><br>Upon selection of a **Patient Card**, this list will filter to show doctors assigned to said patient.  |
-| **Doctor Card**       | Displays key information about a doctor, such as name, phone number, email and tags.                                                                                                                                                                                        |
-| **Patient List**      | Shows a list of **Patient Cards**. This list can be manipulated through commands.<br><br>Upon starting the app, this list will reflect all patients in Docedex.<br><br>Upon selection of a **Doctor Card**, this list will filter to show patients assigned to said doctor. |
-| **Patient Card**      | Displays key information about a patient, such as name, phone number, email and tags.                                                                                                                                                                                       |
-| **Information Card**  | Displays all information about a selected doctor or patient.                                                                                                                                                                                                                |
-| **Footer**            | Shows the location of the Docedex storage.                                                                                                                                                                                                                                  |
+| **Name of component** | **Description**                                                                                                                                                                                                                                                                 |
+|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Menu Bar**          | Contains dropdown menu options for the Docedex application.                                                                                                                                                                                                                     |
+| **Command Box**       | Allows users to enter Docedex commands.                                                                                                                                                                                                                                         |
+| **Result Display**    | Provides CLI-based feedback upon a user command.<br>Allows users to see if their command was successful or not.<br>Provides error messages to guide users on how to use Docedex commands.                                                                                       |
+| **Doctor List**       | Shows a list of **Doctor Cards**. This list can be manipulated through commands.<br><br>Upon starting the app, this list will reflect all doctors in Docedex.<br><br>Upon selection of a **Patient Card**, this list will filter to show doctors assigned to the said patient.  |
+| **Doctor Card**       | Displays key information about a doctor, such as name, phone number, email, and tags.                                                                                                                                                                                           |
+| **Patient List**      | Shows a list of **Patient Cards**. This list can be manipulated through commands.<br><br>Upon starting the app, this list will reflect all patients in Docedex.<br><br>Upon selection of a **Doctor Card**, this list will filter to show patients assigned to the said doctor. |
+| **Patient Card**      | Displays key information about a patient, such as name, phone number, email, and tags.                                                                                                                                                                                          |
+| **Information Card**  | Displays all information about a selected doctor or patient.                                                                                                                                                                                                                    |
+| **Footer**            | Shows the location of the Docedex storage.                                                                                                                                                                                                                                      |
 
 [Scroll back to Table of Contents](#table-of-contents)
 
@@ -206,13 +207,13 @@ and patients immediately after they are entered.
 
 For example, when you type in the [`add-doc`](#adding-a-doctor) command, Docedex will automatically select
 the newly added doctor and display their details to you. This gives the user (you!)
-a nice visual feedback that the command is successful.
+nice visual feedback that the command is successful.
 
 Upon selecting a doctor, the Patient List displays the patients assigned
-to the selected doctor. However, if the doctor is newly added, said doctor will have
+to the selected doctor. However, if the doctor is newly added, the said doctor will have
 no patients, and thus the Patient List will be empty.
 
-This behaviour will also exist if the user adds a patient instead too.
+This behavior will also exist if the user adds a patient instead too.
 
 <div markdown="span" class="alert alert-danger">
     :exclamation: Some users have mentioned being alarmed by <strong>sudden disappearances of
@@ -256,7 +257,7 @@ look through all the doctors and patients in Docedex, please use the
 4. Launch Docedex
     - For Mac Users:
         - Open a new Terminal window by following the instructions below.
-            - Press `Command ⌘` and `Space` keys together.
+            - Press the `Command ⌘` and `Space` keys together.
             - Type "Terminal".
             - Hit the `Enter` key.
         - Navigate to the folder where you have stored the jar file using the `cd` command.
@@ -265,7 +266,7 @@ look through all the doctors and patients in Docedex, please use the
     - For Windows Users:
         - Double-click `docedex.jar` to launch the application.
     - If this still does not work follow the instructions listed **[here](#launching-docedex)**.
-    - You should notice the GUI of the application pop up.
+    - The GUI of the application should appear on your screen.
       <br><br>
 
 5. Learn more about **navigating the GUI [here](#navigating-the-graphical-user-interface-gui)**.
@@ -279,7 +280,7 @@ look through all the doctors and patients in Docedex, please use the
 
 <div markdown="span" class="alert alert-danger">
 **WARNING TO ALL MAC USERS** <br/>
-It is  possible to right click <code>docedex.jar</code> and open it with <code>JavaLauncherApp</code>.<br/>
+It is  possible to right-click <code>docedex.jar</code> and open it with <code>JavaLauncherApp</code>.<br/>
 However, doing so <strong>will result in improper loading of data</strong> into Docedex. Therefore, it is recommended
 to use follow the instructions stated above instead.
 </div>
@@ -312,8 +313,8 @@ This is a tutorial for **first-time** Docedex users.
    ![UnassignPtn](images/UnassignPtn.png)
 9. Let us try **finding a doctor** named John. Enter the command `find-doc n/John` in the command box.
 10. Let us try **finding a patient** with the name Patrick. Enter `find-ptn n/Patrick` in the command box.
-11. Let us try **deleting a doctor** from Docedex. Enter the command `del-doc 1` in the command box. This removes the first displayed doctor in the doctors' list.
-12. Let us try **deleting a patient** from Docedex. Enter the command `del-ptn 1` in the command box. This removes the first displayed patient in the patients' list.
+11. Let us try **deleting a doctor** from Docedex. Enter the command `del-doc 1` in the command box. This removes the first displayed doctor from the doctors' list.
+12. Let us try **deleting a patient** from Docedex. Enter the command `del-ptn 1` in the command box. This removes the first displayed patient from the patients' list.
 13. Let us try **listing all doctors**. Enter the command `list-doc` in the command box. This lists all the doctors within Docedex.
 14. Let us try **listing all patients**. Enter the command `list-ptn` in the command box. This lists all the patients within Docedex.
 15. Congratulations! You are now ready to use Docedex.
@@ -331,7 +332,7 @@ This is a tutorial for **first-time** Docedex users.
 | `add-doc / add-ptn`   | `ad / ap`   | Adds a doctor or patient into Docedex.                                                                        |
 | `edit-doc / edit-ptn` | `ed / ep`   | Edits the specified doctor or patient.                                                                        |
 | `del-doc / del-ptn`   | `dd / dp`   | Removes the specified doctor or patient from Docedex. **This action cannot be undone.**                       |
-| `find-doc / find-ptn` | `fd / fp`   | Finds the doctor(s) and patient(s) based on specific parameters. (ie. Find all doctors named Smith")          |
+| `find-doc / find-ptn` | `fd / fp`   | Finds the doctor(s) and patient(s) based on specific parameters. (i.e. Find all doctors named Smith")         |
 | `list-doc / list-ptn` | `lsd / lsp` | Lists all doctors or patients within Docedex.                                                                 |
 | `assign-ptn`          | `asn`       | Assigns a patient to a doctor.                                                                                |
 | `unassign-ptn`        | `uasn`      | Remove the assignment of the specified patient to the specified doctor.                                       |
@@ -341,7 +342,7 @@ This is a tutorial for **first-time** Docedex users.
 | `exit`                | N/A         | Exits the application (equivalent to closing the application).                                                |
 
 <br>
-Here are some notes about the behaviour of our commands!
+Here are some notes about the behavior of our commands!
 
 | Notes                                                                                                        | Examples                                                                             |
 |--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
@@ -411,7 +412,7 @@ new supplied parameters.
   - Not providing any parameters (such as typing ```edit-doc 1```) will result in an error message.
 - Only parameters specified in the command will be updated.
   - All other information about the doctor will remain the same.
-- When editing tags, you have to include any previous tags that was already associated with the doctor.
+- When editing tags, you have to include any previous tags that were already associated with the doctor.
   - Not doing so will result in these tags being removed.
   - Type `t/` once, leaving the text for the tag empty, to remove all tags from a doctor.
 
@@ -478,7 +479,7 @@ using [`list-doc`](#listing-all-doctors) to list out all the doctors in Docedex 
 <br>
 
 ***What does it do?***
-- Finds all doctors in Docedex that match the specified parameter values, and displays
+- Finds all doctors in Docedex that match the specified parameter values and displays
 those doctors to the user within the *doctors list*.
 
 ***Additional notes***
@@ -504,7 +505,7 @@ will be displayed to the user.
   - Finds and displays all doctors whose names contain the word `Gabriel`, and have the tags `friend` and `expert`.
 - `find-doc y/3`
   - Finds and displays all doctors that have the number *3* in their years of experience.
-  - So, for example, any doctor with 3, 30 or 23 years of experience will be displayed.
+  - So, for example, any doctor with 3, 30, or 23 years of experience will be displayed.
 
 <div markdown="span" class="alert alert-info">
     :information_source:    <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
@@ -517,7 +518,7 @@ will be displayed to the user.
 
 #### Select doctor
 
-**Wish to click on a *doctor card* to view more information about them without using a mouse?**
+**Wish to click on a *Doctor Card* to view more information about them without using a mouse?**
 Use the `sd` command!
 
 ***Command format***
@@ -526,13 +527,13 @@ Use the `sd` command!
 <br>
 
 ***What does it do?***
-- Performs a mouse click on the *doctor card* of the doctor associated with the specified `INDEX`.
+- Performs a mouse click on the *Doctor Card* of the doctor associated with the specified `INDEX`.
   - This displays all information about the doctor within the *contact card*.
   - It also filters the *patients list* to only show patients assigned to this doctor.
 
 ***Examples***
 - `sd 1`
-    - Performs a mouse click on the *doctor card* of the doctor with displayed index of 1.
+    - Performs a mouse click on the *Doctor Card* of the doctor with displayed index of 1.
 
 <div markdown="span" class="alert alert-info">
     :information_source:    <strong>If your <em>patients list</em> seems to disappear</strong> after entering this command, fret not! Click
@@ -683,7 +684,7 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
     - Not providing any parameters (such as typing ```edit-ptn 1```) will result in an error message.
 - Only parameters specified in the command will be updated.
     - All other information about the patient will remain the same.
-- When editing tags, you have to include any previous tags that was already associated with the patient.
+- When editing tags, you have to include any previous tags that were already associated with the patient.
     - Not doing so will result in these tags being removed.
     - Type `t/` once, leaving the text for the tag empty, to remove all tags from a patient.
 
@@ -709,7 +710,7 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
 
 #### Deleting a patient
 
-**Wish to remove a patient who have not visited your clinic in 5 years?** Use the `del-ptn` command!
+**Wish to remove a patient who has not visited your clinic in 5 years?** Use the `del-ptn` command!
 
 ***Command format***
 <br><br>
@@ -750,7 +751,7 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
 <br>
 
 ***What does it do?***
-- Finds all patients in Docedex that match the specified parameter values, and displays
+- Finds all patients in Docedex that match the specified parameter values and displays
   those patients to the user within the *patients list*.
 
 ***Additional notes***
@@ -774,7 +775,7 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
     - Finds and displays all patients whose names contain the word `Alice`.
 - `find-ptn h/1`
     - Finds and displays all patients that have the number *1* in their height.
-    - So, for example, any patients with a height of 1.70m, 0.91m or 1.81m will be displayed.
+    - So, for example, any patients with a height of 1.70m, 0.91m, or 1.81m will be displayed.
 
 <div markdown="span" class="alert alert-info">
     :information_source:    <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
@@ -787,7 +788,7 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
 
 #### Select patient
 
-**Wish to click on a *patient card* to view more information about them without using a mouse?**
+**Wish to click on a *Patient Card* to view more information about them without using a mouse?**
 Use the `sp` command!
 
 ***Command format***
@@ -796,13 +797,13 @@ Use the `sp` command!
 <br>
 
 ***What does it do?***
-- Performs a mouse click on the *patient card* of the patient associated with the specified `INDEX`.
+- Performs a mouse click on the *Patient Card* of the patient associated with the specified `INDEX`.
     - This displays all information about the patient within the *contact card*.
     - It also filters the *doctors list* to only show doctors assigned to this patient.
 
 ***Examples***
 - `sp 1`
-    - Performs a mouse click on the *patient card* of the patient with displayed index of 1.
+    - Performs a mouse click on the *Patient Card* of the patient with displayed index of 1.
 
 <div markdown="span" class="alert alert-info">
     :information_source:    <strong>If your <em>doctors list</em> seems to disappear</strong> after entering this command, fret not! Click
@@ -920,7 +921,7 @@ Docedex data is saved automatically after any command that changes data. There i
 
 Docedex data is saved as a JSON file at this specified path: `[JAR file location]/data/docedex.json`.
 
-DO NOT modify data directly, as it might result in the malfunction of the application. In the worst case scenario, all your data may be reset. Only modify data directly if you know what you are doing and accept the risks of such actions.
+DO NOT modify data directly, as it might result in the malfunction of the application. In the worst-case scenario, all your data may be reset. Only modify data directly if you know what you are doing and accept the risks of such actions.
 
 [Scroll back to Table of Contents](#table-of-contents)
 
@@ -929,7 +930,7 @@ DO NOT modify data directly, as it might result in the malfunction of the applic
 ## **FAQ**
 
 ### Launching Docedex
-**Q**: How can I launch docedex if the clicking on the JAR file does not work?<br>
+**Q**: How can I launch Docedex if clicking on the JAR file does not work?<br>
 **A**: There are two possible methods to launch Docedex.
 
 Method 1: For users familiar with the command prompt
@@ -947,7 +948,8 @@ java -jar [JAR file location]/docedex.jar
 3. Save the text file as `docedex.bat` (Windows) or `docedex.sh` (macOS/Linux)
 4. Change the admin settings of the script to allow it to run as a program:
    1. Windows: Right-click on the script and select `Properties`. Under `General`, check the box that says `Allow this file to run as a program`.
-   2. MacOS/Linux: Open the terminal and navigate to the directory where the script is located. Type `chmod +x [script name]` and press enter. (`chmod +x` changes permissions of the script to allow it to be executed.)
+   2. MacOS/Linux: Open the terminal and navigate to the directory where the script is located. Type `chmod +x [script name]` and press enter.
+      1. `chmod +x` changes the permissions of the script and allows it to be executed.
 5. Double-click on the script to launch Docedex
 6. Docedex should launch
 
@@ -957,12 +959,15 @@ If you have any further issues, please raise an issue on our [GitHub page](https
 **Q**: How can I check my Java version?<br>
 **A**: Open a command prompt and type `java -version`. If you do not have Java installed, you can download it [here](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
 
-For Mac Users you may wish to follow the instructions listed [here](https://nus-cs2103-ay2223s2.github.io/website/admin/programmingLanguages.html)
+For Mac Users, you may wish to follow the instructions listed [here](https://nus-cs2103-ay2223s2.github.io/website/admin/programmingLanguages.html)
 
 ### Loading Data from another computer
 
 **Q**: How can I load data from another computer into Docedex installed on another computer?<br>
-**A**: Delete the `docedex.json` file (stored at `[JAR file location]/data/docedex.json`) from the computer that you wish to use Docedex on. Then, copy over the `docedex.json` file from the computer which you no longer wish to use Docedex on. After which, boot up Docedex to check whether your doctor information is properly loaded into the new computer.
+**A**: Delete the `docedex.json` file (stored at `[JAR file location]/data/docedex.json`) from the computer that
+you wish to use Docedex on. Then, copy over the `docedex.json` file from your previous computer.
+After which, boot up Docedex to check whether your doctor information is
+properly loaded into the new computer.
 
 ### Using Docedex
 **Q**: I entered a command and my doctor/patient list was cleared. What happened?<br>
