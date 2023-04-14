@@ -94,7 +94,7 @@ handy when crafting commands in Docedex.
 Here are some notes about these parameters.
 - Each parameter comes with **constraints**. These constraints detail the specific formats of text that
 each parameter accepts as valid user input.
-  - Not following these constraints will result in an error when
+  - Not following these constraints will **result in an error** when
   entering the command.
   - Nonetheless, Docedex will not stop working. Rather, a message will be provided to you on how to correct
   your command.
@@ -142,12 +142,12 @@ each parameter accepts as valid user input.
 
 Here are the explanations behind the formatting we use throughout this guide!
 
-| Format                                                                    | Explanation                                                                                                                                                             |
-|---------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Words in `code blocks`                                                    | These represent any of the following:<br/>1. Text used in commands, such as `add-doc`<br/>2. Keys on your keyboard like `Enter`<br/>3. File names such as `docedex.jar` |
-| <div markdown="span" class="alert alert-danger">Text within a red box     | These usually represent major warnings. Not following these warnings may cause major errors within Docedex. (ie. Having all data cleared from Docedex)                  |
-| <div markdown="span" class="alert alert-warning">Text within a yellow box | These usually represent minor warnings. Not following these warnings may cause minor inconveniences within Docedex. (ie. Editing patient data incorrectly)              |
-| <div markdown="span" class="alert alert-info">Text within a blue box      | These usually represent any other additional notes for users.                                                                                                           |
+| Format                                                                      | Explanation                                                                                                                                                             |
+|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Words in `code blocks`                                                      | These represent any of the following:<br/>1. Text used in commands, such as `add-doc`<br/>2. Keys on your keyboard like `Enter`<br/>3. File names such as `docedex.jar` |
+| Text within a <div markdown="span" class="alert alert-danger">red box</div> | These usually represent major warnings. Not following these warnings may cause major errors within Docedex. (ie. Having all data cleared from Docedex)                  |
+| <div markdown="span" class="alert alert-warning">Text within a yellow box   | These usually represent minor warnings. Not following these warnings may cause minor inconveniences within Docedex. (ie. Editing patient data incorrectly)              |
+| <div markdown="span" class="alert alert-info">Text within a blue box        | These usually represent any other additional notes for users.                                                                                                           |
 
 [Scroll back to Table of Contents](#table-of-contents)
 
