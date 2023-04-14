@@ -403,7 +403,7 @@ Here are some notes about the behavior of our commands!
 **WARNING**: This command overwrites existing data within Docedex, proceed with caution.
 </div>
 
-<br><br>
+<br>
 
 ***What does it do?***
 - Edits the information of the doctor associated with the specified `INDEX` using any
@@ -451,7 +451,7 @@ new supplied parameters.
 **WARNING**: This command is cannot be undone, and there is no way to recover the deleted doctor.
 </div>
 
-<br><br>
+<br>
 
 ***What does it do?***
 - Deletes the doctor associated with the specified `INDEX`.
@@ -679,7 +679,7 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
 **WARNING**: This command overwrites existing data within Docedex, proceed with caution.
 </div>
 
-<br><br>
+<br>
 
 ***What does it do?***
 - Edits the information of the patient associated with the specified `INDEX` using any
@@ -727,7 +727,7 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
 **WARNING**: This command is cannot be undone, and there is no way to recover the deleted patient.
 </div>
 
-<br><br>
+<br>
 
 ***What does it do?***
 - Deletes the patient associated with the specified `INDEX`.
@@ -907,7 +907,7 @@ Use the `clear` command!
 **WARNING**: This command is cannot be undone, and there is no way to recover the deleted doctors and patients.
 </div>
 
-<br><br>
+<br>
 
 ***What does it do?***
 - Deletes all patients and doctors in Docedex.
