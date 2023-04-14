@@ -145,7 +145,7 @@ each parameter accepts as valid user input.
 
 Here are the explanations behind the formatting we use throughout this guide!
 
-Words in `code blocks` usually represent any of the following:
+Words in `grey blocks (like these)` usually represent any of the following:
 1. Text used in commands, such as `add-doc`
 2. Keys on your keyboard like `Enter`
 3. File names such as `docedex.jar`
