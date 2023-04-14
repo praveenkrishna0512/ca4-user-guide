@@ -142,12 +142,14 @@ each parameter accepts as valid user input.
 
 Here are the explanations behind the formatting we use throughout this guide!
 
-| Format                                                                                                                                                 | Explanation                                                                                                                                                             |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Words in `code blocks`                                                                                                                                 | These represent any of the following:<br/>1. Text used in commands, such as `add-doc`<br/>2. Keys on your keyboard like `Enter`<br/>3. File names such as `docedex.jar` |
-| Text within a {::options parse_block_html="true" /}<div markdown="span" class="alert alert-danger">red box</div>{::options parse_block_html="false" /} | These usually represent major warnings. Not following these warnings may cause major errors within Docedex. (ie. Having all data cleared from Docedex)                  |
-| <div markdown="span" class="alert alert-warning">Text within a yellow box                                                                              | These usually represent minor warnings. Not following these warnings may cause minor inconveniences within Docedex. (ie. Editing patient data incorrectly)              |
-| <div markdown="span" class="alert alert-info">Text within a blue box                                                                                   | These usually represent any other additional notes for users.                                                                                                           |
+| Format                                                               | Explanation                                                                                                                                                             |
+|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Words in `code blocks`                                               | These represent any of the following:<br/>1. Text used in commands, such as `add-doc`<br/>2. Keys on your keyboard like `Enter`<br/>3. File names such as `docedex.jar` |
+| Text within a red box                                                | These usually represent major warnings. Not following these warnings may cause major errors within Docedex. (ie. Having all data cleared from Docedex)                  |
+| <p class="alert alert-warning">Text within a yellow box </p>         | These usually represent minor warnings. Not following these warnings may cause minor inconveniences within Docedex. (ie. Editing patient data incorrectly)              |
+| <div markdown="span" class="alert alert-info">Text within a blue box | These usually represent any other additional notes for users.                                                                                                           |
+
+<p class="alert alert-warning">Text within a yellow box </p> 
 
 [Scroll back to Table of Contents](#table-of-contents)
 
@@ -376,11 +378,11 @@ Here are some notes about the behaviour of our commands!
     to find out why this happens.
 </div>
 <div markdown="span" class="alert alert-info">
-    Don't know what each parameter stands for? Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
+    <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
     <br/><br/>
-    Confused regarding the command format? Refer to our guide on the <a href="#command-format">Command Format</a>.
+    <strong><strong>Confused regarding the command format?</strong></strong> Refer to our guide on the <a href="#command-format">Command Format</a>.
     <br/><br/>
-    Not sure of the terminology used? Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
+    <strong>Not sure of the terminology used?</strong> Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
     and <a href="#quick-orientation">Quick Orientation</a> to the GUI for the definitions of GUI components.
 </div>
 
@@ -425,11 +427,11 @@ new supplied parameters.
     to find out why this happens.
 </div>
 <div markdown="span" class="alert alert-info">
-    Don't know what each parameter stands for? Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
+    <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
     <br/><br/>
-    Confused regarding the command format? Refer to our guide on the <a href="#command-format">Command Format</a>.
+    <strong><strong>Confused regarding the command format?</strong></strong> Refer to our guide on the <a href="#command-format">Command Format</a>.
     <br/><br/>
-    Not sure of the terminology used? Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
+    <strong>Not sure of the terminology used?</strong> Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
     and <a href="#quick-orientation">Quick Orientation</a> to the GUI for the definitions of GUI components.
 </div>
 
@@ -460,11 +462,11 @@ using [`list-doc`](#listing-all-doctors) to list out all the doctors in Docedex 
   - Deletes the 2nd doctor displayed in the *doctors list* within Docedex.
 
 <div markdown="span" class="alert alert-info">
-    Don't know what each parameter stands for? Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
+    <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
     <br/><br/>
-    Confused regarding the command format? Refer to our guide on the <a href="#command-format">Command Format</a>.
+    <strong><strong>Confused regarding the command format?</strong></strong> Refer to our guide on the <a href="#command-format">Command Format</a>.
     <br/><br/>
-    Not sure of the terminology used? Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
+    <strong>Not sure of the terminology used?</strong> Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
     and <a href="#quick-orientation">Quick Orientation</a> to the GUI for the definitions of GUI components.
 </div>
 
@@ -509,11 +511,11 @@ will be displayed to the user.
   - So, any doctor with 3, 30 or 23 years of experience will be displayed.
 
 <div markdown="span" class="alert alert-info">
-    Don't know what each parameter stands for? Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
+    <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
     <br/><br/>
-    Confused regarding the command format? Refer to our guide on the <a href="#command-format">Command Format</a>.
+    <strong><strong>Confused regarding the command format?</strong></strong> Refer to our guide on the <a href="#command-format">Command Format</a>.
     <br/><br/>
-    Not sure of the terminology used? Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
+    <strong>Not sure of the terminology used?</strong> Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
     and <a href="#quick-orientation">Quick Orientation</a> to the GUI for the definitions of GUI components.
 </div>
 
@@ -544,11 +546,11 @@ Use the `sd` command!
     to find out why this happens.
 </div>
 <div markdown="span" class="alert alert-info">
-    Don't know what each parameter stands for? Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
+    <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
     <br/><br/>
-    Confused regarding the command format? Refer to our guide on the <a href="#command-format">Command Format</a>.
+    <strong>Confused regarding the command format?</strong> Refer to our guide on the <a href="#command-format">Command Format</a>.
     <br/><br/>
-    Not sure of the terminology used? Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
+    <strong>Not sure of the terminology used?</strong> Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
     and <a href="#quick-orientation">Quick Orientation</a> to the GUI for the definitions of GUI components.
 </div>
 
@@ -568,11 +570,11 @@ Use the `list-doc` command!
 - Lists all doctors within the *doctors list* in Docedex.
     
 <div markdown="span" class="alert alert-info">
-    Don't know what each parameter stands for? Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
+    <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
     <br/><br/>
-    Confused regarding the command format? Refer to our guide on the <a href="#command-format">Command Format</a>.
+    <strong><strong>Confused regarding the command format?</strong></strong> Refer to our guide on the <a href="#command-format">Command Format</a>.
     <br/><br/>
-    Not sure of the terminology used? Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
+    <strong>Not sure of the terminology used?</strong> Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
     and <a href="#quick-orientation">Quick Orientation</a> to the GUI for the definitions of GUI components.
 </div>
 
