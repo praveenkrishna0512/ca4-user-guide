@@ -402,7 +402,7 @@ Here are some notes about the behaviour of our commands!
 </div>
 
 ***What does it do?***
-- Edits the information of the doctor at the specified `INDEX` using any
+- Edits the information of the doctor associated with the specified `INDEX` using any
 new supplied parameters.
 
 ***Additional notes***
@@ -448,7 +448,7 @@ new supplied parameters.
 </div>
 
 ***What does it do?***
-- Deletes the doctor at the specified `INDEX`.
+- Deletes the doctor associated with the specified `INDEX`.
 
 ***Additional notes***
 - If the doctor you wish to delete is not shown on the *doctors list*, you can try
@@ -525,7 +525,7 @@ Use the `sd` command!
 <br>
 
 ***What does it do?***
-- Performs a mouse click on the *doctor card* of the doctor at the specified `INDEX`.
+- Performs a mouse click on the *doctor card* of the doctor associated with the specified `INDEX`.
   - This displays all information about the doctor within the *contact card*.
   - It also filters the *patients list* to only show patients assigned to this doctor.
 
@@ -604,36 +604,58 @@ Use the `list-doc` command!
 
 #### Assigning a patient to a doctor
 
+**Wish to assign a newly triaged patient to an available doctor?** Use the `assign-ptn` command!
+
+***Command format***
+<br><br>
 ```assign-ptn ptn/PATIENT_INDEX doc/DOCTOR_INDEX```
-- To view parameter information click [here](#parameter-information)
-- What it does: Performs an assignment operation and filters the doctors' list to show only the doctors associated with the patient.
-- Possible use cases: Assigning a newly arrived patient to an available doctor.
-- Examples:
-  - `assign-ptn ptn/1 doc/1` assigns the first patient to the first doctor.
+<br>
+
+***What does it do?***
+- Assigns the patient associated with the specified `PATIENT_INDEX`
+to the doctor associated with the specified `DOCTOR_INDEX`.
+
+***Examples***
+- `assign-ptn ptn/2 doc/1`
+  - Assigns the 2nd patient displayed in the *patients list*
+  to the 1st doctor  displayed in the *doctors list*.
 
 <div markdown="span" class="alert alert-info">
-Assign patient command, also calls select patient to display the recently added information in the Enlarged Contact Card.
-The doctors that appear in the doctors list, are those that the patient has been assigned to.
-
-For more information see: [Selecting doctors or patients through commands](#selecting-doctors-or-patients-through-commands)
+    <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
+    refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
+    for definitions of terms related to the user interface.
 </div>
 
 [Scroll back to Table of Contents](#table-of-contents)
 
 #### Undoing assignment of a patient from a doctor
 
+**Wish to remove the assignment of a patient to a doctor once their consultations are over?** Use the `unassign-ptn` command!
+
+***Command format***
+<br><br>
 ```unassign-ptn ptn/PATIENT_INDEX doc/DOCTOR_INDEX```
-- To view parameter information click [here](#parameter-information)
-- What it does: Undoes the assignment of a patient from a doctor. Filters the doctors list to highlight only doctors associated with the patient.
-- Possible use cases: Transferring a patient's case from one doctor to another
-- Examples:
-  - `unassign-ptn ptn/1 doc/1` undoes the assignment of the first patient from the first doctor.
+<br>
+
+***What does it do?***
+- Remove the assignment of the patient associated with the specified `PATIENT_INDEX`
+  to the doctor associated with the specified `DOCTOR_INDEX`.
+
+***Examples***
+- `unassign-ptn ptn/2 doc/1`
+    - Removes the assignment of the 2nd patient displayed in the *patients list*
+      to the 1st doctor  displayed in the *doctors list*.
 
 <div markdown="span" class="alert alert-info">
-Unassign (undo assignment) patient command, also calls select patient to display the recently added information in the Enlarged Contact Card.
-The doctors that appear in the doctors list, are those that the patient has been assigned to (if no doctors are displayed, the patient is assigned to no doctors).
-
-For more information see: [Selecting doctors or patients through commands](#selecting-doctors-or-patients-through-commands)
+    <strong>If your <em>doctors list</em> seems to disappear</strong> after entering this command, fret not! Click
+    <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
+    to find out why this happens.
+    <br/><br/>
+    <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
+    refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
+    for definitions of terms related to the user interface.
 </div>
 
 [Scroll back to Table of Contents](#table-of-contents)
@@ -652,7 +674,7 @@ For more information see: [Selecting doctors or patients through commands](#sele
 </div>
 
 ***What does it do?***
-- Edits the information of the patient at the specified `INDEX` using any
+- Edits the information of the patient associated with the specified `INDEX` using any
   new supplied parameters.
 
 ***Additional notes***
@@ -698,7 +720,7 @@ For more information see: [Selecting doctors or patients through commands](#sele
 </div>
 
 ***What does it do?***
-- Deletes the patient at the specified `INDEX`.
+- Deletes the patient associated with the specified `INDEX`.
 
 ***Additional notes***
 - If the patient you wish to delete is not shown on the *patients list*, you can try
@@ -773,7 +795,7 @@ Use the `sp` command!
 <br>
 
 ***What does it do?***
-- Performs a mouse click on the *patient card* of the patient at the specified `INDEX`.
+- Performs a mouse click on the *patient card* of the patient associated with the specified `INDEX`.
     - This displays all information about the patient within the *contact card*.
     - It also filters the *doctors list* to only show doctors assigned to this patient.
 
