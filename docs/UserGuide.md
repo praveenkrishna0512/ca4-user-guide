@@ -378,12 +378,12 @@ Here are some notes about the behaviour of our commands!
     to find out why this happens.
 </div>
 <div markdown="span" class="alert alert-info">
-    <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
+    <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information"><strong>Parameter Information</strong></a>.
     <br/><br/>
-    <strong><strong>Confused regarding the command format?</strong></strong> Refer to our guide on the <a href="#command-format">Command Format</a>.
+    <strong><strong>Confused regarding the command format?</strong></strong> Refer to our guide on the <a href="#command-format"><strong>Command Format</strong></a>.
     <br/><br/>
-    <strong>Not sure of the terminology used?</strong> Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
-    and <a href="#quick-orientation">Quick Orientation</a> to the GUI for the definitions of GUI components.
+    <strong>Not sure of the terminology used?</strong> Refer to our <a href="#glossary"><strong>Glossary</strong></a> for the definitions of terms used
+    and <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the GUI for the definitions of GUI components.
 </div>
 
 [Scroll back to Table of Contents](#table-of-contents)
@@ -427,12 +427,12 @@ new supplied parameters.
     to find out why this happens.
 </div>
 <div markdown="span" class="alert alert-info">
-    <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
+    <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information"><strong>Parameter Information</strong></a>.
     <br/><br/>
-    <strong><strong>Confused regarding the command format?</strong></strong> Refer to our guide on the <a href="#command-format">Command Format</a>.
+    <strong><strong>Confused regarding the command format?</strong></strong> Refer to our guide on the <a href="#command-format"><strong>Command Format</strong></a>.
     <br/><br/>
-    <strong>Not sure of the terminology used?</strong> Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
-    and <a href="#quick-orientation">Quick Orientation</a> to the GUI for the definitions of GUI components.
+    <strong>Not sure of the terminology used?</strong> Refer to our <a href="#glossary"><strong>Glossary</strong></a> for the definitions of terms used
+    and <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the GUI for the definitions of GUI components.
 </div>
 
 [Scroll back to Table of Contents](#table-of-contents)
@@ -462,12 +462,12 @@ using [`list-doc`](#listing-all-doctors) to list out all the doctors in Docedex 
   - Deletes the 2nd doctor displayed in the *doctors list* within Docedex.
 
 <div markdown="span" class="alert alert-info">
-    <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
+    <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information"><strong>Parameter Information</strong></a>.
     <br/><br/>
-    <strong><strong>Confused regarding the command format?</strong></strong> Refer to our guide on the <a href="#command-format">Command Format</a>.
+    <strong><strong>Confused regarding the command format?</strong></strong> Refer to our guide on the <a href="#command-format"><strong>Command Format</strong></a>.
     <br/><br/>
-    <strong>Not sure of the terminology used?</strong> Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
-    and <a href="#quick-orientation">Quick Orientation</a> to the GUI for the definitions of GUI components.
+    <strong>Not sure of the terminology used?</strong> Refer to our <a href="#glossary"><strong>Glossary</strong></a> for the definitions of terms used
+    and <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the GUI for the definitions of GUI components.
 </div>
 
 [Scroll back to Table of Contents](#table-of-contents)
@@ -511,12 +511,12 @@ will be displayed to the user.
   - So, any doctor with 3, 30 or 23 years of experience will be displayed.
 
 <div markdown="span" class="alert alert-info">
-    <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
+    <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information"><strong>Parameter Information</strong></a>.
     <br/><br/>
-    <strong><strong>Confused regarding the command format?</strong></strong> Refer to our guide on the <a href="#command-format">Command Format</a>.
+    <strong><strong>Confused regarding the command format?</strong></strong> Refer to our guide on the <a href="#command-format"><strong>Command Format</strong></a>.
     <br/><br/>
-    <strong>Not sure of the terminology used?</strong> Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
-    and <a href="#quick-orientation">Quick Orientation</a> to the GUI for the definitions of GUI components.
+    <strong>Not sure of the terminology used?</strong> Refer to our <a href="#glossary"><strong>Glossary</strong></a> for the definitions of terms used
+    and <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the GUI for the definitions of GUI components.
 </div>
 
 [Scroll back to Table of Contents](#table-of-contents)
@@ -546,12 +546,12 @@ Use the `sd` command!
     to find out why this happens.
 </div>
 <div markdown="span" class="alert alert-info">
-    <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
+    <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information"><strong>Parameter Information</strong></a>.
     <br/><br/>
-    <strong>Confused regarding the command format?</strong> Refer to our guide on the <a href="#command-format">Command Format</a>.
+    <strong>Confused regarding the command format?</strong> Refer to our guide on the <a href="#command-format"><strong>Command Format</strong></a>.
     <br/><br/>
-    <strong>Not sure of the terminology used?</strong> Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
-    and <a href="#quick-orientation">Quick Orientation</a> to the GUI for the definitions of GUI components.
+    <strong>Not sure of the terminology used?</strong> Refer to our <a href="#glossary"><strong>Glossary</strong></a> for the definitions of terms used
+    and <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the GUI for the definitions of GUI components.
 </div>
 
 [Scroll back to Table of Contents](#table-of-contents)
@@ -570,12 +570,12 @@ Use the `list-doc` command!
 - Lists all doctors within the *doctors list* in Docedex.
     
 <div markdown="span" class="alert alert-info">
-    <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information">Parameter Information</a>.
+    <strong>Don't know what each parameter stands for?</strong> Refer to our guide on the <a href="#parameter-information"><strong>Parameter Information</strong></a>.
     <br/><br/>
-    <strong><strong>Confused regarding the command format?</strong></strong> Refer to our guide on the <a href="#command-format">Command Format</a>.
+    <strong><strong>Confused regarding the command format?</strong></strong> Refer to our guide on the <a href="#command-format"><strong>Command Format</strong></a>.
     <br/><br/>
-    <strong>Not sure of the terminology used?</strong> Refer to our <a href="#glossary">Glossary</a> for the definitions of terms used
-    and <a href="#quick-orientation">Quick Orientation</a> to the GUI for the definitions of GUI components.
+    <strong>Not sure of the terminology used?</strong> Refer to our <a href="#glossary"><strong>Glossary</strong></a> for the definitions of terms used
+    and <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the GUI for the definitions of GUI components.
 </div>
 
 [Scroll back to Table of Contents](#table-of-contents)
