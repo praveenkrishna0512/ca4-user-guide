@@ -377,7 +377,7 @@ Here are some notes about the behaviour of our commands!
   - Note that the tag is optional.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:<strong>If your <em>patients list</em> seems to disappear</strong> after entering this command, fret not! Click
+    :information_source: <strong>If your <em>patients list</em> seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
     <br/><br/>
@@ -423,7 +423,7 @@ new supplied parameters.
   - Adding `t/` also clears all existing tags.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:<strong>If your <em>patients list</em> seems to disappear</strong> after entering this command, fret not! Click
+    :information_source: <strong>If your <em>patients list</em> seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
     <br/><br/>
@@ -460,7 +460,7 @@ using [`list-doc`](#listing-all-doctors) to list out all the doctors in Docedex 
   - Deletes the 2nd doctor displayed in the *doctors list* within Docedex.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:<strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    :information_source: <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
     Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
     refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
     for definitions of terms related to the user interface.
@@ -507,7 +507,7 @@ will be displayed to the user.
   - So, for example, any doctor with 3, 30 or 23 years of experience will be displayed.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:<strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    :information_source: <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
     Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
     refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
     for definitions of terms related to the user interface.
@@ -535,7 +535,7 @@ Use the `sd` command!
     - Performs a mouse click on the *doctor card* of the doctor with displayed index of 1.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:<strong>If your <em>patients list</em> seems to disappear</strong> after entering this command, fret not! Click
+    :information_source: <strong>If your <em>patients list</em> seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
     <br/><br/>
@@ -561,7 +561,7 @@ Use the `list-doc` command!
 - Lists all doctors within the *doctors list* in Docedex.
     
 <div markdown="span" class="alert alert-info">
-    :information_source:<strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    :information_source: <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
     Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
     refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
     for definitions of terms related to the user interface.
@@ -591,7 +591,7 @@ Use the `list-doc` command!
   - Note that both the remark and tag are optional.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:<strong>If your <em>doctors list</em> seems to disappear</strong> after entering this command, fret not! Click
+    :information_source: <strong>If your <em>doctors list</em> seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
     <br/><br/>
@@ -622,7 +622,7 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
   to the 1st doctor  displayed in the *doctors list*.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:<strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    :information_source: <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
     Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
     refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
     for definitions of terms related to the user interface.
@@ -649,7 +649,7 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
       to the 1st doctor  displayed in the *doctors list*.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:<strong>If your <em>doctors list</em> seems to disappear</strong> after entering this command, fret not! Click
+    :information_source: <strong>If your <em>doctors list</em> seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
     <br/><br/>
@@ -695,7 +695,7 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
   - Adding `t/` also clears all existing tags.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:<strong>If your <em>doctors list</em> seems to disappear</strong> after entering this command, fret not! Click
+    :information_source: <strong>If your <em>doctors list</em> seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
     <br/><br/>
@@ -732,7 +732,7 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
     - Deletes the 2nd patient displayed in the *patients list* within Docedex.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:<strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    :information_source: <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
     Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
     refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
     for definitions of terms related to the user interface.
@@ -777,7 +777,7 @@ to the doctor associated with the specified `DOCTOR_INDEX`.
     - So, for example, any patients with a height of 1.70m, 0.91m or 1.81m will be displayed.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:<strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    :information_source: <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
     Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
     refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
     for definitions of terms related to the user interface.
@@ -805,7 +805,7 @@ Use the `sp` command!
     - Performs a mouse click on the *patient card* of the patient with displayed index of 1.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:<strong>If your <em>doctors list</em> seems to disappear</strong> after entering this command, fret not! Click
+    :information_source: <strong>If your <em>doctors list</em> seems to disappear</strong> after entering this command, fret not! Click
     <a href="#selecting-doctors-or-patients-through-commands"><strong>here</strong></a>
     to find out why this happens.
     <br/><br/>
@@ -831,7 +831,7 @@ Use the `list-ptn` command!
 - Lists all patients within the *patients list* in Docedex.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:<strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    :information_source: <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
     Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
     refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
     for definitions of terms related to the user interface.
@@ -854,7 +854,7 @@ Use the `help` command!
 - Displays the link to this user guide.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:<strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    :information_source: <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
     Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
     refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
     for definitions of terms related to the user interface.
@@ -876,7 +876,7 @@ Use the `exit` command!
 - Closes Docedex after ensuring proper storage of data.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:<strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    :information_source: <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
     Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
     refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
     for definitions of terms related to the user interface.
@@ -902,7 +902,7 @@ Use the `clear` command!
 - Deletes all patients and doctors in Docedex.
 
 <div markdown="span" class="alert alert-info">
-    :information_source:<strong><strong>Confused regarding the command format or terminology used?</strong></strong>
+    :information_source: <strong><strong>Confused regarding the command format or terminology used?</strong></strong>
     Refer to our guide on <a href="#navigating-this-guide"><strong>Navigating this Guide</strong></a>. You may also
     refer to our <a href="#quick-orientation"><strong>Quick Orientation</strong></a> to the user interface,
     for definitions of terms related to the user interface.
